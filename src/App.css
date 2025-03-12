@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.did-you-know{
+  text-align: center;
+  color: bisque;
+  background-color: #282c34;
+}
