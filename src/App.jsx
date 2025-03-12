@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  //loading
+  //loading time
   useEffect(() => {
     const delayTime = 3000;
     const delayLoading = setTimeout(() => {
@@ -32,7 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? ( //loading...
+      {loading ? ( 
+        //loading screen
         <center>
           <br /><br /><br />
           <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
