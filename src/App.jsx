@@ -37,7 +37,7 @@ function App() {
         </center>
       ) : (
         <>
-          <h1>SYNTAX</h1>
+          <h1 className="aaa">SYNTAX</h1>
         </>
       )}
     </div>
