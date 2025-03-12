@@ -39,12 +39,24 @@
 
 .did-you-know{
   text-align: center;
-  color: bisque;
-  background-color: #282c34;
-  border: #282c34 1px solid;
+  color: rgb(255, 178, 84);
 }
 
-.aaa{
+.aaa-temp{
   color: rgb(179, 179, 255);
   background: #000;
+}
+
+.loadingscreen {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid rgb(255, 195, 195);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

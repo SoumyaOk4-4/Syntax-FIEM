@@ -1,3 +1,4 @@
+//libs
 import "./App.css";
 import React, { useState, useEffect } from "react";
 
@@ -33,11 +34,14 @@ function App() {
     <div className="App">
       {loading ? ( //loading...
         <center>
+          <br /><br /><br />
           <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
+          <br /><br />
+          <div className="loadingscreen"></div>
         </center>
       ) : (
         <>
-          <h1 className="aaa">SYNTAX</h1>
+          <h1 className="aaa-temp">SYNTAX</h1>
         </>
       )}
     </div>
