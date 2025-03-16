@@ -113,7 +113,7 @@
 /* btns */
 .nav-btn {
   width: 50px;
-  height: 25px;
+  height: 75px;
   background-size: contain;
   background-repeat: no-repeat;
   transition: background 0.3s ease-in-out;
@@ -129,10 +129,10 @@
 @media (max-width: 768px) {
   .about-btn {
     background-image: url('./images/about.png');
-    margin-left: 45%;
+    margin-left: 40%;
   }
   .about-btn:hover {
     background-image: url('./images/about_h.png');
-    margin-left: 45%;
+    margin-left: 40%;
   }
 }
