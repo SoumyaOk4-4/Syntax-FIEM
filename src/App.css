@@ -124,6 +124,7 @@ body {
   height: 120px;
   width: 250px;
   object-fit: contain;
+  cursor: default;
 }
 
 .fiem {

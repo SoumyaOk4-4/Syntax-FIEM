@@ -55,25 +55,15 @@ function Contact() {
 }
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="navbar">
-      {/* Hamburger Button (Mobile Only) */}
-      <div className={`hamburger ${isOpen ? "active" : ""}`} onClick={() => setIsOpen(!isOpen)}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
-      {/* Normal Navigation Links (Hidden on Mobile) */}
-      <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <Link to="/" className="nav-btn home-btn" onClick={() => setIsOpen(false)}>Events</Link>
-        <Link to="/about" className="nav-btn about-btn" onClick={() => setIsOpen(false)}>About</Link>
-        <Link to="/sponsers" className="nav-btn sponsers-btn" onClick={() => setIsOpen(false)}>Sponsers</Link>
-        <Link to="/team" className="nav-btn team-btn" onClick={() => setIsOpen(false)}>Team</Link>
-        <Link to="/gallery" className="nav-btn gallery-btn" onClick={() => setIsOpen(false)}>Gallery</Link>
-        <Link to="/contact" className="nav-btn contact-btn" onClick={() => setIsOpen(false)}>Contact Us</Link>
+      <div className={`nav-links`}>
+        <Link to="/" className="nav-btn home-btn">Events</Link>
+        <Link to="/about" className="nav-btn about-btn">About</Link>
+        <Link to="/sponsers" className="nav-btn sponsers-btn">Sponsers</Link>
+        <Link to="/team" className="nav-btn team-btn">Team</Link>
+        <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>
+        <Link to="/contact" className="nav-btn contact-btn">Contact Us</Link>
       </div>
     </nav>
   );
@@ -118,7 +108,9 @@ function App() {
       ) : (
         <>
           <h1 className="headers">
-            <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+            <a href="/">
+              <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+            </a>
             <img src={futureblue} alt="FIEM" className="fiem" />
           </h1>
           <div className="nav-links">
