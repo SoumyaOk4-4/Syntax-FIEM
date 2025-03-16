@@ -16,7 +16,7 @@ const firebaseConfig = {
 
   export const requestNotificationPermission = async () => {
     try {
-      const token = await getToken(messaging, { vapidKey: "YOUR_VAPID_KEY" });
+      const token = await getToken(messaging, { vapidKey: "AdsmGJ91dolIkqTEKmbVdbeyolsPbayuHLw58CzTl0c" });
       console.log("FCM Token:", token);
       return token;
     } catch (error) {
