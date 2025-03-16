@@ -3,11 +3,36 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-//routes
-function Home() {
+//nav menus
+
+function Events() {
   return (
     <>
-      <h1>home page</h1>
+      <h1>events page</h1>
+    </>
+  );
+}
+
+function Sponsers() {
+  return (
+    <>
+      <h1>sponsers page</h1>
+    </>
+  );
+}
+
+function Team() {
+  return (
+    <>
+      <h1>team member page</h1>
+    </>
+  );
+}
+
+function Gallery() {
+  return (
+    <>
+      <h1>gallery page</h1>
     </>
   );
 }
@@ -15,7 +40,7 @@ function Home() {
 function About() {
   return (
     <>
-      <h1>about</h1>
+      <h1>about page</h1>
     </>
   );
 }
@@ -23,7 +48,7 @@ function About() {
 function Contact() {
   return (
     <>
-      <h1>contact</h1>
+      <h1>contact us page</h1>
     </>
   );
 }
@@ -31,9 +56,12 @@ function Contact() {
 function Navbar() {
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
+      <Link to="/">Events</Link>
       <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/sponsers">Sponsers</Link>
+      <Link to="/team">Team</Link>
+      <Link to="/gallery">Gallery</Link>
+      <Link to="/contact">Contact Us</Link>
     </nav>
   );
 }
@@ -76,15 +104,20 @@ function App() {
         </center>
       ) : (
         <>
-          <h1 className="aaa-temp">SYNTAX</h1>
-          <Router>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Router>
+            <div className="nav-links">
+              <h1 className="aaa-temp">SYNTAX</h1>
+              <Router>
+                <Navbar />
+                <Routes>
+                  <Route path="/" element={<Events />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/sponsers" element={<Sponsers />} />
+                  <Route path="/team" element={<Team />} />
+                  <Route path="/gallery" element={<Gallery />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </Router>
+            </div>
         </>
       )}
     </div>
