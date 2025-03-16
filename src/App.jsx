@@ -1,5 +1,7 @@
 //libs
 import "./App.css";
+import mainlogo from "./images/logos/mainlogo.png";
+import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { requestNotificationPermission, onMessageListener } from "./firebase";
@@ -54,17 +56,30 @@ function Contact() {
 }
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <Link to="/" className="nav-btn home-btn">Events</Link>
-      <Link to="/about" className="nav-btn about-btn">About</Link>
-      <Link to="/sponsers" className="nav-btn sponsers-btn">Sponsers</Link>
-      <Link to="/team" className="nav-btn team-btn">Team</Link>
-      <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>
-      <Link to="/contact" className="nav-btn contact-btn">Contact Us</Link>
+      {/* Hamburger Button (Mobile Only) */}
+      <div className={`hamburger ${isOpen ? "active" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      {/* Normal Navigation Links (Hidden on Mobile) */}
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <Link to="/" className="nav-btn home-btn" onClick={() => setIsOpen(false)}>Events</Link>
+        <Link to="/about" className="nav-btn about-btn" onClick={() => setIsOpen(false)}>About</Link>
+        <Link to="/sponsers" className="nav-btn sponsers-btn" onClick={() => setIsOpen(false)}>Sponsers</Link>
+        <Link to="/team" className="nav-btn team-btn" onClick={() => setIsOpen(false)}>Team</Link>
+        <Link to="/gallery" className="nav-btn gallery-btn" onClick={() => setIsOpen(false)}>Gallery</Link>
+        <Link to="/contact" className="nav-btn contact-btn" onClick={() => setIsOpen(false)}>Contact Us</Link>
+      </div>
     </nav>
   );
 }
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -82,7 +97,7 @@ function App() {
   //push notifications
   useEffect(() => {
     requestNotificationPermission();
-    onMessageListener().then(payload => {
+    onMessageListener().then((payload) => {
       alert(`New update: ${payload.notification.title}`);
     });
   }, []);
@@ -112,20 +127,24 @@ function App() {
         </center>
       ) : (
         <>
-            <div className="nav-links">
-              <h1 className="aaa-temp">SYNTAX</h1>
-              <Router>
-                <Navbar />
-                <Routes>
-                  <Route path="/" element={<Events />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/sponsers" element={<Sponsers />} />
-                  <Route path="/team" element={<Team />} />
-                  <Route path="/gallery" element={<Gallery />} />
-                  <Route path="/contact" element={<Contact />} />
-                </Routes>
-              </Router>
-            </div>
+          <h1 className="headers">
+            <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+            <img src={futureblue} alt="FIEM" className="fiem" />
+          </h1>
+          <div className="nav-links">
+            <Router>
+              <Navbar />
+              <br /><br />
+              <Routes>
+                <Route path="/" element={<Events />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/sponsers" element={<Sponsers />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </Router>
+          </div>
         </>
       )}
     </div>
