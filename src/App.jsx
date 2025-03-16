@@ -56,12 +56,12 @@ function Contact() {
 function Navbar() {
   return (
     <nav className="navbar">
-      <Link to="/">Events</Link>
-      <Link to="/about">About</Link>
-      <Link to="/sponsers">Sponsers</Link>
-      <Link to="/team">Team</Link>
-      <Link to="/gallery">Gallery</Link>
-      <Link to="/contact">Contact Us</Link>
+      <Link to="/" className="nav-btn home-btn">Events</Link>
+      <Link to="/about" className="nav-btn about-btn"></Link>
+      <Link to="/sponsers" className="nav-btn sponsers-btn">Sponsers</Link>
+      <Link to="/team" className="nav-btn team-btn">Team</Link>
+      <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>
+      <Link to="/contact" className="nav-btn contact-btn">Contact Us</Link>
     </nav>
   );
 }
