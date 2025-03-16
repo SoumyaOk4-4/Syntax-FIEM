@@ -5,54 +5,13 @@ import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-//nav menus
-function Events() {
-  return (
-    <>
-      <h1>events page</h1>
-    </>
-  );
-}
-
-function Sponsers() {
-  return (
-    <>
-      <h1>sponsers page</h1>
-    </>
-  );
-}
-
-function Team() {
-  return (
-    <>
-      <h1>team member page</h1>
-    </>
-  );
-}
-
-function Gallery() {
-  return (
-    <>
-      <h1>gallery page</h1>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <h1>about page</h1>
-    </>
-  );
-}
-
-function Contact() {
-  return (
-    <>
-      <h1>contact us page</h1>
-    </>
-  );
-}
+//components
+import Events from "./components/Events";
+import About from "./components/About";
+import Sponsers from "./components/Sponsers";
+import Team from "./components/Team";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
 
 function Navbar() {
   return (
