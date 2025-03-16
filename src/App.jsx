@@ -2,9 +2,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { requestNotificationPermission, onMessageListener } from "./firebase";
 
 //nav menus
-
 function Events() {
   return (
     <>
@@ -77,6 +77,14 @@ function App() {
     }, delayTime);
 
     return () => clearTimeout(delayLoading);
+  }, []);
+
+  //push notifications
+  useEffect(() => {
+    requestNotificationPermission();
+    onMessageListener().then(payload => {
+      alert(`New update: ${payload.notification.title}`);
+    });
   }, []);
 
   //did you knows
