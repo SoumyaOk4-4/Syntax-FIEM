@@ -57,7 +57,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="nav-btn home-btn">Events</Link>
-      <Link to="/about" className="nav-btn about-btn"></Link>
+      <Link to="/about" className="nav-btn about-btn">About</Link>
       <Link to="/sponsers" className="nav-btn sponsers-btn">Sponsers</Link>
       <Link to="/team" className="nav-btn team-btn">Team</Link>
       <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>

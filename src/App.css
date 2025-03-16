@@ -2,6 +2,7 @@
   text-align: center;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -100,17 +101,16 @@
     width: 40px;
     height: 40px;
   }
-
   h1 {
     font-size: 22px;
   }
-
   .did-you-know {
     font-size: 16px;
   }
 }
 
 /* btns */
+/*
 .nav-btn {
   width: 50px;
   height: 75px;
@@ -136,3 +136,4 @@
     margin-left: 40%;
   }
 }
+*/
