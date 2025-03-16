@@ -162,15 +162,48 @@ body {
 }
 
 /* Button Styling */
-/*
-.nav-btn {
-  width: 50px;
-  height: 75px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: background 0.3s ease-in-out;
-}
 
+.nav-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: rgb(255, 195, 195);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.home-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(253, 64, 120);
+  transform: scale(1.1);
+}
+.about-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(130, 64, 253);
+  transform: scale(1.1);
+}
+.sponsers-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(0, 235, 184);
+  transform: scale(1.1);
+}
+.team-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(253, 177, 64);
+  transform: scale(1.1);
+}
+.gallery-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(247, 64, 253);
+  transform: scale(1.1);
+}
+.contact-btn:hover {
+  background: #ff6666;
+  box-shadow: 0px 0px 15px rgb(140, 253, 64);
+  transform: scale(1.1);
+}
+/*
 .about-btn {
   background-image: url('./images/about.png');
 }
