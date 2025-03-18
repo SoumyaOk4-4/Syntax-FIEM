@@ -226,8 +226,8 @@ nav ul li a:not(.active):hover {
 nav .menu {
   display: none;
   position: absolute;
-  top: 0.75rem;
-  right: 0.5rem;
+  top: 1rem;
+  left: 0.8rem;
   flex-direction: column;
   justify-content: space-between;
   width: 2.25rem;
@@ -237,7 +237,7 @@ nav .menu {
 nav .menu span {
   height: 0.4rem;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffc038;
   border-radius: 0.2rem;
 }
 
@@ -246,8 +246,9 @@ nav .menu span {
   .navbar {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+   
   }
+
 
   .navbar a {
     display: block;
@@ -284,7 +285,7 @@ nav .menu span {
   nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 40%;
     margin-bottom: 0.25rem;
   }
 
@@ -295,9 +296,12 @@ nav .menu span {
   nav ul li {
     width: 100%;
     text-align: center;
+    
   }
 
   nav ul li a {
     margin: 0.2rem 0.5rem;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
