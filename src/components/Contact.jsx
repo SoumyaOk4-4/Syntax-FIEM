@@ -5,7 +5,7 @@ function Contact() {
       <br />
       <h1>contact us page</h1>
       <br />
-      <div className="contact-content">
+      <div className="web-content">
         email: syntx.in@gmail.com
       </div>
     </>

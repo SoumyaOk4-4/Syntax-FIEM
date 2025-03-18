@@ -5,7 +5,7 @@ function About() {
       <br />
       <h1>about page</h1>
       <br />
-      <div className="about-content">
+      <div className="web-content">
         Welcome to SYNTAX, the vibrant tech community of Future Institute of
         Engineering and Management (FIEM) — not just a club, but a nexus of
         innovation, curiosity, and boundless creativity. Like lines of code that
