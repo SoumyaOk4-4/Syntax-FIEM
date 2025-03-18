@@ -16,8 +16,9 @@ body {
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #333;
+  /* background-color: #18abe0; */
+  background-image: linear-gradient(90deg, #000000, #0e1c3f);
+  color: #c07506;
 }
 
 .App {
@@ -41,6 +42,17 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -81,9 +93,25 @@ body {
   background-color: #000;
   text-align: left;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 10px 15px;
   font-size: 1.5rem;
+}
+
+.gform a{
+  color: #ffb254;
+  font-size: 18px;
+  position: absolute;
+  text-decoration: none;
+  border: 1px solid #ffb254;
+  border-radius: 5px;
+  padding: 10px;
+  top: 2rem;
+  right: 1.5rem;
+}
+
+.gform a:hover {
+  transform: scale(1.1);
 }
 
 /* Loading Screen */
@@ -108,12 +136,13 @@ body {
 
 /* Navbar */
 .navbar {
+  /* margin-left: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffc3c3;
+  background: #e7a529;
   padding: 15px;
-  flex-wrap: wrap;
+  /* border-radius: 10px; */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -136,12 +165,17 @@ body {
   width: 250px;
   object-fit: contain;
   cursor: default;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
 }
 
 .fiem {
-  height: 50px;
-  width: 100px;
-  margin-top: 28.5px;
+  height: 40px;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-bottom: 20px;
 }
 
 /* Button Styling */
@@ -151,7 +185,7 @@ body {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
-  background: rgb(255, 195, 195);
+  background: #e7a529;
   transition: all 0.3s ease-in-out;
   display: inline-block;
 }
@@ -176,7 +210,7 @@ body {
 }
 
 .team-btn:hover {
-  box-shadow: 0px 0px 15px rgba(253, 177, 64, 0.8);
+  box-shadow: 0px 0px 15px rgba(230, 113, 4, 0.881);
 }
 
 .gallery-btn:hover {
@@ -297,6 +331,20 @@ nav .menu span {
 
 /* Mobile Navigation */
 @media (max-width: 480px) {
+  .logo-main{
+    left: 0.2rem
+  }
+
+  .headers {
+    height: 170px;
+  }
+
+  .gform a{
+    top: 6rem;
+    left: 2rem;
+    right: 9rem;
+  }
+
   nav .menu {
     display: flex;
   }
@@ -341,4 +389,24 @@ nav .menu span {
 
 .about-content{
   font-family: cursive;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 7px;
+  margin: 20px;
+  padding: 20px;
+
+  border: 1px solid #3f80ff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
+    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
+    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+
+ /* Fade-in effect */
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.about-content:hover {
+  transform: scale(1.2)
 }
