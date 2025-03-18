@@ -192,6 +192,15 @@ nav {
   z-index: 1000;
 }
 
+.cross {
+  position: absolute;
+  top: -0.5rem;
+  left: 0.25rem; 
+  color: black;
+  font-size: 35px;
+  display: block;
+}
+
 nav .title {
   font-size: 1.5rem;
   margin: 1rem;
@@ -246,9 +255,8 @@ nav .menu span {
   .navbar {
     flex-direction: column;
     align-items: center;
-   
+    padding: 0;
   }
-
 
   .navbar a {
     display: block;
@@ -270,10 +278,15 @@ nav .menu span {
     font-size: 16px;
   }
 }
+
 /* Mobile Navigation */
 @media (max-width: 480px) {
   nav .menu {
     display: flex;
+  }
+
+  nav ul.open span{
+    display: none;
   }
 
   nav {
@@ -290,12 +303,12 @@ nav .menu span {
 
   nav ul.open {
     display: flex;
+    padding: 15px;
   }
 
   nav ul li {
     width: 100%;
     text-align: center;
-    
   }
 
   nav ul li a {

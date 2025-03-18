@@ -3,7 +3,7 @@ import "./App.css";
 import mainlogo from "./images/logos/mainlogo.png";
 import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 
 //components
 import Events from "./components/Events";
@@ -15,14 +15,22 @@ import Contact from "./components/Contact";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+ 
   return (
     <nav className="navbar">
+
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+        {!menuOpen ? (
+          <>
+            <span></span>
+            <span></span>
+            <span></span>
+          </>
+        ) : (
+          <div className="cross">✖</div>
+        )}
       </div>
+
       <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link to="/" className="nav-btn home-btn">
