@@ -28,6 +28,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -89,6 +90,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -195,8 +197,8 @@ nav {
 .cross {
   position: absolute;
   top: -0.5rem;
-  left: 0.25rem; 
-  color: black;
+  left: 0.25rem;
+  color: rgb(49, 0, 0);
   font-size: 35px;
   display: block;
 }
@@ -285,7 +287,7 @@ nav .menu span {
     display: flex;
   }
 
-  nav ul.open span{
+  nav ul.open span {
     display: none;
   }
 
