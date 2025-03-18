@@ -5,14 +5,14 @@
 }
 
 @font-face {
-  font-family: 'MyCustomFont';
+  font-family: 'MyCustomFont1';
   src: url('../public/fonts/pixel1.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: 'MyCustomFont1', sans-serif;
 }
 
 body {
@@ -329,4 +329,8 @@ nav .menu span {
     padding-left: 20%;
     padding-right: 20%;
   }
+}
+
+.about-content{
+  font-family: cursive;
 }
