@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../public/fonts/pixel1.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+body {
   background-color: #f8f9fa;
   color: #333;
 }
@@ -28,6 +38,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -89,6 +100,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -194,8 +206,8 @@ nav {
 .cross {
   position: absolute;
   top: -0.5rem;
-  left: 0.25rem; 
-  color: black;
+  left: 0.25rem;
+  color: rgb(49, 0, 0);
   font-size: 35px;
   display: block;
 }
@@ -284,7 +296,7 @@ nav .menu span {
     display: flex;
   }
 
-  nav ul.open span{
+  nav ul.open span {
     display: none;
   }
 
