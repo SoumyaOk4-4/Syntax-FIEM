@@ -3,7 +3,7 @@ import "./App.css";
 import mainlogo from "./images/logos/main_logo.png";
 import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 //components
 import Events from "./components/Events";
@@ -114,7 +114,6 @@ function App() {
               <h3 className="gform">
                 <a href="#">Become a member</a>
               </h3>
-              
             </h1>
 
             <Router>

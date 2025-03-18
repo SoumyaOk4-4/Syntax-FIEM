@@ -50,6 +50,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -98,7 +99,7 @@ body {
   font-size: 1.5rem;
 }
 
-.gform a{
+.gform a {
   color: #ffb254;
   font-size: 18px;
   position: absolute;
@@ -331,7 +332,7 @@ nav .menu span {
 
 /* Mobile Navigation */
 @media (max-width: 480px) {
-  .logo-main{
+  .logo-main {
     left: 0.2rem
   }
 
@@ -339,7 +340,7 @@ nav .menu span {
     height: 170px;
   }
 
-  .gform a{
+  .gform a {
     top: 6rem;
     left: 2rem;
     right: 9rem;
@@ -364,7 +365,7 @@ nav .menu span {
 
   nav ul {
     display: none;
-    flex-direction: column;    
+    flex-direction: column;
     width: 60%;
     margin-bottom: 0.25rem;
   }
@@ -387,7 +388,7 @@ nav .menu span {
   }
 }
 
-.web-content{
+.web-content {
   font-family: cursive;
   font-size: 20px;
   border: 3px solid black;
@@ -402,7 +403,7 @@ nav .menu span {
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 
- /* Fade-in effect */
+  /* Fade-in effect */
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
 }
