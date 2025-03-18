@@ -1,9 +1,9 @@
 //libs
 import "./App.css";
-import mainlogo from "./images/logos/mainlogo.png";
+import mainlogo from "./images/logos/main_logo.png";
 import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 
 //components
 import Events from "./components/Events";
@@ -104,13 +104,19 @@ function App() {
         </center>
       ) : (
         <>
-          <h1 className="headers">
-            <a href="/">
-              <img src={mainlogo} alt="SYNTAX" className="logo-main" />
-            </a>
-            <img src={futureblue} alt="FIEM" className="fiem" />
-          </h1>
           <div className="nav-links">
+            <h1 className="headers">
+              <a href="/">
+                <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+              </a>
+              <img src={futureblue} alt="FIEM" className="fiem" />
+
+              <h3 className="gform">
+                <a href="#">Become a member</a>
+              </h3>
+              
+            </h1>
+
             <Router>
               <Navbar />
               <br />
