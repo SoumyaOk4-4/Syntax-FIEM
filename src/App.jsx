@@ -62,17 +62,6 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-
-      {/*
-      <div className={`nav-links`}>
-        <Link to="/" className="nav-btn home-btn">Events</Link>
-        <Link to="/about" className="nav-btn about-btn">About</Link>
-        <Link to="/sponsers" className="nav-btn sponsers-btn">Sponsers</Link>
-        <Link to="/team" className="nav-btn team-btn">Team</Link>
-        <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>
-        <Link to="/contact" className="nav-btn contact-btn">Contact Us</Link>
-      </div>
-      */}
     </nav>
   );
 }

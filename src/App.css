@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../public/fonts/pixel1.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+body {
   background-color: #f8f9fa;
   color: #333;
 }
