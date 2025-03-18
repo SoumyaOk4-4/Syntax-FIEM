@@ -119,7 +119,8 @@ body {
 
 #nav-links a {
   text-decoration: none;
-  color: #000;
+  color: black;
+  font-size: 17px;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
@@ -262,7 +263,7 @@ nav .menu span {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -274,6 +275,10 @@ nav .menu span {
     width: 100%;
     text-align: center;
     padding: 10px;
+  }
+
+  #nav-links a {
+    font-size: 12px;
   }
 
   .loadingscreen {
@@ -300,7 +305,9 @@ nav .menu span {
     display: none;
   }
 
-  nav ul.open 
+  #nav-links a {
+    font-size: 20px;
+  }
 
   nav {
     flex-direction: column;
@@ -310,7 +317,7 @@ nav .menu span {
   nav ul {
     display: none;
     flex-direction: column;    
-    width: 40%;
+    width: 60%;
     margin-bottom: 0.25rem;
   }
 
@@ -322,6 +329,7 @@ nav .menu span {
   nav ul li {
     width: 100%;
     text-align: center;
+    color: yellow;
   }
 
   nav ul li a {
