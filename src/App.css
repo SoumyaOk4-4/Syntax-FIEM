@@ -342,8 +342,8 @@ nav .menu span {
 
   .gform a {
     top: 6rem;
-    left: 2rem;
-    right: 9rem;
+    left: 2.1rem;
+    right: 8rem;
   }
 
   nav .menu {
@@ -389,7 +389,7 @@ nav .menu span {
 }
 
 .web-content {
-  font-family: cursive;
+  font-family: sans-serif;
   font-size: 20px;
   border: 3px solid black;
   border-radius: 7px;
@@ -408,6 +408,6 @@ nav .menu span {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
-.about-content:hover {
+.web-content:hover {
   transform: scale(1.2)
 }
