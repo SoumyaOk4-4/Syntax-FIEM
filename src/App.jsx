@@ -112,7 +112,7 @@ function App() {
               <img src={futureblue} alt="FIEM" className="fiem" />
 
               <h3 className="gform">
-                <a href="#">Become a member</a>
+                <a href="/">Become a member</a>
               </h3>
             </h1>
 
