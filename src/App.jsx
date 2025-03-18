@@ -14,8 +14,49 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""} id="nav-links">
+        <li>
+          <Link to="/" className="nav-btn home-btn">
+            Events
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="nav-btn about-btn">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/sponsers" className="nav-btn sponsers-btn">
+            Sponsers
+          </Link>
+        </li>
+        <li>
+          <Link to="/team" className="nav-btn team-btn">
+            Team
+          </Link>
+        </li>
+        <li>
+          <Link to="/gallery" className="nav-btn gallery-btn">
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="nav-btn contact-btn">
+            Contact Us
+          </Link>
+        </li>
+      </ul>
+
+      {/*
       <div className={`nav-links`}>
         <Link to="/" className="nav-btn home-btn">Events</Link>
         <Link to="/about" className="nav-btn about-btn">About</Link>
@@ -24,6 +65,7 @@ function Navbar() {
         <Link to="/gallery" className="nav-btn gallery-btn">Gallery</Link>
         <Link to="/contact" className="nav-btn contact-btn">Contact Us</Link>
       </div>
+      */}
     </nav>
   );
 }
@@ -75,7 +117,8 @@ function App() {
           <div className="nav-links">
             <Router>
               <Navbar />
-              <br /><br />
+              <br />
+              <br />
               <Routes>
                 <Route path="/" element={<Events />} />
                 <Route path="/about" element={<About />} />
