@@ -1,9 +1,12 @@
 //libs
 import "./App.css";
-import mainlogo from "./images/logos/main_logo.png";
-import futureblue from "./images/logos/future-blue.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+
+//contents
+import mainlogo from "./images/logos/main_logo.png";
+import futureblue from "./images/logos/future-blue.png";
+import loadingGif from "./images/logos/loading.gif";
 
 //components
 import Events from "./components/Events";
@@ -80,8 +83,8 @@ function App() {
   }, []);
 
   //did you knows
-  const dyk = "Did You Know:";
-  const DYK_arr = [dyk + " hello", dyk + " hi", dyk + " bye", dyk + " ok"];
+  const dyk = "Did You Know: ";
+  const DYK_arr = [dyk + "hello", dyk + "hi", dyk + "bye", dyk + "ok"];
 
   //did you know random function
   function getRandom_DYK(array) {
@@ -97,10 +100,13 @@ function App() {
           <br />
           <br />
           <br />
+          <br />
+          <br />
+          <br />
           <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
           <br />
           <br />
-          <div className="loadingscreen"></div>
+          <img src={loadingGif} className="loadingscreen" alt="Loading..." style={{height:"200px",width:"200px"}}/>
         </center>
       ) : (
         <>
