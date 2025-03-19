@@ -197,6 +197,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.joinus-btn {
+  display: none !important;
+}
+
 .nav-icons {
   transform: translateY(-1.5px);
 }
@@ -272,7 +276,8 @@ nav .title {
 
 nav ul {
   display: flex;
-  width: 85%;
+  justify-content: center;
+  width: 72%;
 }
 
 nav ul li {
@@ -306,9 +311,9 @@ nav .menu {
 }
 
 nav .menu span {
-  height: 0.4rem;
+  height: 100%;
   width: 100%;
-  background-color: #ffc038;
+  padding: 10px;
   border-radius: 0.2rem;
 }
 
@@ -365,6 +370,10 @@ nav .menu span {
 
   .nav-btn {
     justify-content: center;
+  }
+
+  .joinus-btn {
+    display: flex !important;
   }
 
   nav .menu {

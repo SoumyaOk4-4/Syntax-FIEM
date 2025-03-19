@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBars,
   faBuilding,
   faCalendarWeek,
   faCircleInfo,
@@ -38,9 +39,7 @@ function Navbar() {
       >
         {!menuOpen ? (
           <>
-            <span></span>
-            <span></span>
-            <span></span>
+              <span><FontAwesomeIcon icon={faBars} style={{height:"1.7rem",color: "#ffc038",}} /></span>
           </>
         ) : (
           <div className="cross fadein_fadeout">✖</div>
