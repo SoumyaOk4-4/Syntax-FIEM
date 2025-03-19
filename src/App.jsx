@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding, faCalendarWeek, faCircleInfo, faFileSignature, faHeadset, faImages, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 //contents
 import mainlogo from "./images/logos/main_logo.png";
@@ -23,8 +23,8 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+    <nav className="navbar fadein_fadeout">
+      <div className="menu fadein_fadeout" onClick={() => setMenuOpen(!menuOpen)}>
         {!menuOpen ? (
           <>
             <span></span>
@@ -32,46 +32,78 @@ function Navbar() {
             <span></span>
           </>
         ) : (
-          <div className="cross">✖</div>
+          <div className="cross fadein_fadeout">✖</div>
         )}
       </div>
-      <ul className={menuOpen ? "open" : ""} id="nav-links">
+      <ul className={menuOpen ? "open fadein_fadeout" : ""} id="nav-links">
         <li>
-          <Link to="/" className="nav-btn home-btn">
-            <div className="nav-icons">
-              <FontAwesomeIcon icon={faCalendar} />
-            </div>
+          <Link
+            to="/"
+            className="nav-btn home-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div className="nav-icons"><FontAwesomeIcon icon={faCalendarWeek} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Events</div>
           </Link>
         </li>
         <li>
-          <Link to="/about" className="nav-btn about-btn">
+          <Link
+            to="/about"
+            className="nav-btn about-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faCircleInfo} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>About</div>
           </Link>
         </li>
         <li>
-          <Link to="/sponsers" className="nav-btn sponsers-btn">
+          <Link
+            to="/sponsers"
+            className="nav-btn sponsers-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faBuilding} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
           </Link>
         </li>
         <li>
-          <Link to="/team" className="nav-btn team-btn">
+          <Link
+            to="/team"
+            className="nav-btn team-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faUsers} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Team</div>
           </Link>
         </li>
         <li>
-          <Link to="/gallery" className="nav-btn gallery-btn">
+          <Link
+            to="/gallery"
+            className="nav-btn gallery-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faImages} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="nav-btn contact-btn">
+          <Link
+            to="/contact"
+            className="nav-btn contact-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faHeadset} /></div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
           </Link>
         </li>
         <li>
-          <Link to="/joinus" className="nav-btn joinus-btn">
-            Join Us
+          <Link
+            to="/joinus"
+            className="nav-btn joinus-btn"
+            style={{ display: "flex", alignItems: "center", gap: "8px" }}
+          >
+            <div><FontAwesomeIcon icon={faFileSignature} /></div>
+            <div onClick={() => setMenuOpen(!menuOpen)}>Join Us</div>
           </Link>
         </li>
       </ul>
@@ -106,8 +138,7 @@ function App() {
     <div className="App">
       {loading ? (
         //loading screen
-        <center>
-</center>
+        <center></center>
       ) : (
         <>
           <div className="nav-links">
