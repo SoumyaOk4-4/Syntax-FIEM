@@ -3,9 +3,9 @@ function Contact() {
     <>
       <br />
       <br />
-      <h1>contact us page</h1>
+      <h1 className="fadein_fadeout">contact us page</h1>
       <br />
-      <div className="web-content">
+      <div className="fadein_fadeout web-content">
         email: syntx.in@gmail.com
       </div>
     </>

@@ -337,6 +337,7 @@ nav .menu span {
   }
 
   .gform a {
+    font-size: 16px;
     top: 6rem;
     left: 2.1rem;
     right: 8rem;
@@ -398,8 +399,9 @@ nav .menu span {
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+}
 
-  /* Fade-in effect */
+.fadein_fadeout {
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
 }

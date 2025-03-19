@@ -3,7 +3,7 @@ function Events() {
     <>
       <br />
       <br />
-      <h1>events page</h1>
+      <h1 className="fadein_fadeout">events page</h1>
     </>
   );
 }
