@@ -1,9 +1,7 @@
 function Gallery() {
   return (
     <>
-      <br />
-      <br />
-      <h1 className="fadein_fadeout">gallery page</h1>
+      <h1>gallery page</h1>
     </>
   );
 }
