@@ -32,7 +32,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar fadein_fadeout">
+    <nav className="navbar">
       <div
         className="menu fadein_fadeout"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -42,15 +42,24 @@ function Navbar() {
             <span>
               <FontAwesomeIcon
                 icon={faBars}
-                style={{ transform: "translateY(-90px)", height: "1.7rem", color: "#ffc038" }}
+                style={{
+                  transform: "translateY(-90px)",
+                  height: "1.7rem",
+                  color: "#ffc038",
+                }}
               />
             </span>
           </>
         ) : (
-          <div className="cross fadein_fadeout" style={{transform: "translateY(-120px)"}}>✖</div>
+          <div
+            className="cross"
+            style={{ transform: "translateY(-85px)", color: "#ffc038" }}
+          >
+            ✖
+          </div>
         )}
       </div>
-      <ul className={menuOpen ? "open fadein_fadeout" : ""} id="nav-links">
+      <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link
             to="/"
@@ -206,15 +215,17 @@ function App() {
               <Navbar />
               <br />
               <br />
-              <Routes>
-                <Route path="/" element={<Events />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/sponsers" element={<Sponsers />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/joinus" element={<Joinus />} />
-              </Routes>
+              <div className="big-container">
+                <Routes>
+                  <Route path="/" element={<Events />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/sponsers" element={<Sponsers />} />
+                  <Route path="/team" element={<Team />} />
+                  <Route path="/gallery" element={<Gallery />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/joinus" element={<Joinus />} />
+                </Routes>
+              </div>
             </Router>
           </div>
         </>

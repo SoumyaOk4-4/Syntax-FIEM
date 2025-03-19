@@ -1,9 +1,7 @@
 function Joinus() {
   return (
     <>
-      <br />
-      <br />
-      <h1 className="fadein_fadeout">Join Us</h1>
+      <h1>Join Us</h1>
     </>
   );
 }

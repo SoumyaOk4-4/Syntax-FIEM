@@ -1,10 +1,7 @@
 function Team() {
   return (
     <>
-      <br />
-      <br />
-      <h1 className="fadein_fadeout">team member page</h1>
-      <div className="fadein_fadeout web-content">
+            <div className="fadein_fadeout web-content">
         <div>
           name = Ankush Samanta <br />
           linkedin=https://www.linkedin.com/in/ankush-samanta-804403295/
