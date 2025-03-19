@@ -3,7 +3,15 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faCalendarWeek, faCircleInfo, faFileSignature, faHeadset, faImages, faUsers } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faCalendarWeek,
+  faCircleInfo,
+  faFileSignature,
+  faHeadset,
+  faImages,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
 
 //contents
 import mainlogo from "./images/logos/main_logo.png";
@@ -24,7 +32,10 @@ function Navbar() {
 
   return (
     <nav className="navbar fadein_fadeout">
-      <div className="menu fadein_fadeout" onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className="menu fadein_fadeout"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         {!menuOpen ? (
           <>
             <span></span>
@@ -42,7 +53,9 @@ function Navbar() {
             className="nav-btn home-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons"><FontAwesomeIcon icon={faCalendarWeek} /></div>
+            <div className="nav-icons">
+              <FontAwesomeIcon icon={faCalendarWeek} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Events</div>
           </Link>
         </li>
@@ -52,7 +65,9 @@ function Navbar() {
             className="nav-btn about-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faCircleInfo} /></div>
+            <div>
+              <FontAwesomeIcon icon={faCircleInfo} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>About</div>
           </Link>
         </li>
@@ -62,7 +77,9 @@ function Navbar() {
             className="nav-btn sponsers-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faBuilding} /></div>
+            <div>
+              <FontAwesomeIcon icon={faBuilding} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
           </Link>
         </li>
@@ -72,7 +89,9 @@ function Navbar() {
             className="nav-btn team-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faUsers} /></div>
+            <div>
+              <FontAwesomeIcon icon={faUsers} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Team</div>
           </Link>
         </li>
@@ -82,7 +101,9 @@ function Navbar() {
             className="nav-btn gallery-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faImages} /></div>
+            <div>
+              <FontAwesomeIcon icon={faImages} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
           </Link>
         </li>
@@ -92,7 +113,9 @@ function Navbar() {
             className="nav-btn contact-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faHeadset} /></div>
+            <div>
+              <FontAwesomeIcon icon={faHeadset} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
           </Link>
         </li>
@@ -102,7 +125,9 @@ function Navbar() {
             className="nav-btn joinus-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div><FontAwesomeIcon icon={faFileSignature} /></div>
+            <div>
+              <FontAwesomeIcon icon={faFileSignature} />
+            </div>
             <div onClick={() => setMenuOpen(!menuOpen)}>Join Us</div>
           </Link>
         </li>
@@ -138,7 +163,28 @@ function App() {
     <div className="App">
       {loading ? (
         //loading screen
-        <center></center>
+        <center>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <img
+            src={loadingGif}
+            className="loadingscreen"
+            alt="loading..."
+            style={{ height: "200px", width: "270px" }}
+          />
+          <br />
+          <br />
+          <br />
+          <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
+        </center>
       ) : (
         <>
           <div className="nav-links">
