@@ -318,7 +318,7 @@ nav .menu span {
 }
 
 /* Responsive Design */
-@media (max-width: 1120px) {
+@media (max-width: 1460px) {
   .navbar {
     flex-direction: column;
     align-items: center;

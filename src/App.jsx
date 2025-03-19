@@ -39,7 +39,12 @@ function Navbar() {
       >
         {!menuOpen ? (
           <>
-              <span><FontAwesomeIcon icon={faBars} style={{height:"1.7rem",color: "#ffc038",}} /></span>
+            <span>
+              <FontAwesomeIcon
+                icon={faBars}
+                style={{ height: "1.7rem", color: "#ffc038" }}
+              />
+            </span>
           </>
         ) : (
           <div className="cross fadein_fadeout">✖</div>
@@ -194,10 +199,9 @@ function App() {
               <img src={futureblue} alt="FIEM" className="fiem" />
 
               <h3 className="gform">
-                <a href="/">Become a member</a>
+                <a href="/joinus">Become a member</a>
               </h3>
             </h1>
-
             <Router>
               <Navbar />
               <br />
