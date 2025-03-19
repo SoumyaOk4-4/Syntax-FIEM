@@ -42,12 +42,12 @@ function Navbar() {
             <span>
               <FontAwesomeIcon
                 icon={faBars}
-                style={{ height: "1.7rem", color: "#ffc038" }}
+                style={{ transform: "translateY(-90px)", height: "1.7rem", color: "#ffc038" }}
               />
             </span>
           </>
         ) : (
-          <div className="cross fadein_fadeout">✖</div>
+          <div className="cross fadein_fadeout" style={{transform: "translateY(-120px)"}}>✖</div>
         )}
       </div>
       <ul className={menuOpen ? "open fadein_fadeout" : ""} id="nav-links">
