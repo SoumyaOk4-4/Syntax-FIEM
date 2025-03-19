@@ -32,7 +32,6 @@ function Navbar() {
           <div className="cross">✖</div>
         )}
       </div>
-
       <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link to="/" className="nav-btn home-btn">
@@ -74,7 +73,7 @@ function App() {
 
   //loading time
   useEffect(() => {
-    const delayTime = 3000;
+    const delayTime = 3500;
     const delayLoading = setTimeout(() => {
       setLoading(false);
     }, delayTime);
@@ -106,7 +105,7 @@ function App() {
           <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
           <br />
           <br />
-          <img src={loadingGif} className="loadingscreen" alt="Loading..." style={{height:"200px",width:"200px"}}/>
+          <img src={loadingGif} className="loadingscreen" alt="Loading..." style={{height:"200px",width:"270px"}}/>
         </center>
       ) : (
         <>
