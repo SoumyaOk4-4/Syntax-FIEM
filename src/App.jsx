@@ -102,10 +102,14 @@ function App() {
           <br />
           <br />
           <br />
-          <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
+          <br />
           <br />
           <br />
           <img src={loadingGif} className="loadingscreen" alt="Loading..." style={{height:"200px",width:"270px"}}/>
+          <br />
+          <br />
+          <br />
+          <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
         </center>
       ) : (
         <>
