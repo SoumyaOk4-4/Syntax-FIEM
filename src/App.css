@@ -169,14 +169,25 @@ body {
 
 .fiem {
   height: 40px;
-  width: 70px;
-  margin-top: 20px;
+  width: 60px;
+  
+  /* position: absolute;
+  top: 0.8rem;
+  left: 15.5rem; */
+
+  transform: translateX(-20px);
+  margin-top: 25px;
   margin-left: 250px;
+  margin-right: 110px;
   margin-bottom: 20px;
 }
 
 /* Button Styling */
 .nav-btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -184,8 +195,11 @@ body {
   border-radius: 5px;
   background: #e7a529;
   transition: all 0.3s ease-in-out;
-  display: inline-block;
-}
+  }
+
+  .nav-icons {
+    transform: translateY(-1.5px);
+  }
 
 .nav-btn:hover {
   background: #ff6666;
@@ -254,6 +268,7 @@ nav .title {
 
 nav ul {
   display: flex;
+  width: 60%;
 }
 
 nav ul li {
@@ -329,18 +344,88 @@ nav .menu span {
 /* Mobile Navigation */
 @media (max-width: 480px) {
   .logo-main {
-    left: 0.2rem
+    left: 2.9rem
+  }
+
+  .fiem {
+    transform: translateX(9px);
   }
 
   .headers {
-    height: 170px;
+    height: 100px;
   }
 
   .gform a {
-    font-size: 16px;
+    display: none;
+  }
+
+  .nav-btn {
+    justify-content: center;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  nav ul.open span {
+    display: none;
+  }
+
+  #nav-links a {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    display: flex;
+    padding: 15px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-main {
+    left: 1rem;
+  }
+
+  .fiem {
+    transform: translateX(-10px);
+  }
+
+  .headers {
+    height: 100px;
+  }
+
+  .gform a {
+    display: none;
+    /* font-size: 15px;
     top: 6rem;
-    left: 2.1rem;
-    right: 8rem;
+    left: 1.8rem;
+    right: 6rem; */
   }
 
   nav .menu {
@@ -393,6 +478,10 @@ nav .menu span {
   margin: 20px;
   padding: 20px;
 
+  display: flex;
+  justify-content: right;
+
+  /* width: 60%; */
   border: 1px solid #3f80ff;
   background-color: rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.12);

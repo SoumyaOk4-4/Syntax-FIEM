@@ -2,6 +2,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 
 //contents
 import mainlogo from "./images/logos/main_logo.png";
@@ -35,32 +37,35 @@ function Navbar() {
       <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link to="/" className="nav-btn home-btn">
-            Events
+            <div className="nav-icons">
+              <FontAwesomeIcon icon={faCalendar} />
+            </div>
+            <div onClick={() => setMenuOpen(!menuOpen)}>Events</div>
           </Link>
         </li>
         <li>
           <Link to="/about" className="nav-btn about-btn">
-            About
+            <div onClick={() => setMenuOpen(!menuOpen)}>About</div>
           </Link>
         </li>
         <li>
           <Link to="/sponsers" className="nav-btn sponsers-btn">
-            Sponsers
+            <div onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
           </Link>
         </li>
         <li>
           <Link to="/team" className="nav-btn team-btn">
-            Team
+            <div onClick={() => setMenuOpen(!menuOpen)}>Team</div>
           </Link>
         </li>
         <li>
           <Link to="/gallery" className="nav-btn gallery-btn">
-            Gallery
+            <div onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
           </Link>
         </li>
         <li>
           <Link to="/contact" className="nav-btn contact-btn">
-            Contact Us
+            <div onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
           </Link>
         </li>
       </ul>
@@ -105,7 +110,12 @@ function App() {
           <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
           <br />
           <br />
-          <img src={loadingGif} className="loadingscreen" alt="Loading..." style={{height:"200px",width:"270px"}}/>
+          <img
+            src={loadingGif}
+            className="loadingscreen"
+            alt="Loading..."
+            style={{ height: "200px", width: "270px" }}
+          />
         </center>
       ) : (
         <>
