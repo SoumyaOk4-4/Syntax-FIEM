@@ -19,43 +19,43 @@ function Team() {
           <a href="https://github.com/MrFantastico007">GitHub</a>
         </div>
         <div>
-          <img src={mrigank} alt="Mrigank Sen" />
+          <img src={mrigank} alt="Mrigank Sen" /><br />
           Mrigank Sen <br />
           <a href="https://www.linkedin.com/in/mrigank-sen-ba843827a/">LinkedIn</a> <br />
           <a href="https://github.com/OrangeCatKekw">GitHub</a> <br />
         </div>
         <div>
-          <img src={sagufta} alt="Sagufta Sinha" />
+          <img src={sagufta} alt="Sagufta Sinha" /><br />
           Sagufta Sinha <br />
           <a href="https://www.linkedin.com/in/sagufta-sinha-a03491295/">LinkedIn</a> <br />
           <a href="https://github.com/Sagufta1">GitHub</a>
         </div>
         <div>
-          <img src={soumya} alt="Soumya Chakraborty" />
+          <img src={soumya} alt="Soumya Chakraborty" /><br />
           Soumya Chakraborty <br />
           <a href="https://www.linkedin.com/in/soumya-chakraborty-122388225/">LinkedIn</a> <br />
           <a href="https://github.com/SoumyaOk4-4">GitHub</a>
         </div>
         <div>
-          <img src={ayan} alt="Ayan Purkait" />
+          <img src={ayan} alt="Ayan Purkait" /><br />
           Ayan Purkait <br />
           <a href="https://www.linkedin.com/in/ayan-purkait-615464289/">LinkedIn</a> <br />
           <a href="https://github.com/JustChillinBro92">GitHub</a>
         </div>
         <div>
-          <img src={aniket} alt="Aniket Nandi" />
+          <img src={aniket} alt="Aniket Nandi" /><br />
           Aniket Nandi <br />
           <a href="https://www.linkedin.com/in/aniket-nandi%F0%9F%A7%91%E2%80%8D%F0%9F%9A%80-9620a4216/">LinkedIn</a> <br />
           <a href="https://github.com/Optimus1o1">GitHub</a>
         </div>
         <div>
-          <img src={deboshreya} alt="Deboshreya Ganguly" />
+          <img src={deboshreya} alt="Deboshreya Ganguly" /><br />
           Deboshreya Ganguly <br />
           <a href="https://www.linkedin.com/in/deboshreya-ganguly-73b813224/">Linked In</a> <br />
           <a href="https://github.com/Deboshreya0603">GitHub</a>
         </div>
         <div>
-          <img src={shubhangi} alt="Subhangi Bandyopadhyay" />
+          <img src={shubhangi} alt="Subhangi Bandyopadhyay" /><br />
           Subhangi Bandyopadhyay <br />
           <a href="https://www.linkedin.com/in/subhangi-bandyopadhyay-9196132a5/">LinkedIn</a> <br />
           <a href="https://github.com/Subhangi-14">GitHub</a>
