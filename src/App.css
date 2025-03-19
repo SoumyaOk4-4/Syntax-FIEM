@@ -170,10 +170,6 @@ body {
   height: 40px;
   width: 60px;
 
-  /* position: relative;
-  top: 2.2rem;
-  left: 17.5rem; */
-
   transform: translateX(-20px);
   margin-top: 25px;
   margin-left: 250px;
@@ -384,6 +380,14 @@ nav .menu span {
   .did-you-know {
     font-size: 16px;
   }
+
+  .web-content-container {
+    width: 75%;
+  }
+
+  .web-content {
+    font-size: 18px;
+  }
 }
 
 /* Mobile Navigation */
@@ -402,6 +406,14 @@ nav .menu span {
 
   .gform a {
     display: none;
+  }
+
+  .web-content-container {
+    width: 100%;
+  }
+
+  .web-content {
+    font-size: 18px;
   }
 
   .nav-btn {
@@ -468,6 +480,14 @@ nav .menu span {
 
   .headers {
     height: 100px;
+  }
+
+  .web-content-container {
+    width: 100%;
+  }
+
+  .web-content {
+    font-size: 20px;
   }
 
   .gform a {
