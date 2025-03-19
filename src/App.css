@@ -218,6 +218,10 @@ body {
   box-shadow: 0px 0px 15px rgba(140, 253, 64, 0.8);
 }
 
+.joinus-btn:hover {
+  box-shadow: 0px 0px 15px rgba(43, 21, 241, 0.8);
+}
+
 /* Active Link */
 .active {
   background-color: #1d4ed8;

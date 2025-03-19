@@ -15,6 +15,7 @@ import Sponsers from "./components/Sponsers";
 import Team from "./components/Team";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Joinus from "./components/Joinus";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,6 +62,11 @@ function Navbar() {
         <li>
           <Link to="/contact" className="nav-btn contact-btn">
             Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/joinus" className="nav-btn joinus-btn">
+            Join Us
           </Link>
         </li>
       </ul>
@@ -136,6 +142,7 @@ function App() {
                 <Route path="/team" element={<Team />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/joinus" element={<Joinus />} />
               </Routes>
             </Router>
           </div>
