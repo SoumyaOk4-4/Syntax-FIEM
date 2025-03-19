@@ -107,7 +107,27 @@ function App() {
       {loading ? (
         //loading screen
         <center>
-</center>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <img
+            src={loadingGif}
+            className="loadingscreen"
+            alt="loading..."
+            style={{ height: "200px", width: "270px" }}
+          />
+          <br />
+          <br />
+          <br />
+          <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
+        </center>
       ) : (
         <>
           <div className="nav-links">
