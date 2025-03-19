@@ -3,7 +3,7 @@ function Gallery() {
     <>
       <br />
       <br />
-      <h1>gallery page</h1>
+      <h1 className="fadein_fadeout">gallery page</h1>
     </>
   );
 }

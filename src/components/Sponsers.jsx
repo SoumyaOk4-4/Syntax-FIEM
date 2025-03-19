@@ -3,7 +3,7 @@ function Sponsers() {
     <>
       <br />
       <br />
-      <h1>sponsers page</h1>
+      <h1 className="fadein_fadeout">sponsers page</h1>
     </>
   );
 }
