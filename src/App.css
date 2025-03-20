@@ -113,6 +113,7 @@ body {
 
 .gform a:hover {
   transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
   border: 2px solid #ffb254;;
 }
 
@@ -546,6 +547,14 @@ nav .menu span {
 
 /* profile pics */
 
+.team {
+  padding: 50px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
 .team-container {
   width: 100%;
   overflow: hidden;
@@ -553,16 +562,31 @@ nav .menu span {
   position: relative;
 }
 
-.team-scroll {
-  display: inline-flex;
-  animation: scroll-left 50s linear infinite; 
-}
-
 .team-member {
+  border: 1.5px solid rgb(255, 174, 0);
+  border-radius: 6px;
   text-align: center;
   margin-right: 20px;
-  width: 220px;
+  width: 260px;
   flex-shrink: 0;
+  padding: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.team-member a{
+  color: rgb(56, 156, 195);
+  text-decoration: none;
+}
+
+.team-member:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-pic {
@@ -571,6 +595,7 @@ nav .menu span {
   border-radius: 10px;
   object-fit: cover;
 }
+
 @keyframes scroll-left {
   0% {
     transform: translateX(100%);
