@@ -6,25 +6,31 @@ function About() {
       <div className="web-content-container">
         <div className="fadein_fadeout web-content">
           Welcome to SYNTAX, the vibrant tech community of Future Institute of
-          Engineering and Management (FIEM) — not just a club, but a nexus of
-          innovation, curiosity, and boundless creativity. Like lines of code
-          that form something extraordinary, SYNTAX is where passionate minds
-          come together to craft the future. At SYNTAX, we believe technology is
-          more than just circuits and software — it's a language, a culture, a
-          way of thinking. Whether you're decoding algorithms, brainstorming the
-          next big startup idea, or exploring the latest advancements in AI,
-          robotics, blockchain, and beyond, this is your playground. Our
-          calendar is packed with electrifying seminars on cutting-edge tech,
-          hands-on workshops, insightful tech talks, intense coding
-          competitions, and endless opportunities for collaboration. SYNTAX is
-          where engineers, developers, creators, and thinkers unite to challenge
-          norms, break barriers, and lead the charge into tomorrow. In a world
-          where every line of code tells a story and every innovation hides an
-          enigma, SYNTAX invites you to embark on a journey of exploration,
-          skill-building, and self-expression. Here, creativity knows no bounds,
-          curiosity fuels every conversation, and the pulse of technology beats
-          strong in every activity we host. Join us and become part of a legacy
-          that's not just about learning tech, but about living it.
+          Engineering and Management (FIEM), Kolkata, dedicated to nurturing
+          innovation, creativity, and collaboration among students. Our goal is
+          to create a dynamic community where tech enthusiasts can explore,
+          experiment, and excel in the rapidly evolving world of technology.
+          Stepping into a new era of tech-driven excellence, SYNTAX provides a
+          platform for hands-on learning, problem-solving, and skill-building
+          through a wide range of events and activities. From robotics and
+          gaming to coding competitions and technical workshops, we offer a
+          space where curiosity meets innovation. To kickstart each academic
+          session and ignite the spark of technology, SYNTAX organizes CODEFEST
+          - an intra-college coding competition that challenges problem-solving
+          skills. We also host BOT WARS, a thrilling robotics showdown, and TECH
+          ARENA, our annual tech fest, packed with hackathons, gaming
+          tournaments, and cutting-edge tech talks. Beyond events, SYNTAX is
+          committed to continuous learning. We conduct workshops and mentorship
+          programs on emerging technologies, offering opportunities for students
+          to gain hands-on experience in fields like AI, cybersecurity, IoT, and
+          game development—bridging the gap between academics and real-world
+          applications. But SYNTAX is more than just competitions and workshops.
+          Over the years, our members have achieved remarkable success in
+          national and international tech challenges, setting new benchmarks for
+          future innovators. Whether you're a coding wizard, a robotics
+          enthusiast, a gaming champion, or just someone eager to dive into the
+          world of technology, SYNTAX welcomes you. Join us and be part of a
+          community that doesn't just follow technology— it creates it.
         </div>
       </div>
     </>
