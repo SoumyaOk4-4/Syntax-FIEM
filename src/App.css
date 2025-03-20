@@ -423,11 +423,11 @@ nav .menu span {
   .team {
     width: 100% !important;
     scale: 0.99; 
-    transform: translateY(-80px);
+    transform: translateY(-20px);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 80px !important;
+    gap: 60px !important;
   }
 
   .team-member {
@@ -439,7 +439,7 @@ nav .menu span {
 
     margin: 0 auto;
     width: fit-content; 
-    transform: translateX(5px);
+    transform: translateX(-18px);
   }
 
   .team-member:hover {
@@ -452,7 +452,7 @@ nav .menu span {
   .team {
     width: 100% !important;
     scale: 0.9; 
-    transform: translateY(-170px);
+    transform: translateY(-120px);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -479,6 +479,8 @@ nav .menu span {
     width: 65% !important;
   }
 }
+
+
 
 /* Mobile Navigation */
 @media (max-width: 640px) {
@@ -589,13 +591,30 @@ nav .menu span {
   }
 }
 
+@media (max-width: 540px) {
+  .team {
+    width: 90% !important;
+    display: grid;
+    scale: 1;
+    grid-template-columns: repeat(1, 1fr) !important; 
+
+    transform: translateY(-30px);
+  }
+
+  .team-member {   
+    margin: 0 auto;
+    width: fit-content; 
+    transform: translateX(-30px);
+  }
+}
+
 @media (max-width: 480px) {
   .logo-main {
     left: 15%;
   }
 
   .fiem {
-    transform: translateX(30px);
+    transform: translateX(32px) !important;
   }
 
   .headers {
@@ -609,11 +628,11 @@ nav .menu span {
   .team {
     width: 90% !important;
     display: grid;
-    scale: 1 ;
+    scale: 1;
     grid-template-columns: repeat(1, 1fr) !important; 
 
     width: 100%;
-    transform: translateY(-80px);
+    transform: translateY(-30px);
   }
 
   .team-member {   
@@ -712,7 +731,7 @@ nav .menu span {
 
   .team {
     width: 100%;
-    transform: translateY(-80px);
+    transform: translateY(-30px);
   }
 
   .team-member {  

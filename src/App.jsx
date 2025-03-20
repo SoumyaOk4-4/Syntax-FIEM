@@ -211,7 +211,7 @@ function App() {
           <br />
           <h4
             className="did-you-know"
-            style={{ fontFamily: "Font2", fontSize: "1.2rem" }}
+            style={{ fontFamily: "Font2", fontWeight: "normal" ,fontSize: "1.1rem" }}
           >
             {getRandom_DYK(DYK_arr)}
           </h4>
@@ -221,9 +221,9 @@ function App() {
           <div className="nav-links">
             <h1 className="headers">
               <a href="/">
-                <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+                <img src={mainlogo} alt="SYNTAX" className="logo-main fadein_fadeout" />
               </a>
-              <img src={futureblue} alt="FIEM" className="fiem" />
+              <img src={futureblue} alt="FIEM" className="fiem fadein_fadeout" />
 
               <h3 className="gform">
                 <a href="/joinus">Become a member</a>
