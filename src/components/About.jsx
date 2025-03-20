@@ -24,10 +24,7 @@ function About() {
           programs on emerging technologies, offering opportunities for students
           to gain hands-on experience in fields like AI, cybersecurity, IoT, and
           game development—bridging the gap between academics and real-world
-          applications. But SYNTAX is more than just competitions and workshops.
-          Over the years, our members have achieved remarkable success in
-          national and international tech challenges, setting new benchmarks for
-          future innovators. Whether you're a coding wizard, a robotics
+          applications. Whether you're a coding wizard, a robotics
           enthusiast, a gaming champion, or just someone eager to dive into the
           world of technology, SYNTAX welcomes you. Join us and be part of a
           community that doesn't just follow technology— it creates it.
