@@ -4,7 +4,7 @@ function About() {
       <h1>About</h1>
       <br />
       <div className="web-content-container">
-        <div className="fadein_fadeout web-content">
+        <div className="fadein_fadeout web-content about-txt">
           Welcome to SYNTAX, the vibrant tech community of Future Institute of
           Engineering and Management (FIEM), Kolkata, dedicated to nurturing
           innovation, creativity, and collaboration among students. Our goal is
