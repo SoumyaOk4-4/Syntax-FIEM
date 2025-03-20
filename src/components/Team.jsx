@@ -21,6 +21,7 @@ function Team() {
       <br />
       <br />
       <div className="web-content-container team">
+
         <div className="team-member">
 
           <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />

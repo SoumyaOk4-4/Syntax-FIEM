@@ -2,10 +2,11 @@ import { FaEnvelope, FaPhone, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
   return (
-    <div className="contact-container">
+    <div className="web-content-container contact-container">
       <h1>Contact Us</h1>
       <br />
       <div className="fadein_fadeout web-content">
+
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
           <a href="mailto:syntx.in@gmail.com" className="contact-link">
@@ -40,6 +41,7 @@ function Contact() {
             X.com
           </a>
         </div>
+        
       </div>
     </div>
   );
