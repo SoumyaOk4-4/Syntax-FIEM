@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "Font1";
   src: url("../public/fonts/pixel1.TTF") format("truetype");
@@ -326,6 +330,7 @@ nav .menu span {
 }
 
 .web-content-container {
+
   width: 70%;
   margin: 0 auto;
   overflow: hidden; 
@@ -569,6 +574,11 @@ nav .menu span {
   position: relative;
 }
 
+/* .team-socials {
+  
+  color: white;
+} */
+
 .team-member {
   border: 1.5px solid rgb(255, 174, 0);
   border-radius: 6px;
@@ -577,12 +587,29 @@ nav .menu span {
   width: 260px;
   flex-shrink: 0;
   padding: 20px;
+  color: rgb(184, 184, 184);
+}
+
+.Job-Role {
+  font-family: "Font2";
+  font-size: 1.5rem;
+  color: rgb(255, 174, 0);
 }
 
 .socials {
+  height: 40px;
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-evenly;
+}
+
+.socials .team-socials{
+  transform: translateY(15px);
+  font-size: 25px;
+  color: white;
+}
+
+.socials .team-socials:hover {
+  font-size: 30px;
 }
 
 .team-member a{
