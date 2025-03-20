@@ -164,7 +164,17 @@ function App() {
 
   //did you knows
   const dyk = "Did You Know: ";
-  const DYK_arr = [dyk + "hello", dyk + "hi", dyk + "bye", dyk + "ok"];
+  const DYK_arr = [
+    dyk + "The 3.5sec delay is intentional, to read these messages.😆", 
+    dyk + "Ctrl+C and Ctrl+V are responsible for 90% of coding.💀", 
+    dyk + "Gamers rage over lag, but developers rage over missing semicolons.😡", 
+    dyk + "Git was created by Linus Torvalds, the same guy who made Linux.🐧",
+    dyk + "Python was named after Monty Python, not the snake.🐍",
+    dyk + "Programmers spend more time debugging than coding.🤓",
+    dyk + "This messages took a long time to thought out. So read them! 🔪⚰️",
+    dyk + "This website is made by 2 devs(Soumya,Ayan).👨‍💻👨‍💻",
+    dyk + "There are currently 8 random facts and 9 if we include this.👀",
+  ];
 
   //did you know random function
   function getRandom_DYK(array) {
@@ -187,6 +197,8 @@ function App() {
           <br />
           <br />
           <br />
+          <br />
+          <br />
           <img
             src={loadingGif}
             className="loadingscreen"
@@ -196,7 +208,13 @@ function App() {
           <br />
           <br />
           <br />
-          <h4 className="did-you-know">{getRandom_DYK(DYK_arr)}</h4>
+          <br />
+          <h4
+            className="did-you-know"
+            style={{ fontFamily: "Font2", fontSize: "1.2rem" }}
+          >
+            {getRandom_DYK(DYK_arr)}
+          </h4>
         </center>
       ) : (
         <>

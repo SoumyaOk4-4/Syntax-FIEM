@@ -16,25 +16,20 @@ function Team() {
     <>
       <h1>Team Page</h1>
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div className="web-content-container team">
         <div className="team-member">
-
           <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />
           <br />
           <br />
-          Mrigank Sen 
-          <div className="Job-Role">whore</div>
-
-
+          Mrigank Sen
+          <div className="Job-Role">Marketing Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/mrigank-sen-ba843827a/">
-              <FaLinkedin className="team-socials linkedin" style= {{}}/>
+              <FaLinkedin className="team-socials linkedin" style={{}} />
             </a>
-            <a href="https://github.com/OrangeCatKekw"><FaGithub className="team-socials github" /></a>
+            <a href="https://github.com/OrangeCatKekw">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -43,13 +38,14 @@ function Team() {
           <br />
           <br />
           Ayan Purkait
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Support Dev</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/ayan-purkait-615464289/">
               <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/JustChillinBro92"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/JustChillinBro92">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -58,13 +54,14 @@ function Team() {
           <br />
           <br />
           Sagufta Sinha
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Web Content Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/sagufta-sinha-a03491295/">
-            <FaLinkedin className="team-socials linkedin" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/Sagufta1"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/Sagufta1">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -73,13 +70,14 @@ function Team() {
           <br />
           <br />
           Soumya Chakraborty
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Technical Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/soumya-chakraborty-122388225/">
-              <FaLinkedin className="team-socials" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/SoumyaOk4-4"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/SoumyaOk4-4">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -88,14 +86,13 @@ function Team() {
           <br />
           <br />
           Ankush Samanta
-          <div></div>
-
+          <div className="Job-Role">Design Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/ankush-samanta-804403295/">
-              <FaLinkedin className="team-socials" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
             <a href="https://github.com/MrFantastico007">
-              <FaGithub className="team-socials" />
+              <FaGithub className="team-socials github" />
             </a>
           </div>
         </div>
@@ -105,13 +102,14 @@ function Team() {
           <br />
           <br />
           Aniket Nandi
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Operation Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/aniket-nandi%F0%9F%A7%91%E2%80%8D%F0%9F%9A%80-9620a4216/">
-              <FaLinkedin className="team-socials" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/Optimus1o1"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/Optimus1o1">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -124,13 +122,14 @@ function Team() {
           <br />
           <br />
           Deboshreya Ganguly
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Publicity and Content Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/deboshreya-ganguly-73b813224/">
-              <FaLinkedin className="team-socials" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/Deboshreya0603"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/Deboshreya0603">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
 
@@ -143,13 +142,14 @@ function Team() {
           <br />
           <br />
           Subhangi Bandyopadhyay
-          <div className="Job-Role"></div>
-
+          <div className="Job-Role">Media and Communication Head</div>
           <div className="socials">
             <a href="https://www.linkedin.com/in/subhangi-bandyopadhyay-9196132a5/">
-              <FaLinkedin className="team-socials" />
+              <FaLinkedin className="team-socials linkedin" />
             </a>
-            <a href="https://github.com/Subhangi-14"><FaGithub className="team-socials" /></a>
+            <a href="https://github.com/Subhangi-14">
+              <FaGithub className="team-socials github" />
+            </a>
           </div>
         </div>
       </div>

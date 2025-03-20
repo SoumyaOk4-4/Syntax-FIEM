@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: "Font1", sans-serif;
+  font-family: "Font1";
 }
 
 body {
@@ -95,8 +95,6 @@ body {
 .did-you-know {
   text-align: center;
   color: #ffb254;
-  font-size: 1.2rem;
-  font-weight: 600;
   margin: 20px 0;
 }
 
@@ -605,7 +603,7 @@ nav .menu span {
 .socials .team-socials{
   transform: translateY(15px);
   font-size: 25px;
-  color: white;
+  color: grey;
 }
 
 .socials .team-socials:hover {
@@ -680,4 +678,12 @@ nav .menu span {
 .about-txt{
   font-family: "Font2";
   font-size: 1.5rem;
+}
+
+.linkedin:hover {
+  color: #3b5fff;
+}
+
+.github:hover {
+  color: white;
 }
