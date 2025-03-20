@@ -1,7 +1,7 @@
 function About() {
   return (
     <>
-      <h1>about page</h1>
+      <h1>About</h1>
       <br />
       <div className="web-content-container">
         <div className="fadein_fadeout web-content">

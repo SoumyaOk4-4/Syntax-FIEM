@@ -544,3 +544,37 @@ nav .menu span {
   }
 }
 
+/* profile pics */
+.team-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap;
+  position: relative;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  cursor: grab;
+}
+
+.team-scroll {
+  display: inline-flex;
+  cursor: grab; /* Enable drag cursor */
+  transition: transform 0.1s ease-out; /* Smooth drag movement */
+}
+
+.team-member {
+  text-align: center;
+  margin-right: 20px;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Hide scrollbar for a cleaner look */
+.team-container::-webkit-scrollbar {
+  display: none;
+}

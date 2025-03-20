@@ -1,7 +1,7 @@
 function Sponsers() {
   return (
     <>
-      <h1>sponsers page</h1>
+      <h1>Sponsers</h1>
     </>
   );
 }
