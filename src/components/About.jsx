@@ -4,7 +4,7 @@ function About() {
       <h1>About</h1>
       <br />
       <div className="web-content-container">
-        <div className="fadein_fadeout web-content">
+        <div className="fadein_fadeout web-content about-txt">
           Welcome to SYNTAX, the vibrant tech community of Future Institute of
           Engineering and Management (FIEM), Kolkata, dedicated to nurturing
           innovation, creativity, and collaboration among students. Our goal is
@@ -24,10 +24,7 @@ function About() {
           programs on emerging technologies, offering opportunities for students
           to gain hands-on experience in fields like AI, cybersecurity, IoT, and
           game development—bridging the gap between academics and real-world
-          applications. But SYNTAX is more than just competitions and workshops.
-          Over the years, our members have achieved remarkable success in
-          national and international tech challenges, setting new benchmarks for
-          future innovators. Whether you're a coding wizard, a robotics
+          applications. Whether you're a coding wizard, a robotics
           enthusiast, a gaming champion, or just someone eager to dive into the
           world of technology, SYNTAX welcomes you. Join us and be part of a
           community that doesn't just follow technology— it creates it.

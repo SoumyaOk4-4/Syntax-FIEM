@@ -5,14 +5,21 @@
 }
 
 @font-face {
-  font-family: "MyCustomFont1";
+  font-family: "Font1";
   src: url("../public/fonts/pixel1.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Font2";
+  src: url("../public/fonts/pixel2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "MyCustomFont1", sans-serif;
+  font-family: "Font1", sans-serif;
 }
 
 body {
@@ -603,4 +610,47 @@ nav .menu span {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* contacts */
+.contact-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  font-family: "Font2";
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+}
+
+.contact-icon {
+  font-size: 1.9rem;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  color: #ffd358;
+}
+
+.about-txt{
+  font-family: "Font2";
+  font-size: 1.5rem;
 }
