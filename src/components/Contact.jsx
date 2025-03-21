@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaPhone, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,6 +34,17 @@ function Contact() {
           </a>
         </div>
         <div className="contact-item">
+          <FaYoutube className="contact-icon" />
+          <a
+            href="https://www.youtube.com/@syntx_in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            Youtube
+          </a>
+        </div>
+        <div className="contact-item">
           <FaXTwitter className="contact-icon" />
           <a
             href="http://x.com/SyntxIn"
@@ -41,7 +52,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="contact-link"
           >
-            X.com
+            Twitter/X
           </a>
         </div>
       </div>
