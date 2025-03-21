@@ -27,6 +27,7 @@ import Team from "./components/Team";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Joinus from "./components/Joinus";
+import Error from "./components/Error";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -242,6 +243,7 @@ function App() {
                   <Route path="/gallery" element={<Gallery />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/joinus" element={<Joinus />} />
+                  <Route path="*" element={<Error />} />
                 </Routes>
               </div>
             </Router>
