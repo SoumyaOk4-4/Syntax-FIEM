@@ -70,7 +70,7 @@ function Navbar() {
             <div className="nav-icons">
               <FontAwesomeIcon icon={faCalendarWeek} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Events</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Events</div>
           </Link>
         </li>
         <li>
@@ -79,10 +79,10 @@ function Navbar() {
             className="nav-btn about-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faCircleInfo} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>About</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>About</div>
           </Link>
         </li>
         <li>
@@ -91,10 +91,10 @@ function Navbar() {
             className="nav-btn sponsers-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faBuilding} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
           </Link>
         </li>
         <li>
@@ -103,10 +103,10 @@ function Navbar() {
             className="nav-btn team-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faUsers} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Team</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Team</div>
           </Link>
         </li>
         <li>
@@ -115,10 +115,10 @@ function Navbar() {
             className="nav-btn gallery-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faImages} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
           </Link>
         </li>
         <li>
@@ -127,10 +127,10 @@ function Navbar() {
             className="nav-btn contact-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faHeadset} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
           </Link>
         </li>
         <li>
@@ -139,10 +139,10 @@ function Navbar() {
             className="nav-btn joinus-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div>
+            <div className="nav-icons" >
               <FontAwesomeIcon icon={faFileSignature} />
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)}>Join Us</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Join Us</div>
           </Link>
         </li>
       </ul>

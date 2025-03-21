@@ -124,7 +124,6 @@ body {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
   border: 2px solid #ffb254;
-  ;
 }
 
 /* Loading Screen */
@@ -194,6 +193,7 @@ body {
   gap: 8px;
   align-items: center;
 
+  width: 100%;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   color: black;
@@ -284,10 +284,12 @@ nav .title {
 nav ul {
   display: flex;
   justify-content: center;
-  width: 72%;
+  width: fit-content;
 }
 
 nav ul li {
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
@@ -325,6 +327,9 @@ nav .menu span {
 }
 
 .big-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -335,6 +340,10 @@ nav .menu span {
 }
 
 .web-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   font-family: sans-serif;
   font-size: 22px;
   border: 3px solid black;
@@ -354,16 +363,12 @@ nav .menu span {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
-.web-content:hover {
-  transform: scale(1.2);
-}
-
 /* Responsive Design */
 @media (max-width: 1460px) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 15px;
   }
 
   .navbar a {
@@ -371,6 +376,14 @@ nav .menu span {
     width: 100%;
     text-align: center;
     padding: 10px;
+  }
+
+  .nav-btn-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-icons {
+    font-size: 1.2rem;
   }
 
   #nav-links a {
@@ -418,41 +431,45 @@ nav .menu span {
   .socials {
     width: 100%;
   }
-}
 
-@media (max-width: 1459px) {
-
-  .team {
-    width: 100% !important;
-    transform: translateY(-40px) !important;
-
-    gap: 30px !important;
+  .error-container {
+    scale: 0.85 !important;
   }
 
-  .team-member {
-    margin: 0 auto;
-    width: fit-content;
-    transform: translateX(-18px);
+  .error-container h1, h4, marquee span{
+    font-size: 2rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.5rem !important;
   }
 
-  .team-member:hover {
-    transform: scale(1.1) !important;
-  }
-
-  .socials {
-    width: 100%;
+  .return-home {
+    scale: 1;
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1380px) {
+  .navbar{
+    padding: 15px;
+  }
+
+  .nav-btn-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-icons {
+    font-size: 1.2rem;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.99;
     transform: translateY(-20px) !important;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 60px !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 50px !important;
   }
 
   .team-member {
@@ -471,17 +488,94 @@ nav .menu span {
     transform: scale(1.1) !important;
   }
 
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 2rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.5rem !important;
+  }
+
+  .return-home {
+    scale: 1;
+  }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1117px) {
+  .navbar{
+    padding: 12px;
+  }
+
+  .nav-btn-title {
+    font-size: 1rem;
+  }
+
+  .nav-icons {
+    font-size: 1rem;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.9;
-    transform: translateY(-120px);
+    transform: translateY(-80px) !important;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 80px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 50px !important;
+  }
+
+  .team-member {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateX(5px);
+  }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.8rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.4rem !important;
+  }
+
+  .return-home {
+    scale: 0.95
+  }
+}
+
+@media (max-width: 984px) {
+  .nav-btn-title {
+    font-size: 0.8rem;
+  }
+
+  .nav-icons {
+    font-size: 0.8rem;
+  }
+
+  .team {
+    width: 100% !important;
+    scale: 0.8;
+    transform: translateY(-153px) !important;
+
+    padding: 20px !important;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
   }
 
   .team-member {
@@ -503,9 +597,206 @@ nav .menu span {
   .contact-container {
     width: 65% !important;
   }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.7rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.3rem !important;
+  }
+
+  .return-home {
+    scale: 0.94
+  }
 }
 
 
+@media (max-width: 925px) {
+  .team {
+    width: 100% !important;
+    scale: 0.75;
+    transform: translateY(-204px) !important;
+
+    padding: 20px !important;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0px !important;
+  }
+
+  .team-member {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    scale: 0.85 !important;
+
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateX(-5px);
+  }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.7rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.3rem !important;
+  }
+
+  .return-home {
+    scale: 0.94
+  } 
+}
+
+@media (max-width: 902px) {
+  .team {
+    width: 100% !important;
+    scale: 0.8;
+    transform: translateY(-150px) !important;
+
+    padding: 20px !important;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0px !important;
+  }
+
+  .team-member {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    scale: 0.85;
+
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateX(-5px);
+  }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.7rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.3rem !important;
+  }
+
+  .return-home {
+    scale: 0.94
+  }
+}
+
+@media (max-width: 856px) {
+  .nav-btn-title {
+    font-size: 0.7rem !important;
+  }
+
+  .nav-icons {
+    font-size: 1rem !important;
+  }
+
+  .team {
+    width: 100% !important;
+    scale: 0.8;
+    transform: translateY(-150px) !important;
+
+    padding: 0px !important;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0px !important;
+  }
+
+  .team-member {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateX(-5px);
+  }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.7rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.3rem !important;
+  }
+
+  .return-home {
+    scale: 0.94
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    width: 85% !important;
+    scale: 0.99;
+    transform: translateY(-45px) !important;
+
+    padding: 50px !important;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .team-member {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    scale: 1 !important;
+
+    margin: 0 auto;
+    width: fit-content;
+    transform: translateX(-15px);
+  }
+
+  .team-member:hover {
+    transform: scale(1.05) !important;
+  }
+
+  .error-container {
+    scale: 0.85 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.7rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.3rem !important;
+  }
+
+  .return-home {
+    scale: 0.92
+  }
+}
 
 /* Mobile Navigation */
 @media (max-width: 640px) {
@@ -514,7 +805,7 @@ nav .menu span {
   }
 
   .fiem {
-    transform: translateX(120px);
+    transform: translateX(120px) !important;
   }
 
   .headers {
@@ -532,7 +823,7 @@ nav .menu span {
   .team {
     width: 100% !important;
     scale: 0.8;
-    transform: translateY(-280px);
+    transform: translateY(-220px) !important;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -552,11 +843,15 @@ nav .menu span {
   }
 
   .team-member:hover {
-    transform: scale(1) !important;
+    transform: scale(1.05) !important;
   }
 
   .web-content {
     font-size: 18px;
+  }
+
+  .navbar{
+    padding: 0 !important;
   }
 
   .nav-btn {
@@ -614,22 +909,66 @@ nav .menu span {
   .contact-container {
     width: 100% !important;
   }
+
+  .error-container {
+    scale: 0.8 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.5rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.2rem !important;
+  }
+
+  .return-home {
+    scale: 0.9
+  }
 }
 
 @media (max-width: 540px) {
-  .team {
-    width: 90% !important;
-    display: grid;
-    scale: 1;
-    grid-template-columns: repeat(1, 1fr) !important;
+  .fiem {
+    transform: translateX(100px) !important;
+  }
 
-    transform: translateY(-30px);
+  .team {
+    width: 100% !important;
+    display: grid;
+    scale: 0.99;
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    padding: 0px !important;
+
+    transform: translateY(-12px) !important;
+    gap: 0px;
   }
 
   .team-member {
     margin: 0 auto;
     width: fit-content;
-    transform: translateX(-30px);
+
+    scale: 0.8 !important;
+  }
+
+  .team-member:hover {
+    transform: scale(1.05) !important;
+  }
+
+  .error-container {
+    scale: 0.8 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.5rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.2rem !important;
+  }
+
+  .return-home {
+    scale: 0.9
   }
 }
 
@@ -651,13 +990,14 @@ nav .menu span {
   }
 
   .team {
-    width: 90% !important;
+    width: 70% !important;
     display: grid;
     scale: 1;
     grid-template-columns: repeat(1, 1fr) !important;
 
-    width: 100%;
-    transform: translateY(-30px);
+    padding: 0px !important;
+
+    transform: translateY(-2px) !important;
   }
 
   .team-member {
@@ -671,7 +1011,7 @@ nav .menu span {
   }
 
   .team-member:hover {
-    transform: scale(1) !important;
+    transform: scale(1.05) !important;
   }
 
   .socials {
@@ -684,6 +1024,10 @@ nav .menu span {
 
   .gform a {
     display: none;
+  }
+
+  .navbar{
+    padding: 0 !important;
   }
 
   nav .menu {
@@ -747,6 +1091,22 @@ nav .menu span {
     font-size: 1.4rem !important;
     color: #4e0e0e;
   }
+
+  .error-container {
+    scale: 0.8 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1.1rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2.2rem !important;
+  }
+
+  .return-home {
+    scale: 0.9
+  }
 }
 
 @media (max-width: 360px) {
@@ -755,18 +1115,19 @@ nav .menu span {
   }
 
   .team {
-    width: 100%;
-    transform: translateY(-30px);
+    width: 80% !important;
+    transform: translateY(-3px) !important;
+
+    padding: 0px !important;
   }
 
   .team-member {
     margin: 0 auto;
     width: fit-content;
-    transform: translateX(-18px);
   }
 
   .team-member:hover {
-    transform: scale(1) !important;
+    transform: scale(1.05) !important;
   }
 
   .socials {
@@ -780,6 +1141,22 @@ nav .menu span {
   .contact-icon {
     font-size: 1.2rem !important;
     color: #4e0e0e;
+  }
+
+  .error-container {
+    scale: 0.7 !important;
+  }
+
+  .error-container h1, h4, marquee span{
+    font-size: 1rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2rem !important;
+  }
+
+  .return-home {
+    scale: 0.8
   }
 }
 
@@ -808,7 +1185,7 @@ nav .menu span {
 }
 
 .team-member {
-  border: 1px solid rgb(255, 174, 0);
+  border: 1.6px solid rgb(255, 174, 0);
   border-radius: 6px;
   text-align: center;
   margin-right: 20px;
@@ -920,4 +1297,28 @@ nav .menu span {
 
 .github:hover {
   color: white;
+}
+
+.error-content-container {
+  height: fit-content;
+}
+
+.error-container {
+  gap: 80px;
+
+  scale: 0.8;
+  width: 95%;
+  text-align: center;
+  padding: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.error-container h4 {
+  font-size: 2.2rem;
+}
+
+.return-home h1:hover{
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+  border: 3px solid #e7a529;
 }
