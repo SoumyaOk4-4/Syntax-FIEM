@@ -1,7 +1,13 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+
 function About() {
   return (
     <>
-      <h1>About</h1>
+      <br />
+      <h1>
+        <FontAwesomeIcon icon={faCircleInfo} /> About
+      </h1>
       <br />
       <div className="web-content-container">
         <div className="fadein_fadeout web-content about-txt">
@@ -24,10 +30,10 @@ function About() {
           programs on emerging technologies, offering opportunities for students
           to gain hands-on experience in fields like AI, cybersecurity, IoT, and
           game development—bridging the gap between academics and real-world
-          applications. Whether you're a coding wizard, a robotics
-          enthusiast, a gaming champion, or just someone eager to dive into the
-          world of technology, SYNTAX welcomes you. Join us and be part of a
-          community that doesn't just follow technology— it creates it.
+          applications. Whether you're a coding wizard, a robotics enthusiast, a
+          gaming champion, or just someone eager to dive into the world of
+          technology, SYNTAX welcomes you. Join us and be part of a community
+          that doesn't just follow technology— it creates it.
         </div>
       </div>
     </>

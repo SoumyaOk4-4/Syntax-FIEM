@@ -123,7 +123,8 @@ body {
 .gform a:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
-  border: 2px solid #ffb254;;
+  border: 2px solid #ffb254;
+  ;
 }
 
 /* Loading Screen */
@@ -330,7 +331,7 @@ nav .menu span {
 .web-content-container {
   width: 70%;
   margin: 0 auto;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .web-content {
@@ -404,9 +405,9 @@ nav .menu span {
     gap: 30px !important;
   }
 
-  .team-member {  
+  .team-member {
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(-18px);
   }
 
@@ -414,7 +415,7 @@ nav .menu span {
     transform: scale(1.1) !important;
   }
 
-  .socials{
+  .socials {
     width: 100%;
   }
 }
@@ -428,9 +429,9 @@ nav .menu span {
     gap: 30px !important;
   }
 
-  .team-member {  
+  .team-member {
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(-18px);
   }
 
@@ -438,7 +439,7 @@ nav .menu span {
     transform: scale(1.1) !important;
   }
 
-  .socials{
+  .socials {
     width: 100%;
   }
 }
@@ -446,7 +447,7 @@ nav .menu span {
 @media (max-width: 1365px) {
   .team {
     width: 100% !important;
-    scale: 0.99; 
+    scale: 0.99;
     transform: translateY(-20px) !important;
 
     display: grid;
@@ -459,23 +460,23 @@ nav .menu span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(-18px);
   }
 
   .team-member:hover {
     transform: scale(1.1) !important;
-  }   
+  }
 
 }
 
 @media (max-width: 920px) {
   .team {
     width: 100% !important;
-    scale: 0.9; 
+    scale: 0.9;
     transform: translateY(-120px);
 
     display: grid;
@@ -488,10 +489,10 @@ nav .menu span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(5px);
   }
 
@@ -530,7 +531,7 @@ nav .menu span {
 
   .team {
     width: 100% !important;
-    scale: 0.8; 
+    scale: 0.8;
     transform: translateY(-280px);
 
     display: grid;
@@ -543,10 +544,10 @@ nav .menu span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(5px);
   }
 
@@ -620,14 +621,14 @@ nav .menu span {
     width: 90% !important;
     display: grid;
     scale: 1;
-    grid-template-columns: repeat(1, 1fr) !important; 
+    grid-template-columns: repeat(1, 1fr) !important;
 
     transform: translateY(-30px);
   }
 
-  .team-member {   
+  .team-member {
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(-30px);
   }
 }
@@ -653,15 +654,15 @@ nav .menu span {
     width: 90% !important;
     display: grid;
     scale: 1;
-    grid-template-columns: repeat(1, 1fr) !important; 
+    grid-template-columns: repeat(1, 1fr) !important;
 
     width: 100%;
     transform: translateY(-30px);
   }
 
-  .team-member {   
+  .team-member {
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(5px);
   }
 
@@ -673,7 +674,7 @@ nav .menu span {
     transform: scale(1) !important;
   }
 
-  .socials{
+  .socials {
     width: 50%;
   }
 
@@ -717,7 +718,7 @@ nav .menu span {
     display: flex;
     padding: 15px;
 
-    opacity: 0; 
+    opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
   }
 
@@ -738,7 +739,7 @@ nav .menu span {
     width: 100% !important;
   }
 
-  .contact-item a{
+  .contact-item a {
     font-size: 1.5rem;
   }
 
@@ -758,9 +759,9 @@ nav .menu span {
     transform: translateY(-30px);
   }
 
-  .team-member {  
+  .team-member {
     margin: 0 auto;
-    width: fit-content; 
+    width: fit-content;
     transform: translateX(-18px);
   }
 
@@ -768,11 +769,11 @@ nav .menu span {
     transform: scale(1) !important;
   }
 
-  .socials{
+  .socials {
     width: 50%;
   }
 
-  .contact-item a{
+  .contact-item a {
     font-size: 1.2rem;
   }
 
@@ -829,7 +830,7 @@ nav .menu span {
   justify-content: space-evenly;
 }
 
-.socials .team-socials{
+.socials .team-socials {
   transform: translateY(15px);
   font-size: 25px;
   color: grey;
@@ -839,7 +840,7 @@ nav .menu span {
   font-size: 30px;
 }
 
-.team-member a{
+.team-member a {
   color: rgb(56, 156, 195);
   text-decoration: none;
 }
@@ -863,6 +864,7 @@ nav .menu span {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -907,7 +909,7 @@ nav .menu span {
   color: #ffd358;
 }
 
-.about-txt{
+.about-txt {
   font-family: "Font2";
   font-size: 1.5rem;
 }

@@ -1,12 +1,15 @@
 import { FaEnvelope, FaPhone, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
     <div className="web-content-container contact-container">
-      <h1>Contact Us</h1>
+      <h1>
+        <FontAwesomeIcon icon={faHeadset} /> Contact Us
+      </h1>
       <br />
       <div className="fadein_fadeout web-content">
-
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
           <a href="mailto:syntx.in@gmail.com" className="contact-link">
@@ -41,7 +44,6 @@ function Contact() {
             X.com
           </a>
         </div>
-        
       </div>
     </div>
   );
