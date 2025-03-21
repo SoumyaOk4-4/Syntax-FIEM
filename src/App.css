@@ -422,9 +422,6 @@ nav .menu span {
 }
 
 @media (max-width: 1459px) {
-  .navbar {
-    padding: 15px;
-  }
 
   .team {
     width: 100% !important;
