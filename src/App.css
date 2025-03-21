@@ -400,8 +400,41 @@ nav .menu span {
   }
 
   .team {
+    width: 100% !important;
+    transform: translateY(-40px) !important;
+
+    gap: 30px !important;
+  }
+
+  .team-member {  
+    margin: 0 auto;
+    width: fit-content; 
+    transform: translateX(-18px);
+  }
+
+  .team-member:hover {
+    transform: scale(1.1) !important;
+  }
+
+  .socials{
     width: 100%;
-    transform: translateY(-80px);
+  }
+}
+
+@media (max-width: 1459px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-btn:hover{
+    /* width: ; */
+  }
+
+  .team {
+    width: 100% !important;
+    transform: translateY(-40px) !important;
+
+    gap: 30px !important;
   }
 
   .team-member {  
@@ -423,7 +456,7 @@ nav .menu span {
   .team {
     width: 100% !important;
     scale: 0.99; 
-    transform: translateY(-20px);
+    transform: translateY(-20px) !important;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -783,7 +816,7 @@ nav .menu span {
 }
 
 .team-member {
-  border: 1.5px solid rgb(255, 174, 0);
+  border: 1px solid rgb(255, 174, 0);
   border-radius: 6px;
   text-align: center;
   margin-right: 20px;
@@ -823,7 +856,8 @@ nav .menu span {
 .team-member:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(255, 174, 0);
+  box-shadow: 0px 4px 20px rgb(255, 174, 0);
 }
 
 .profile-pic {
