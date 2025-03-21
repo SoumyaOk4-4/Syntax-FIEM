@@ -426,10 +426,6 @@ nav .menu span {
     padding: 15px;
   }
 
-  .nav-btn:hover{
-    /* width: ; */
-  }
-
   .team {
     width: 100% !important;
     transform: translateY(-40px) !important;
