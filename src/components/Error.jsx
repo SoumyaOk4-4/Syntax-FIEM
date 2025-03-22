@@ -18,10 +18,11 @@ function Error() {
               }}
             >
               <h3><FontAwesomeIcon icon={faTriangleExclamation} /> 404</h3>
+              <br />
               <h4> Oops! Page Not Found</h4>
             </h1>
           </div>
-
+              <br />
           <div>
             {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
             <marquee>
