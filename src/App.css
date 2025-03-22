@@ -436,23 +436,30 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 2rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.5rem !important;
   }
 
   .return-home {
     scale: 1;
   }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.8rem !important;
+  }
+
+  .para {
+    font-size: 1.8rem !important;
+  }
 }
 
 @media (max-width: 1380px) {
-  .navbar {
+  .navbar{
     padding: 15px;
   }
 
@@ -494,23 +501,30 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 2rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.5rem !important;
   }
 
   .return-home {
     scale: 1;
   }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.8rem !important;
+  }
+
+  .para {
+    font-size: 1.8rem !important;
+  }
 }
 
 @media (max-width: 1117px) {
-  .navbar {
+  .navbar{
     padding: 12px;
   }
 
@@ -548,18 +562,25 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.8rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.4rem !important;
   }
 
   .return-home {
     scale: 0.95
+  }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.8rem !important;
+  }
+
+  .para {
+    font-size: 1.8rem !important;
   }
 }
 
@@ -608,13 +629,11 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.7rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.3rem !important;
   }
 
@@ -654,19 +673,17 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.7rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.3rem !important;
   }
 
   .return-home {
     scale: 0.94
-  }
+  } 
 }
 
 @media (max-width: 902px) {
@@ -699,13 +716,11 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.7rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.3rem !important;
   }
 
@@ -750,18 +765,25 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.7rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.3rem !important;
   }
 
   .return-home {
     scale: 0.94
+  }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.8rem !important;
+  }
+
+  .para {
+    font-size: 1.9rem !important;
   }
 }
 
@@ -799,13 +821,11 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.7rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.3rem !important;
   }
 
@@ -822,6 +842,10 @@ nav .menu span {
 
   .fiem {
     transform: translateX(120px) !important;
+  }
+
+  .nav-btn-title {
+    font-size: 1.2rem !important;
   }
 
   .headers {
@@ -866,7 +890,7 @@ nav .menu span {
     font-size: 18px;
   }
 
-  .navbar {
+  .navbar{
     padding: 0 !important;
   }
 
@@ -930,13 +954,11 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.5rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.2rem !important;
   }
 
@@ -948,6 +970,10 @@ nav .menu span {
 @media (max-width: 540px) {
   .fiem {
     transform: translateX(100px) !important;
+  }
+
+  .nav-btn-title {
+    font-size: 1.2rem !important;
   }
 
   .team {
@@ -977,13 +1003,11 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
+  .error-container h1, h4, marquee span{
     font-size: 1.5rem !important;
-  }
+  }  
 
-  .error-container marquee span {
+  .error-container marquee span{
     font-size: 2.2rem !important;
   }
 
@@ -999,6 +1023,10 @@ nav .menu span {
 
   .fiem {
     transform: translateX(32px) !important;
+  }
+
+  .nav-btn-title {
+    font-size: 1.2rem !important;
   }
 
   .headers {
@@ -1046,7 +1074,7 @@ nav .menu span {
     display: none;
   }
 
-  .navbar {
+  .navbar{
     padding: 0 !important;
   }
 
@@ -1116,18 +1144,29 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
-    font-size: 1.1rem !important;
+  .error-container h3 {
+    font-size: 2rem !important;
   }
 
-  .error-container marquee span {
+  .error-container h1, h4, marquee span{
+    font-size: 1.1rem !important;
+  }  
+
+  .error-container marquee span{
     font-size: 2.2rem !important;
   }
 
   .return-home {
     scale: 0.9
+  }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.7rem !important;
+  }
+
+  .para {
+    font-size: 1.8rem !important;
   }
 }
 
@@ -1141,6 +1180,10 @@ nav .menu span {
     transform: translateY(-3px) !important;
 
     padding: 0px !important;
+  }
+
+  .nav-btn-title {
+    font-size: 1rem !important;
   }
 
   .team-member {
@@ -1165,22 +1208,33 @@ nav .menu span {
     color: #4e0e0e;
   }
 
+  
   .error-container {
     scale: 0.7 !important;
   }
 
-  .error-container h1,
-  h4,
-  marquee span {
-    font-size: 1rem !important;
-  }
-
-  .error-container marquee span {
+  .error-container h3 {
     font-size: 2rem !important;
   }
 
+  .error-container h1, h4, marquee span{
+    font-size: 1rem !important;
+  }  
+
+  .error-container marquee span{
+    font-size: 2rem !important;
+  }
   .return-home {
     scale: 0.8
+  }
+
+  .volunteer-btn a{
+    padding: 15px !important;
+    font-size: 1.5rem !important;
+  }
+
+  .para {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -1313,6 +1367,7 @@ nav .menu span {
 .about-txt {
   font-family: "Font2";
   font-size: 1.5rem;
+  color: rgb(157, 157, 157);
 }
 
 .linkedin:hover {
@@ -1337,28 +1392,17 @@ nav .menu span {
   -webkit-tap-highlight-color: transparent;
 }
 
+.error-container h3 {
+  font-size: 3rem;
+}
+
 .error-container h4 {
   font-size: 2.2rem;
 }
 
-.return-home h1:hover {
+.return-home h1:hover{
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
   border: 3px solid #e7a529;
 }
 
-.vol-form {
-  align-items: center;
-  color: #ffffff;
-  font-size: 2rem;
-  font-family: "Font2";
-  text-decoration: none;
-  padding: 20px;
-  border: 2px solid #e7a529;
-  border-radius: 35px;
-}
-
-.vol-form:hover {
-  color: #e7a529;
-  transform: scale(1.05);
-}

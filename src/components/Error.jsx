@@ -5,26 +5,29 @@ function Error() {
   return (
     <>
       <br />
-      <div>
-        <h1
-          style={{
-            fontSize: "2.5rem",
-            fontFamily: "Font1",
-            transform: "translateY(50px)",
-          }}
-        >
-          <h3>
-            <FontAwesomeIcon icon={faTriangleExclamation} /> 404
-          </h3>
-        </h1>
-      </div>
+
       <div className="web-content-container error-content-container">
         <div className="fadein_fadeout error-container web-content">
-          <br />
           <div>
-          <h4 style={{ fontFamily: "Font1" }}>Page Not Found</h4>
-          <br />
-          <br />
+            <h1
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+
+                fontSize: "2.5rem" ,
+                fontFamily: "Font1",
+                transform: "translateY(50px)",
+              }}
+            >
+              <h3>
+                <FontAwesomeIcon icon={faTriangleExclamation} /> 404!
+              </h3>
+              <h4>Page Not Found</h4>
+            </h1>
+          </div>
+
+          <div>
             {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
             <marquee>
               <span
