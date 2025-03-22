@@ -1,4 +1,4 @@
-import { faFileSignature } from "@fortawesome/free-solid-svg-icons";
+import { faFileSignature, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Joinus() {
@@ -21,7 +21,7 @@ function Joinus() {
         rel="noopener noreferrer"
         className="vol-form"
       >
-        Volunteer Form
+        <FontAwesomeIcon icon={faPen} /> Volunteer Form
       </a>
     </>
   );
