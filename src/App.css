@@ -364,7 +364,48 @@ nav .menu span {
 }
 
 /* Responsive Design */
-@media (max-width: 1460px) {
+@media (max-width: 2090px) {
+  .did-you-know {
+    font-size: 30px !important;
+  }
+
+  .team {
+    width: 70% !important;
+    gap: 30px !important;
+  }
+
+  .team-member {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1820px) {
+  .team {
+    width: 80% !important;
+    gap: 30px !important;
+  }
+
+  .team-member {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1665px) {
+  .team {
+    width: 90% !important;
+    gap: 30px !important;
+  }
+
+  .team-member {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+
+@media (max-width: 1465px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -396,11 +437,11 @@ nav .menu span {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .did-you-know {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .web-content-container {
@@ -412,20 +453,12 @@ nav .menu span {
   }
 
   .team {
-    width: 100% !important;
-    transform: translateY(-40px) !important;
-
     gap: 30px !important;
   }
 
   .team-member {
     margin: 0 auto;
     width: fit-content;
-    transform: translateX(-18px);
-  }
-
-  .team-member:hover {
-    transform: scale(1.1) !important;
   }
 
   .socials {
@@ -471,10 +504,13 @@ nav .menu span {
     font-size: 1.2rem;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+  
   .team {
     width: 100% !important;
-    scale: 0.99;
-    transform: translateY(-20px) !important;
+    scale: 1;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr) !important;
@@ -490,11 +526,6 @@ nav .menu span {
 
     margin: 0 auto;
     width: fit-content;
-    transform: translateX(-18px);
-  }
-
-  .team-member:hover {
-    transform: scale(1.1) !important;
   }
 
   .error-container {
@@ -615,10 +646,6 @@ nav .menu span {
     margin: 0 auto;
     width: fit-content;
     transform: translateX(5px);
-  }
-
-  .team-member:hover {
-    transform: scale(1.1) !important;
   }
 
   .contact-container {
@@ -813,10 +840,6 @@ nav .menu span {
     transform: translateX(-15px);
   }
 
-  .team-member:hover {
-    transform: scale(1.05) !important;
-  }
-
   .error-container {
     scale: 0.85 !important;
   }
@@ -880,10 +903,6 @@ nav .menu span {
     margin: 0 auto;
     width: fit-content;
     transform: translateX(5px);
-  }
-
-  .team-member:hover {
-    transform: scale(1.05) !important;
   }
 
   .web-content {
@@ -995,10 +1014,6 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .team-member:hover {
-    transform: scale(1.05) !important;
-  }
-
   .error-container {
     scale: 0.8 !important;
   }
@@ -1056,10 +1071,6 @@ nav .menu span {
 
   .fiem {
     transform: translateX(20px);
-  }
-
-  .team-member:hover {
-    transform: scale(1.05) !important;
   }
 
   .socials {
@@ -1191,10 +1202,6 @@ nav .menu span {
     width: fit-content;
   }
 
-  .team-member:hover {
-    transform: scale(1.05) !important;
-  }
-
   .socials {
     width: 50%;
   }
@@ -1301,7 +1308,7 @@ nav .menu span {
 }
 
 .team-member:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.2s ease-in-out;
   border: 2px solid rgb(255, 174, 0);
   box-shadow: 0px 4px 20px rgb(255, 174, 0);
