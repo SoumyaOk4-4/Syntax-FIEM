@@ -28,7 +28,7 @@ function Joinus() {
               color: "rgb(184, 184, 184)",
             }}
           >
-            No prerequisites required! Just fill out the form and join us—be
+            No prerequisites required! Just fill out the form and join us — Be
             part of the incredible journey ahead!
           </div>
 
