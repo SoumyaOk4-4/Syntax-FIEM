@@ -363,6 +363,23 @@ nav .menu span {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
+.toggle-member {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 30%;
+  padding: 20px;
+  border: 1.6px solid #ffb254;
+  border-radius: 20px;
+}
+
+.toggle-member h5:hover{
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .event-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
