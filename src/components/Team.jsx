@@ -21,10 +21,6 @@ function Team() {
         <FontAwesomeIcon icon={faUsers} /> Team
       </h1>
       <br />
-      <div className="web-content-container">
-
-        
-      </div>
       <div className="web-content-container team">
         <div className="team-member">
           <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />
