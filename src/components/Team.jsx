@@ -12,11 +12,12 @@ import deboshreya from "../images/team_pics/deboshreya.jpg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faUserTie } from "@fortawesome/free-solid-svg-icons";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function Team() {
   const [teamToggle, setTeamToggle] = useState(true);
   const [mentorToggle, setMentorToggle] = useState(false);
+  console.log(mentorToggle);
 
   return (
     <>
@@ -34,6 +35,7 @@ function Team() {
             >
               <FontAwesomeIcon icon={faUsers} /> Team
             </h5>
+            {/* eslint-disable-next-line */}
             <h6 style={{ border: "1.6px solid #ffb254" }}></h6>
             <h5
               style={{ padding: "10px" }}
