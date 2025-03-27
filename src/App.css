@@ -735,8 +735,8 @@ nav .menu span {
 
 @media (max-width: 925px) {
   .event-stat {
-    width: 50% !important;
-    transform: translateX(50%) !important;
+    width: 60% !important;
+    transform: translateX(40%) !important;
   }
 
   .team {
@@ -1112,8 +1112,8 @@ nav .menu span {
   }
 
   .event-stat {
-    width: 35% !important;
-    transform: translateX(94%) !important;
+    width: 30% !important;
+    transform: translateX(120%) !important;
   }
 
   .team {
@@ -1179,8 +1179,8 @@ nav .menu span {
   }
 
   .event-stat {
-    width: 50% !important;
-    transform: translateX(50%) !important;
+    width: 40% !important;
+    transform: translateX(80%) !important;
   }
 
   .team {
