@@ -363,10 +363,43 @@ nav .menu span {
   animation: fadeIn 0.5s ease-in forwards;
 }
 
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 45px;
+}
+
+.event-content-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1.6px solid rgb(255, 174, 0);
+  border-radius: 5px;
+}
+
+.event-box{
+  font-size: 25px;
+  border: 3px solid black;
+  border-radius: 7px;
+  margin: 20px;
+  padding: 10px;
+  
+  border: 1px solid rgb(0, 136, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
+    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
+    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+}
+
 /* Responsive Design */
 @media (max-width: 2090px) {
   .did-you-know {
     font-size: 30px !important;
+  }
+
+  .event-stat {
+    width: 25% !important;
+    transform: translateX(150%) !important;
   }
 
   .team {
@@ -381,6 +414,11 @@ nav .menu span {
 }
 
 @media (max-width: 1820px) {
+  .event-stat {
+    width: 30% !important;
+    transform: translateX(120%) !important;
+  }
+
   .team {
     width: 80% !important;
     gap: 30px !important;
@@ -393,6 +431,11 @@ nav .menu span {
 }
 
 @media (max-width: 1665px) {
+  .event-stat {
+    width: 30% !important;
+    transform: translateX(120%) !important;
+  }
+
   .team {
     width: 90% !important;
     gap: 30px !important;
@@ -452,6 +495,11 @@ nav .menu span {
     font-size: 18px;
   }
 
+  .event-stat {
+    width: 40% !important;
+    transform: translateX(75%) !important;
+  }
+
   .team {
     gap: 30px !important;
   }
@@ -506,6 +554,11 @@ nav .menu span {
 
   h1 {
     font-size: 30px;
+  }
+
+  .event-stat {
+    width: 40% !important;
+    transform: translateX(75%) !important;
   }
   
   .team {
@@ -567,6 +620,11 @@ nav .menu span {
     font-size: 1rem;
   }
 
+  .event-stat {
+    width: 60% !important;
+    transform: translateX(35%) !important;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.9;
@@ -624,6 +682,11 @@ nav .menu span {
     font-size: 0.8rem;
   }
 
+  .event-stat {
+    width: 60% !important;
+    transform: translateX(35%) !important;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.8;
@@ -671,6 +734,11 @@ nav .menu span {
 
 
 @media (max-width: 925px) {
+  .event-stat {
+    width: 50% !important;
+    transform: translateX(50%) !important;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.75;
@@ -714,6 +782,11 @@ nav .menu span {
 }
 
 @media (max-width: 902px) {
+  .event-stat {
+    width: 50% !important;
+    transform: translateX(50%) !important;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.8;
@@ -765,6 +838,16 @@ nav .menu span {
     font-size: 1rem !important;
   }
 
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-stat {
+    width: 50% !important;
+    transform: translateX(50%) !important;
+  }
+
   .team {
     width: 100% !important;
     scale: 0.8;
@@ -814,7 +897,17 @@ nav .menu span {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-stat {
+    width: 55% !important;
+    transform: translateX(45%) !important;
+  }
+
   .team {
     width: 85% !important;
     scale: 0.99;
@@ -881,6 +974,20 @@ nav .menu span {
 
   .web-content-container {
     width: 100%;
+  }
+
+  .event-content-container {
+    width: 100%;
+  }
+
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-stat {
+    width: 55% !important;
+    transform: translateX(45%) !important;
   }
 
   .team {
@@ -995,6 +1102,20 @@ nav .menu span {
     font-size: 1.2rem !important;
   }
 
+  .event-content-container {
+    width: 100%;
+  }
+
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .event-stat {
+    width: 35% !important;
+    transform: translateX(94%) !important;
+  }
+
   .team {
     width: 100% !important;
     display: grid;
@@ -1050,6 +1171,16 @@ nav .menu span {
 
   .web-content-container {
     width: 100%;
+  }
+
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .event-stat {
+    width: 50% !important;
+    transform: translateX(50%) !important;
   }
 
   .team {
@@ -1184,6 +1315,16 @@ nav .menu span {
 @media (max-width: 360px) {
   .fiem {
     transform: translateX(20px);
+  }
+
+  .event-container {
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .event-stat {
+    width: 50% !important;
+    transform: translateX(50%) !important;
   }
 
   .team {

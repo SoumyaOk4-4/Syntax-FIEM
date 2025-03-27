@@ -10,7 +10,7 @@ function Events() {
         <FontAwesomeIcon icon={faCalendarWeek} /> Events
       </h1>
       <br />
-      <div>
+      <div className="event-container">
         <EventsHandler />
       </div>
     </>
