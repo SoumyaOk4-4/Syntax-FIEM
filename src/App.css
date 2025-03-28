@@ -372,8 +372,6 @@ nav .menu span {
 
   width: 30%;
   padding: 20px;
-  border: 1.6px solid #ffb254;
-  border-radius: 20px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1301,11 +1299,11 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 85% !important;
+    width: 100% !important;
   }
 
   .toggle-member h5{
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .team {
@@ -1323,7 +1321,7 @@ nav .menu span {
   .team-member {
     scale: 1 !important;
     margin: 0 auto;
-    width: 320px !important;
+    width: 350px !important;
   }
 
   .socials {
@@ -1450,11 +1448,11 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 88% !important;
+    width: 100% !important;
   }
 
   .toggle-member h5{
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 
   .nav-btn-title {

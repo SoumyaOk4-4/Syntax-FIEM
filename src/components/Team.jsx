@@ -28,7 +28,7 @@ function Team() {
         >
           <div className="toggle-member">
             <h5
-              style={{ padding: "10px" }}
+              style={{ padding: "10px", backgroundColor: "rgb(98, 0, 255)", borderRadius: "10px", color: "rgb(232, 209, 209)" }}
               onClick={() => {
                 setTeamToggle(true);
                 setMentorToggle(false);
@@ -37,9 +37,8 @@ function Team() {
               <FontAwesomeIcon icon={faUsers} /> Team
             </h5>
             {/* eslint-disable-next-line */}
-            <h6 style={{ border: "1.6px solid #ffb254" }}></h6>
             <h5
-              style={{ padding: "10px" }}
+              style={{ padding: "10px", backgroundColor: "rgb(98, 0, 255)", borderRadius: "10px", color: "rgb(232, 209, 209)" }}
               onClick={() => {
                 setMentorToggle(true);
                 setTeamToggle(false);
