@@ -106,7 +106,7 @@ function Navbar() {
             <div className="nav-icons" >
               <FontAwesomeIcon icon={faUsers} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Team</div>
+            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Members</div>
           </Link>
         </li>
         <li>

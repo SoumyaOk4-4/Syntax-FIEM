@@ -7,6 +7,7 @@ import aniket from "../images/team_pics/aniket.jpg";
 import ankush from "../images/team_pics/ankush.jpg";
 import shubhangi from "../images/team_pics/shubhangi.jpg";
 import deboshreya from "../images/team_pics/deboshreya.jpg";
+import chanchal from "../images/team_pics/chanchal-ghosh.jpg"
 
 //libs
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
@@ -22,7 +23,7 @@ function Team() {
   return (
     <>
       <h1>
-        <div
+        <div className="toggle-box"
           style={{ display: "flex", justifyContent: "center", padding: "10px" }}
         >
           <div className="toggle-member">
@@ -51,7 +52,7 @@ function Team() {
       </h1>
 
       {teamToggle ? (
-        <div className="web-content-container team">
+        <div className="web-content-container team fadein_fadeout">
           <div className="team-member">
             <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />
             <br />
@@ -257,13 +258,13 @@ function Team() {
           </div>
         </div>
       ) : (
-        <div className="web-content-container team">
+        <div className="web-content-container team fadein_fadeout">
           <div className="team-member">
-            <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />
+            <img src={chanchal} alt="Chanchal Ghosh" className="profile-pic" />
             <br />
             <br />
-            Mrigank Sen
-            <div className="Job-Role">Marketing Head</div>
+            Chanchal Ghosh
+            <div className="Job-Role">Mentor</div>
             <div className="socials">
               <a
                 href="https://www.linkedin.com/in/mrigank-sen-ba843827a/"

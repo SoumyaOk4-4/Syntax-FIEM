@@ -337,6 +337,8 @@ nav .menu span {
   width: 70%;
   margin: 0 auto;
   overflow: hidden;
+
+  justify-content: center;
 }
 
 .web-content {
@@ -372,12 +374,12 @@ nav .menu span {
   padding: 20px;
   border: 1.6px solid #ffb254;
   border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .toggle-member h5:hover{
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .event-container {
@@ -419,12 +421,22 @@ nav .menu span {
     transform: translateX(150%) !important;
   }
 
+  .toggle-member {
+    width: 23% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 23px !important;
+  }
+
   .team {
-    width: 70% !important;
-    gap: 30px !important;
+    width: 100% !important;
+    padding: 80px !important;
+    gap: 110px !important;
   }
 
   .team-member {
+    scale: 1.2;
     margin: 0 auto;
     width: fit-content;
   }
@@ -436,12 +448,24 @@ nav .menu span {
     transform: translateX(120%) !important;
   }
 
+  .toggle-box {
+    padding: 10px !important;
+  }
+
+  .toggle-member {
+    width: 25% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 23px !important;
+  }
+
   .team {
-    width: 80% !important;
-    gap: 30px !important;
+    width: 100% !important;
   }
 
   .team-member {
+    scale: 1.2;
     margin: 0 auto;
     width: fit-content;
   }
@@ -452,13 +476,27 @@ nav .menu span {
     width: 30% !important;
     transform: translateX(120%) !important;
   }
+  
+  .toggle-box {
+    padding: 10px !important;
+  }
+
+  .toggle-member {
+    width: 28% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 23px !important;
+  }
 
   .team {
-    width: 90% !important;
+    width: 100% !important;
     gap: 30px !important;
+    padding: 30px !important;
   }
 
   .team-member {
+    scale: 1;
     margin: 0 auto;
     width: fit-content;
   }
@@ -517,7 +555,16 @@ nav .menu span {
     transform: translateX(75%) !important;
   }
 
+  .toggle-member {
+    width: 30% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 23px !important;
+  }
+
   .team {
+    width: 100% !important;
     gap: 30px !important;
   }
 
@@ -577,11 +624,17 @@ nav .menu span {
     width: 40% !important;
     transform: translateX(75%) !important;
   }
+
+  .toggle-member {
+    width: 37% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 23px !important;
+  }
   
   .team {
     width: 100% !important;
-    scale: 1;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr) !important;
     gap: 50px !important;
@@ -592,7 +645,6 @@ nav .menu span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 
     margin: 0 auto;
     width: fit-content;
@@ -642,10 +694,17 @@ nav .menu span {
     transform: translateX(35%) !important;
   }
 
+  .toggle-member {
+    width: 39% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 21px !important;
+  }
+
   .team {
     width: 100% !important;
-    scale: 0.9;
-    transform: translateY(-80px) !important;
+    transform: translateY(-1px) !important;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -658,7 +717,7 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
 
-
+    scale: 1;
     margin: 0 auto;
     width: fit-content;
     transform: translateX(5px);
@@ -704,10 +763,17 @@ nav .menu span {
     transform: translateX(35%) !important;
   }
 
+  .toggle-member {
+    width: 42% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 20px !important;
+  }
+
   .team {
     width: 100% !important;
-    scale: 0.8;
-    transform: translateY(-153px) !important;
+    transform: translateY(-1px) !important;
 
     padding: 20px !important;
 
@@ -722,7 +788,7 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
 
-
+    scale: 0.95;
     margin: 0 auto;
     width: fit-content;
     transform: translateX(5px);
@@ -756,10 +822,17 @@ nav .menu span {
     transform: translateX(40%) !important;
   }
 
+  .toggle-member {
+    width: 42% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 20px !important;
+  }
+
   .team {
     width: 100% !important;
-    scale: 0.75;
-    transform: translateY(-204px) !important;
+    transform: translateY(-1px) !important;
 
     padding: 20px !important;
 
@@ -804,11 +877,16 @@ nav .menu span {
     transform: translateX(50%) !important;
   }
 
-  .team {
-    width: 100% !important;
-    scale: 0.8;
-    transform: translateY(-150px) !important;
+  .toggle-member {
+    width: 42% !important;
+  }
 
+  .toggle-member h5{
+    font-size: 19px !important;
+  }
+
+  .team {
+    transform: translateY(-1px) !important;
     padding: 20px !important;
 
     display: grid;
@@ -865,11 +943,16 @@ nav .menu span {
     transform: translateX(50%) !important;
   }
 
-  .team {
-    width: 100% !important;
-    scale: 0.8;
-    transform: translateY(-150px) !important;
+  .toggle-member {
+    width: 45% !important;
+  }
 
+  .toggle-member h5{
+    font-size: 18px !important;
+  }
+
+  .team {
+    transform: translateY(-1px) !important;
     padding: 0px !important;
 
     display: grid;
@@ -925,16 +1008,23 @@ nav .menu span {
     transform: translateX(45%) !important;
   }
 
+  .toggle-member {
+    width: 53% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 18px !important;
+  }
+
   .team {
-    width: 85% !important;
     scale: 0.99;
-    transform: translateY(-45px) !important;
+    transform: translateY(-6px) !important;
 
     padding: 50px !important;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
+    gap: 50px !important;
   }
 
   .team-member {
@@ -947,7 +1037,6 @@ nav .menu span {
 
     margin: 0 auto;
     width: fit-content;
-    transform: translateX(-15px);
   }
 
   .error-container {
@@ -989,10 +1078,6 @@ nav .menu span {
     display: none;
   }
 
-  .web-content-container {
-    width: 100%;
-  }
-
   .event-content-container {
     width: 100%;
   }
@@ -1007,14 +1092,22 @@ nav .menu span {
     transform: translateX(45%) !important;
   }
 
+  .toggle-member {
+    width: 60% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 17px !important;
+  }
+
   .team {
-    width: 100% !important;
-    scale: 0.8;
-    transform: translateY(-220px) !important;
+    width: 100%;
+    scale: 1;
+    transform: translateY(-1px) !important;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-
+    gap: 30px !important;
   }
 
   .team-member {
@@ -1133,23 +1226,30 @@ nav .menu span {
     transform: translateX(120%) !important;
   }
 
+  .toggle-member {
+    width: 65% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 17px !important;
+  }
+
   .team {
-    width: 100% !important;
     display: grid;
-    scale: 0.99;
     grid-template-columns: repeat(2, 1fr) !important;
 
     padding: 0px !important;
 
-    transform: translateY(-12px) !important;
-    gap: 0px;
+    transform: translateY(-1px) !important;
+    gap: 0px !important;
   }
 
   .team-member {
     margin: 0 auto;
     width: fit-content;
 
-    scale: 0.8 !important;
+    scale: 0.85 !important;
+    transform: translateX(10px);
   }
 
   .error-container {
@@ -1175,7 +1275,7 @@ nav .menu span {
   }
 
   .fiem {
-    transform: translateX(32px) !important;
+    transform: translateX(38px) !important;
   }
 
   .nav-btn-title {
@@ -1200,25 +1300,30 @@ nav .menu span {
     transform: translateX(80%) !important;
   }
 
+  .toggle-member {
+    width: 85% !important;
+  }
+
+  .toggle-member h5{
+    font-size: 15px !important;
+  }
+
   .team {
-    width: 70% !important;
+    width: 100% !important;
     display: grid;
     scale: 1;
     grid-template-columns: repeat(1, 1fr) !important;
 
-    padding: 0px !important;
+    padding: 30px !important;
 
-    transform: translateY(-2px) !important;
+    transform: translateY(-1px) !important;
+    gap: 50px !important;
   }
 
   .team-member {
+    scale: 1 !important;
     margin: 0 auto;
-    width: fit-content;
-    transform: translateX(5px);
-  }
-
-  .fiem {
-    transform: translateX(20px);
+    width: 320px !important;
   }
 
   .socials {
@@ -1331,7 +1436,7 @@ nav .menu span {
 
 @media (max-width: 360px) {
   .fiem {
-    transform: translateX(20px);
+    transform: translateX(20px) !important;
   }
 
   .event-container {
@@ -1344,20 +1449,27 @@ nav .menu span {
     transform: translateX(50%) !important;
   }
 
-  .team {
-    width: 80% !important;
-    transform: translateY(-3px) !important;
+  .toggle-member {
+    width: 88% !important;
+  }
 
-    padding: 0px !important;
+  .toggle-member h5{
+    font-size: 16px !important;
   }
 
   .nav-btn-title {
     font-size: 1rem !important;
   }
 
+  .team {
+    width: 100% !important;
+    transform: translateY(-1px) !important;
+    gap: 50px !important;
+  }
+
   .team-member {
     margin: 0 auto;
-    width: fit-content;
+    width: 280px !important;
   }
 
   .socials {
@@ -1404,20 +1516,12 @@ nav .menu span {
 }
 
 /* profile pics */
-
 .team {
   padding: 50px;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-
-  /* border: 1px solid #3f80ff;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
-    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
-    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65); */
 }
 
 .team-container {
@@ -1436,6 +1540,16 @@ nav .menu span {
   flex-shrink: 0;
   padding: 20px;
   color: rgb(184, 184, 184);
+}
+
+.team-member:hover {
+  border: 2px solid rgb(255, 174, 0);
+  box-shadow: 0px 4px 20px rgb(255, 174, 0);
+}
+
+.team-member a {
+  color: rgb(56, 156, 195);
+  text-decoration: none;
 }
 
 .Job-Role {
@@ -1458,18 +1572,6 @@ nav .menu span {
 
 .socials .team-socials:hover {
   font-size: 30px;
-}
-
-.team-member a {
-  color: rgb(56, 156, 195);
-  text-decoration: none;
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(255, 174, 0);
-  box-shadow: 0px 4px 20px rgb(255, 174, 0);
 }
 
 .profile-pic {
