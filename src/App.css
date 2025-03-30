@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -35,9 +36,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
-  will-change: transform;
-
   color: #c07506;
 }
 
@@ -384,6 +382,7 @@ nav .menu span {
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+  user-select: none;
 }
 
 .toggle-member h5:hover{
@@ -1364,7 +1363,7 @@ nav .menu span {
   .team-member {
     scale: 1 !important;
     margin: 0 auto;
-    width: 400px !important;
+    width: 350px !important;
     transform: translateX(8px) !important;
   }
 
