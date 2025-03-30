@@ -35,6 +35,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
+  will-change: transform;
+
   color: #c07506;
 }
 
@@ -1293,6 +1296,16 @@ nav .menu span {
   }
 }
 
+@media (max-width: 518px) {
+  .team-member {
+    margin: 0 auto;
+    width: 250px !important;
+
+    scale: 0.8 !important;
+    transform: translateX(10px);
+  }
+}
+
 @media (max-width: 480px) {
   body{
     background-image: url("../src/images/logos/back_mobile2.png") !important;  
@@ -1351,7 +1364,7 @@ nav .menu span {
   .team-member {
     scale: 1 !important;
     margin: 0 auto;
-    width: 350px !important;
+    width: 400px !important;
     transform: translateX(8px) !important;
   }
 
