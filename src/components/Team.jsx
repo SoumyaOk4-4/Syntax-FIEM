@@ -7,7 +7,10 @@ import aniket from "../images/team_pics/aniket.jpg";
 import ankush from "../images/team_pics/ankush.jpg";
 import shubhangi from "../images/team_pics/shubhangi.jpg";
 import deboshreya from "../images/team_pics/deboshreya.jpg";
-import chanchal from "../images/team_pics/chanchal-ghosh.jpg"
+import chanchal from "../images/team_pics/chanchal-ghosh.jpg";
+import manjushree from "../images/team_pics/manjushree-chakraborty.jpg";
+import satyaam from "../images/team_pics/satyaam-raha.jpg";
+import sounak from "../images/team_pics/sounak-banerjee.jpeg";
 
 //libs
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
@@ -258,6 +261,7 @@ function Team() {
         </div>
       ) : (
         <div className="web-content-container team fadein_fadeout">
+
           <div className="team-member">
             <img src={chanchal} alt="Chanchal Ghosh" className="profile-pic" />
             <br />
@@ -266,14 +270,69 @@ function Team() {
             <div className="Job-Role">Mentor</div>
             <div className="socials">
               <a
-                href="https://www.linkedin.com/in/mrigank-sen-ba843827a/"
+                href="https://www.linkedin.com/in/chanchal-ghosh-50b6023b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="team-socials linkedin" />
+              </a>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <img src={manjushree} alt="Manjushree Chakraborty" className="profile-pic" />
+            <br />
+            <br />
+            Manjushree Chakraborty
+            <div className="Job-Role">Mentor</div>
+            <div className="socials">
+              <a
+                href="https://www.linkedin.com/in/manjushree-chakraborty-547428105/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="team-socials linkedin" />
+              </a>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <img src={sounak} alt="Sounak Banerjee" className="profile-pic" />
+            <br />
+            <br />
+            Sounak Banerjee
+            <div className="Job-Role">Mentor</div>
+            <div className="socials">
+              <a
+                href="https://www.linkedin.com/in/b-sounak/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="team-socials linkedin" />
+              </a>
+            </div>
+          </div>
+
+          <div className="team-member">
+            <img
+              src={satyaam}
+              alt="Satyam Raha"
+              className="profile-pic"
+            />
+            <br />
+            <br />
+            Satyam Raha
+            <div className="Job-Role">Mentor</div>
+            <div className="socials">
+              <a
+                href="https://www.linkedin.com/in/satyaam-raha"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="team-socials linkedin" />
               </a>
               <a
-                href="https://github.com/OrangeCatKekw"
+                href="https://github.com/hellyhell"
                 target="_blank"
                 rel="noopener noreferrer"
               >
