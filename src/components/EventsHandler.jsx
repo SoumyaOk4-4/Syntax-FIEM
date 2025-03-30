@@ -47,7 +47,7 @@ function EventsHandler() {
     const timerInterval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(timerInterval);
-  }, []);
+  }, [eventDate]);
 
   return (
     <>
