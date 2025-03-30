@@ -18,18 +18,18 @@ const events = [
 ];
 
 function EventsHandler() {
-  const date = "2025-04-24T14:30:00"; // <-------- CHNAGE TIME HERE FOR EVENTS
+  const eventDate = new Date("2025-04-24T14:30:00").getTime(); // Change time for events
   const [timeLeft, setTimeLeft] = useState("");
+  const [status, setStatus] = useState("Future"); // Track status separately
 
   useEffect(() => {
-    const eventDateTime = new Date(date).getTime();
-
     const updateCountdown = () => {
       const now = new Date().getTime();
-      const diff = eventDateTime - now;
+      const diff = eventDate - now;
 
       if (diff <= 0) {
-        setTimeLeft("Event Started");
+        setStatus("Ongoing"); // ✅ Update state instead of modifying the array
+        setTimeLeft("Ongoing");
         return;
       }
 
@@ -52,8 +52,8 @@ function EventsHandler() {
   return (
     <>
       {events.map((event, index) => (
-        <div className="event-content-container fadein_fadeout">
-          <h2 key={index} style={{ fontFamily: "Font2" }} className="event-box">
+        <div className="event-content-container fadein_fadeout" key={index}>
+          <h2 style={{ fontFamily: "Font2" }} className="event-box">
             <br />
             <h2>{event.name}</h2>
             <br />
@@ -83,11 +83,11 @@ function EventsHandler() {
               className="event-stat"
               style={{
                 color:
-                  event.status === "Future"
+                  status === "Future"
                     ? "yellow"
-                    : event.status === "Ongoing"
+                    : status === "Ongoing"
                     ? "green"
-                    : "blue",
+                    : "blue", // ✅ Uses state
                 border: "2px solid orange",
                 borderRadius: "20px",
                 width: "30%",
@@ -95,10 +95,7 @@ function EventsHandler() {
                 padding: "8px",
               }}
             >
-              {" "}
-              {event.timer === true
-                ? `${timeLeft}`
-                : event.status}
+              {event.timer === true ? `${timeLeft}` : status}
             </p>
             <br />
           </h2>
