@@ -28,7 +28,13 @@ body {
 
 body {
   /* background-color: #18abe0; */
-  background-image: linear-gradient(90deg, #000000, #0e1c3f);
+  /* background-image: linear-gradient(90deg, #706e6e, #967751); */
+
+  background-image: url("../src/images/logos/Back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   color: #c07506;
 }
 
@@ -370,7 +376,7 @@ nav .menu span {
 }
 
 .toggle-member h5{
-  border: 2px solid rgb(0, 136, 255);
+  border: 2px solid rgb(17, 0, 255);
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
@@ -385,8 +391,9 @@ nav .menu span {
 
 .event-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   padding: 45px;
+  gap: 30px;
 }
 
 .event-content-container {
@@ -459,7 +466,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 26% !important;
+    width: 28% !important;
   }
 
   .toggle-member h5{
@@ -941,7 +948,7 @@ nav .menu span {
 
   .event-container {
     gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .event-stat {
@@ -1010,7 +1017,7 @@ nav .menu span {
 
   .event-container {
     gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .event-stat {
@@ -1094,7 +1101,7 @@ nav .menu span {
 
   .event-container {
     gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .event-stat {
@@ -1214,6 +1221,13 @@ nav .menu span {
 }
 
 @media (max-width: 540px) {
+  .body{
+    background-image: url("../src/images/logos/back_mobile.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+  }
   .fiem {
     transform: translateX(100px) !important;
   }
@@ -1232,8 +1246,8 @@ nav .menu span {
   }
 
   .event-stat {
-    width: 30% !important;
-    transform: translateX(120%) !important;
+    width: 100% !important;
+    transform: translateX(0%) !important;
   }
 
   .toggle-member {
@@ -1256,7 +1270,7 @@ nav .menu span {
 
   .team-member {
     margin: 0 auto;
-    width: fit-content;
+    width: 262px !important;
 
     scale: 0.85 !important;
     transform: translateX(10px);
@@ -1280,6 +1294,10 @@ nav .menu span {
 }
 
 @media (max-width: 480px) {
+  body{
+    background-image: url("../src/images/logos/back_mobile.png") !important;  
+  }
+
   .logo-main {
     left: 15%;
   }
@@ -1306,8 +1324,8 @@ nav .menu span {
   }
 
   .event-stat {
-    width: 40% !important;
-    transform: translateX(80%) !important;
+    width: 100% !important;
+    transform: translateX(0%) !important;
   }
 
   .toggle-member {
@@ -1451,6 +1469,10 @@ nav .menu span {
 }
 
 @media (max-width: 380px) {
+  body{
+    background-image: url("../src/images/logos/back_mobile.png") !important;
+  }
+
   .fiem {
     transform: translateX(20px) !important;
   }
@@ -1461,8 +1483,8 @@ nav .menu span {
   }
 
   .event-stat {
-    width: 50% !important;
-    transform: translateX(50%) !important;
+    width: 100% !important;
+    transform: translateX(0%) !important;
   }
 
   .toggle-member {
@@ -1549,19 +1571,22 @@ nav .menu span {
 }
 
 .team-member {
-  border: 1.6px solid rgb(255, 174, 0);
+  border: 2px solid rgb(0, 145, 255);
   border-radius: 6px;
   text-align: center;
   margin-right: 20px;
   width: 260px;
   flex-shrink: 0;
   padding: 20px;
-  color: rgb(184, 184, 184);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 26px rgba(2, 34, 64, 0.7),
+    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
+    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 }
 
 .team-member:hover {
-  border: 2px solid rgb(255, 174, 0);
-  box-shadow: 0px 4px 20px rgb(255, 174, 0);
+  border: 2px solid rgb(0, 145, 255);
+  box-shadow: 0px 4px 20px rgb(0, 145, 255);
 }
 
 .team-member a {
@@ -1572,7 +1597,7 @@ nav .menu span {
 .Job-Role {
   font-family: "Font2";
   font-size: 1.5rem;
-  color: rgb(255, 174, 0);
+  color: rgb(255, 162, 0);
 }
 
 .socials {
@@ -1584,7 +1609,7 @@ nav .menu span {
 .socials .team-socials {
   transform: translateY(15px);
   font-size: 25px;
-  color: grey;
+  color: rgb(208, 206, 206);
 }
 
 .socials .team-socials:hover {
@@ -1594,9 +1619,12 @@ nav .menu span {
 .profile-pic {
   height: 200px;
   width: 200px;
-  border: 2px solid rgb(72, 0, 255);
+  border: 2px solid rgb(123, 0, 255);
   border-radius: 10px;
   object-fit: cover;
+  box-shadow: 0 0 26px rgba(2, 34, 64, 0.7),
+    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
+    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 }
 
 @keyframes scroll-left {
