@@ -1295,7 +1295,7 @@ nav .menu span {
 
 @media (max-width: 480px) {
   body{
-    background-image: url("../src/images/logos/back_mobile.png") !important;  
+    background-image: url("../src/images/logos/back_mobile2.png") !important;  
   }
 
   .logo-main {
@@ -1470,7 +1470,7 @@ nav .menu span {
 
 @media (max-width: 380px) {
   body{
-    background-image: url("../src/images/logos/back_mobile.png") !important;
+    background-image: url("../src/images/logos/back_mobile2.png") !important;
   }
 
   .fiem {
