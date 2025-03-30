@@ -68,6 +68,15 @@ body {
   }
 }
 
+.fadein_fadeout {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.spin{
+  animation: App-logo-spin 0.5s ease-in forwards;
+}
+
 /* Header */
 .App-header {
   background-color: #282c34;
@@ -130,16 +139,6 @@ body {
 .loadingscreen {
   width: 210px;
   height: 200px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* Navbar */
@@ -360,11 +359,6 @@ nav .menu span {
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 }
 
-.fadein_fadeout {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
-}
-
 .toggle-member {
   cursor: pointer;
   display: flex;
@@ -375,9 +369,18 @@ nav .menu span {
   -webkit-tap-highlight-color: transparent;
 }
 
+.toggle-member h5{
+  border: 2px solid rgb(0, 136, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
+    1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
+    4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+}
+
 .toggle-member h5:hover{
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
+  color: rgb(118, 135, 236) !important;
 }
 
 .event-container {
@@ -438,6 +441,11 @@ nav .menu span {
     margin: 0 auto;
     width: fit-content;
   }
+
+  .team-member:hover {
+    transform: scale(1.05) !important;
+    transition: transform 0.2s ease-in-out !important;
+  }
 }
 
 @media (max-width: 1820px) {
@@ -451,7 +459,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 25% !important;
+    width: 26% !important;
   }
 
   .toggle-member h5{
@@ -480,7 +488,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 28% !important;
+    width: 30% !important;
   }
 
   .toggle-member h5{
@@ -554,7 +562,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 30% !important;
+    width: 32% !important;
   }
 
   .toggle-member h5{
@@ -624,7 +632,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 37% !important;
+    width: 34% !important;
   }
 
   .toggle-member h5{
@@ -693,7 +701,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 39% !important;
+    width: 42% !important;
   }
 
   .toggle-member h5{
@@ -821,7 +829,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 42% !important;
+    width: 46% !important;
   }
 
   .toggle-member h5{
@@ -942,7 +950,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 45% !important;
+    width: 48% !important;
   }
 
   .toggle-member h5{
@@ -965,8 +973,8 @@ nav .menu span {
     align-items: center;
 
     margin: 0 auto;
-    width: fit-content;
-    transform: translateX(-5px);
+    width: 258px !important;
+    transform: translateX(15px) !important;
   }
 
   .error-container {
@@ -996,6 +1004,10 @@ nav .menu span {
 }
 
 @media (max-width: 768px) { 
+  .nav-btn-title {
+    font-size: 0.7rem !important;
+  }
+
   .event-container {
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
@@ -1007,7 +1019,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 53% !important;
+    width: 50% !important;
   }
 
   .toggle-member h5{
@@ -1034,7 +1046,7 @@ nav .menu span {
     scale: 1 !important;
 
     margin: 0 auto;
-    width: fit-content;
+    width: 312px !important;
   }
 
   .error-container {
@@ -1225,7 +1237,7 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 65% !important;
+    width: 70% !important;
   }
 
   .toggle-member h5{
@@ -1322,6 +1334,12 @@ nav .menu span {
     scale: 1 !important;
     margin: 0 auto;
     width: 350px !important;
+    transform: translateX(8px) !important;
+  }
+
+  .team-member:hover {
+    transform: scale(1) !important;
+    transition: transform 0.2s ease-in-out;
   }
 
   .socials {
@@ -1432,7 +1450,7 @@ nav .menu span {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .fiem {
     transform: translateX(20px) !important;
   }
@@ -1452,7 +1470,7 @@ nav .menu span {
   }
 
   .toggle-member h5{
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .nav-btn-title {
@@ -1467,7 +1485,8 @@ nav .menu span {
 
   .team-member {
     margin: 0 auto;
-    width: 280px !important;
+    width: 300px !important;
+    transform: translateX(8px) !important;
   }
 
   .socials {

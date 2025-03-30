@@ -28,23 +28,23 @@ function Team() {
         >
           <div className="toggle-member">
             <h5
-              style={{ padding: "10px", backgroundColor: "rgb(98, 0, 255)", borderRadius: "10px", color: "rgb(232, 209, 209)" }}
+              style={{ padding: "15px", backgroundColor: "rgb(36, 34, 39)", borderRadius: "20px", color: "rgb(184, 184, 184)" }}
               onClick={() => {
                 setTeamToggle(true);
                 setMentorToggle(false);
               }}
             >
-              <FontAwesomeIcon icon={faUsers} /> Team
+              <FontAwesomeIcon icon={faUsers} style={{color: "rgb(184, 184, 184)"}}/> Team
             </h5>
             {/* eslint-disable-next-line */}
             <h5
-              style={{ padding: "10px", backgroundColor: "rgb(98, 0, 255)", borderRadius: "10px", color: "rgb(232, 209, 209)" }}
+              style={{ padding: "15px", backgroundColor: "rgb(36, 34, 39)", borderRadius: "20px", color: "rgb(184, 184, 184)" }}
               onClick={() => {
                 setMentorToggle(true);
                 setTeamToggle(false);
               }}
             >
-              Mentors <FontAwesomeIcon icon={faUserTie} />
+              Mentors <FontAwesomeIcon icon={faUserTie} style={{color: "rgb(184, 184, 184)"}}/>
             </h5>
           </div>
         </div>
