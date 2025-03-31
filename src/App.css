@@ -1490,11 +1490,11 @@ nav .menu span {
   }
 
   .logo-main {
-    margin-left: 45px;
+    margin-left: 55px;
   }
 
   .fiem {
-    transform: translateX(-10px) !important;
+    transform: translateX(-15px) !important;
   }
 
   .event-container {
