@@ -55,7 +55,7 @@ function EventsHandler() {
         <div className="event-content-container fadein_fadeout" key={index}>
           <h2 style={{ fontFamily: "Font2" }} className="event-box">
             <br />
-            <h2>{event.name}</h2>
+            <h2 style={{color: "#e7a129"}}>{event.name}</h2>
             <br />
             <p style={{ color: "rgb(157, 157, 157)" }}>
               <FontAwesomeIcon

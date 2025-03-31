@@ -20,10 +20,10 @@ function Error() {
                 transform: "translateY(50px)",
               }}
             >
-              <h3>
+              <h3 style={{color: "#e7a129"}}>
                 <FontAwesomeIcon icon={faTriangleExclamation} /> 404!
               </h3>
-              <h4>Page Not Found</h4>
+              <h4 style={{color: "#e7a129"}}>Page Not Found</h4>
             </h1>
           </div>
 

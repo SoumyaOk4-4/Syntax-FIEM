@@ -6,7 +6,7 @@ function Events() {
   return (
     <>
       <br />
-      <h1>
+      <h1 style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faCalendarWeek} /> Events
       </h1>
       <br />

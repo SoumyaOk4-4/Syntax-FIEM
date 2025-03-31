@@ -126,8 +126,8 @@ html, body {
   text-align: left;
   display: flex;
   justify-content: left;
-  padding: 10px 15px;
-  font-size: 1.5rem;
+  height: 100px;
+  /* padding: 10px 15px; */
 }
 
 .gform a {
@@ -179,24 +179,18 @@ html, body {
 
 /* Logo Styling */
 .logo-main {
-  height: 120px;
+  height: 100px;
   width: 250px;
   object-fit: contain;
   cursor: default;
-  position: absolute;
-  top: -1rem;
-  left: 1rem;
 }
 
 .fiem {
   height: 40px;
   width: 60px;
 
-  transform: translateX(-20px);
-  margin-top: 25px;
-  margin-left: 250px;
+  margin-top: 38px;
   margin-right: 110px;
-  margin-bottom: 20px;
 }
 
 /* Button Styling */
@@ -1084,11 +1078,11 @@ nav .menu span {
 /* Mobile Navigation */
 @media (max-width: 640px) {
   .logo-main {
-    left: 25%;
+    margin-left: 175px;
   }
 
   .fiem {
-    transform: translateX(120px) !important;
+    transform: translateX(-10px) !important;
   }
 
   .nav-btn-title {
@@ -1236,10 +1230,14 @@ nav .menu span {
     background-position: center !important;
     background-attachment: fixed !important;
   }
-  .fiem {
-    transform: translateX(100px) !important;
+
+  .logo-main {
+    margin-left: 120px;
   }
 
+  .fiem {
+    transform: translateX(-10px) !important;
+  }
   .nav-btn-title {
     font-size: 1.2rem !important;
   }
@@ -1317,11 +1315,11 @@ nav .menu span {
   }
 
   .logo-main {
-    left: 15%;
+    margin-left: 65px;
   }
 
   .fiem {
-    transform: translateX(38px) !important;
+    transform: translateX(-10px) !important;
   }
 
   .nav-btn-title {
@@ -1491,8 +1489,12 @@ nav .menu span {
     background-image: url("../src/images/logos/back_mobile2.png") !important;
   }
 
+  .logo-main {
+    margin-left: 45px;
+  }
+
   .fiem {
-    transform: translateX(20px) !important;
+    transform: translateX(-10px) !important;
   }
 
   .event-container {

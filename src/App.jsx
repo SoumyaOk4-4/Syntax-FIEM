@@ -33,7 +33,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar fadein_fadeout">
       <div
         className="menu fadein_fadeout"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -44,8 +44,8 @@ function Navbar() {
               <FontAwesomeIcon
                 icon={faBars}
                 style={{
-                  transform: "translateY(-90px)",
-                  height: "1.7rem",
+                  transform: "translate(-5px, -83px)",
+                  height: "1.9rem",
                   color: "#ffc038",
                 }}
               />
@@ -54,7 +54,7 @@ function Navbar() {
         ) : (
           <div
             className="cross"
-            style={{ transform: "translateY(-85px)", color: "#ffc038" }}
+            style={{ transform: "translateY(-75px)", color: "#ffc038" }}
           >
             ✖
           </div>
@@ -70,7 +70,12 @@ function Navbar() {
             <div className="nav-icons">
               <FontAwesomeIcon icon={faCalendarWeek} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Events</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Events
+            </div>
           </Link>
         </li>
         <li>
@@ -79,10 +84,15 @@ function Navbar() {
             className="nav-btn about-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faCircleInfo} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>About</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              About
+            </div>
           </Link>
         </li>
         <li>
@@ -91,10 +101,15 @@ function Navbar() {
             className="nav-btn sponsers-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faBuilding} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Sponsers</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Sponsers
+            </div>
           </Link>
         </li>
         <li>
@@ -103,10 +118,15 @@ function Navbar() {
             className="nav-btn team-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faUsers} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Members</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Members
+            </div>
           </Link>
         </li>
         <li>
@@ -115,10 +135,15 @@ function Navbar() {
             className="nav-btn gallery-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faImages} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Gallery</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Gallery
+            </div>
           </Link>
         </li>
         <li>
@@ -127,10 +152,15 @@ function Navbar() {
             className="nav-btn contact-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faHeadset} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Contact Us</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Contact Us
+            </div>
           </Link>
         </li>
         <li>
@@ -139,10 +169,15 @@ function Navbar() {
             className="nav-btn joinus-btn"
             style={{ display: "flex", alignItems: "center", gap: "8px" }}
           >
-            <div className="nav-icons" >
+            <div className="nav-icons">
               <FontAwesomeIcon icon={faFileSignature} />
             </div>
-            <div className="nav-btn-title" onClick={() => setMenuOpen(!menuOpen)}>Join Us</div>
+            <div
+              className="nav-btn-title"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Join Us
+            </div>
           </Link>
         </li>
       </ul>
@@ -226,6 +261,8 @@ function App() {
         <>
           <div className="nav-links">
             <h1 className="headers">
+              
+              <h3 style={{display: "flex", justifyContent: "right"}}>
               <a href="/">
                 <img
                   src={mainlogo}
@@ -233,11 +270,13 @@ function App() {
                   className="logo-main fadein_fadeout"
                 />
               </a>
-              <img
-                src={futureblue}
-                alt="FIEM"
-                className="fiem fadein_fadeout"
-              />
+
+                <img
+                  src={futureblue}
+                  alt="FIEM"
+                  className="fiem fadein_fadeout"
+                />
+              </h3>
 
               <h3 className="gform">
                 <a href="/joinus">Become a member</a>

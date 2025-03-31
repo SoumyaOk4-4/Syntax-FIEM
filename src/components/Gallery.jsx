@@ -5,7 +5,7 @@ function Gallery() {
   return (
     <>
       <br />
-      <h1>
+      <h1 style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faImages} /> Gallery
       </h1>
       <br />

@@ -5,7 +5,7 @@ function Joinus() {
   return (
     <>
       <br />
-      <h1>
+      <h1 style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faFileSignature} /> Join Us
       </h1>
       <br />

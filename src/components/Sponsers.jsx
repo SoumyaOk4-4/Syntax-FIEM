@@ -5,7 +5,7 @@ function Sponsers() {
   return (
     <>
       <br />
-      <h1>
+      <h1 style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faBuilding} /> Sponsers
       </h1>
       <br />
