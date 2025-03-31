@@ -36,6 +36,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
+  height: 100vh;
+
   color: #c07506;
 }
 
@@ -377,7 +380,7 @@ nav .menu span {
 }
 
 .toggle-member h5{
-  border: 2px solid rgb(17, 0, 255);
+  border: 2px solid rgb(61, 50, 223);
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
