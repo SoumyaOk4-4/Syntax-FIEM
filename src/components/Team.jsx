@@ -11,6 +11,7 @@ import chanchal from "../images/team_pics/chanchal-ghosh.jpg";
 import manjushree from "../images/team_pics/manjushree-chakraborty.jpg";
 import satyaam from "../images/team_pics/satyaam-raha.jpg";
 import sounak from "../images/team_pics/sounak-banerjee.jpeg";
+import jaydip from "../images/team_pics/dr-jaydip-nath.jpg";
 
 //libs
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
@@ -26,28 +27,47 @@ function Team() {
   return (
     <>
       <h1>
-        <div className="toggle-box"
+        <div
+          className="toggle-box"
           style={{ display: "flex", justifyContent: "center", padding: "10px" }}
         >
           <div className="toggle-member">
             <h5
-              style={{ padding: "15px", backgroundColor: "rgb(36, 34, 39)", borderRadius: "20px", color: "rgb(184, 184, 184)" }}
+              style={{
+                padding: "15px",
+                backgroundColor: "rgb(36, 34, 39)",
+                borderRadius: "20px",
+                color: "rgb(184, 184, 184)",
+              }}
               onClick={() => {
                 setTeamToggle(true);
                 setMentorToggle(false);
               }}
             >
-              <FontAwesomeIcon icon={faUsers} style={{color: "rgb(184, 184, 184)"}}/> Team
+              <FontAwesomeIcon
+                icon={faUsers}
+                style={{ color: "rgb(184, 184, 184)" }}
+              />{" "}
+              Team
             </h5>
             {/* eslint-disable-next-line */}
             <h5
-              style={{ padding: "15px", backgroundColor: "rgb(36, 34, 39)", borderRadius: "20px", color: "rgb(184, 184, 184)" }}
+              style={{
+                padding: "15px",
+                backgroundColor: "rgb(36, 34, 39)",
+                borderRadius: "20px",
+                color: "rgb(184, 184, 184)",
+              }}
               onClick={() => {
                 setMentorToggle(true);
                 setTeamToggle(false);
               }}
             >
-              Mentors <FontAwesomeIcon icon={faUserTie} style={{color: "rgb(184, 184, 184)"}}/>
+              Mentors{" "}
+              <FontAwesomeIcon
+                icon={faUserTie}
+                style={{ color: "rgb(184, 184, 184)" }}
+              />
             </h5>
           </div>
         </div>
@@ -261,6 +281,22 @@ function Team() {
         </div>
       ) : (
         <div className="web-content-container team fadein_fadeout">
+          <div className="team-member">
+            <img src={jaydip} alt="Dr. Jaydip Nath" className="profile-pic" />
+            <br />
+            <br />
+            Dr. Jaydip Nath
+            <div className="Job-Role">Mentor</div>
+            <div className="socials">
+              <a
+                href="https://www.linkedin.com/in/dr-jaydip-nath-217a7a16a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="team-socials linkedin" />
+              </a>
+            </div>
+          </div>
 
           <div className="team-member">
             <img src={chanchal} alt="Chanchal Ghosh" className="profile-pic" />
@@ -280,7 +316,11 @@ function Team() {
           </div>
 
           <div className="team-member">
-            <img src={manjushree} alt="Manjushree Chakraborty" className="profile-pic" />
+            <img
+              src={manjushree}
+              alt="Manjushree Chakraborty"
+              className="profile-pic"
+            />
             <br />
             <br />
             Manjushree Chakraborty
@@ -314,11 +354,7 @@ function Team() {
           </div>
 
           <div className="team-member">
-            <img
-              src={satyaam}
-              alt="Satyam Raha"
-              className="profile-pic"
-            />
+            <img src={satyaam} alt="Satyam Raha" className="profile-pic" />
             <br />
             <br />
             Satyam Raha
