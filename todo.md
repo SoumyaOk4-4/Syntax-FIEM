@@ -2,3 +2,12 @@
 2. scale up content in hover
 3. team page
 4. custom texts
+
+op head
+manage
+tech
+webcontent
+design
+publicity
+media
+support
