@@ -144,14 +144,14 @@ html, body {
   position: absolute;
   text-decoration: none;
   border: 1px solid #ffb254;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px;
-  top: 2rem;
+  top: 1.8rem;
   right: 1.5rem;
 }
 
 .gform a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.1s ease-in-out;
   border: 2px solid #ffb254;
 }
