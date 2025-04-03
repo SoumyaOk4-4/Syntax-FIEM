@@ -26,7 +26,7 @@ function Team() {
 
   return (
     <>
-      <h1>
+      <h1 className="fadein_fadeout2" >
         <div
           className="toggle-box"
           style={{ display: "flex", justifyContent: "center", padding: "10px" }}
