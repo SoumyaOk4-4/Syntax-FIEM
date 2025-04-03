@@ -259,47 +259,55 @@ function App() {
         </center>
       ) : (
         <>
-          <div className="nav-links">
-            <h1 className="headers">
-              
-              <h3 style={{display: "flex", justifyContent: "right"}}>
-              <a href="/">
-                <img
-                  src={mainlogo}
-                  alt="SYNTAX"
-                  className="logo-main fadein_fadeout"
-                />
-              </a>
+          <div className="BOX">
+            <div className="nav-links">
+              <h1 className="headers">
+                <h3 style={{ display: "flex", justifyContent: "right" }}>
+                  <a href="/">
+                    <img
+                      src={mainlogo}
+                      alt="SYNTAX"
+                      className="logo-main fadein_fadeout"
+                    />
+                  </a>
 
-                <img
-                  src={futureblue}
-                  alt="FIEM"
-                  className="fiem fadein_fadeout"
-                />
-              </h3>
+                  <img
+                    src={futureblue}
+                    alt="FIEM"
+                    className="fiem fadein_fadeout"
+                  />
+                </h3>
 
-              <h3 className="gform">
-                <a href="/joinus">Become a member</a>
-              </h3>
-            </h1>
-            <Router>
-              <Navbar />
-              <br />
-              <br />
-              <div className="big-container">
-                <Routes>
-                  <Route path="/" element={<Events />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/sponsers" element={<Sponsers />} />
-                  <Route path="/team" element={<Team />} />
-                  <Route path="/gallery" element={<Gallery />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/joinus" element={<Joinus />} />
-                  <Route path="*" element={<Error />} />
-                </Routes>
-              </div>
-            </Router>
+                <h3 className="gform">
+                  <a href="/joinus">Become a member</a>
+                </h3>
+              </h1>
+              <Router>
+                <Navbar />
+                <br />
+                <br />
+                <div className="big-container">
+                  <Routes>
+                    <Route path="/" element={<Events />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/sponsers" element={<Sponsers />} />
+                    <Route path="/team" element={<Team />} />
+                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/joinus" element={<Joinus />} />
+                    <Route path="*" element={<Error />} />
+                  </Routes>
+                </div>
+              </Router>
+            </div>
           </div>
+          <footer className="footer-container">
+            <p className="footer">
+              <div>
+                &copy; {new Date().getFullYear()} Syntax. All rights reserved.
+              </div>
+            </p>
+          </footer>
         </>
       )}
     </div>

@@ -38,6 +38,9 @@ html, body {
   overflow-x: hidden;
   padding: 0;
 
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
   height: 100vh;
   left: 0;
@@ -118,6 +121,11 @@ html, body {
   text-align: center;
   color: #ffb254;
   margin: 20px 0;
+}
+
+.BOX {
+  display: flex;
+  flex-direction: column;
 }
 
 .headers {
@@ -339,6 +347,22 @@ nav .menu span {
   width: 100%;
 }
 
+.footer-container{
+  margin-top: auto;
+}
+
+.footer {
+  /* border-top: 1px solid #e7a529; */
+  background-color: black;
+  position: relative;
+  padding: 2rem;
+}
+
+.footer div{
+  font-size: 1rem !important;
+  color: #e7a529;
+}
+
 .web-content-container {
   width: 70%;
   margin: 0 auto;
@@ -404,6 +428,7 @@ nav .menu span {
   overflow: hidden;
   border: 1.6px solid rgb(255, 174, 0);
   border-radius: 5px;
+  backdrop-filter: blur(3px);
 }
 
 .event-box{
@@ -449,6 +474,7 @@ nav .menu span {
     scale: 1.2;
     margin: 0 auto;
     width: fit-content;
+    background-color: #282c34a7;
   }
 
   .team-member:hover {
@@ -778,6 +804,14 @@ nav .menu span {
     transform: translateX(35%) !important;
   }
 
+  .footer {
+    padding: 2.3rem;
+  }
+
+  .footer div{
+    font-size: 1rem !important;
+  }
+
   .toggle-member {
     width: 42% !important;
   }
@@ -958,6 +992,14 @@ nav .menu span {
     transform: translateX(50%) !important;
   }
 
+  .footer {
+    padding: 2.2rem;
+  }
+
+  .footer div{
+    font-size: 1rem !important;
+  }
+
   .toggle-member {
     width: 48% !important;
   }
@@ -1025,6 +1067,14 @@ nav .menu span {
   .event-stat {
     width: 55% !important;
     transform: translateX(45%) !important;
+  }
+
+  .footer {
+    padding: 2.2rem;
+  }
+
+  .footer div{
+    font-size: 1rem !important;
   }
 
   .toggle-member {
@@ -1111,6 +1161,14 @@ nav .menu span {
     transform: translateX(45%) !important;
   }
 
+  .footer {
+    padding: 2rem;
+  }
+
+  .footer div{
+    font-size: 0.9rem !important;
+  }
+
   .toggle-member {
     width: 60% !important;
   }
@@ -1166,6 +1224,23 @@ nav .menu span {
     display: none;
   }
 
+  .nav-btn {
+    display: flex;
+  }
+
+  #nav-links a {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul.open span {
+    display: none;
+  }
+
   #nav-links a {
     font-size: 20px;
   }
@@ -1177,19 +1252,21 @@ nav .menu span {
 
   nav ul {
     display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 65%;
+    flex-direction: column;
+    width: 76%;
     margin-bottom: 0.25rem;
   }
 
   nav ul.open {
     display: flex;
     padding: 15px;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
   }
 
   nav ul li {
-    display: inline-block;
+    display: flex;
     width: 100%;
     text-align: center;
     color: yellow;
@@ -1254,6 +1331,14 @@ nav .menu span {
   .event-stat {
     width: 100% !important;
     transform: translateX(0%) !important;
+  }
+
+  .footer {
+    padding: 1.8rem;
+  }
+
+  .footer div{
+    font-size: 0.75rem !important;
   }
 
   .toggle-member {
@@ -1342,6 +1427,14 @@ nav .menu span {
   .event-stat {
     width: 100% !important;
     transform: translateX(0%) !important;
+  }
+
+  .footer {
+    padding: 1.8rem;
+  }
+
+  .footer div{
+    font-size: 0.7rem !important;
   }
 
   .toggle-member {
@@ -1505,6 +1598,14 @@ nav .menu span {
   .event-stat {
     width: 100% !important;
     transform: translateX(0%) !important;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer div{
+    font-size: 0.6rem !important;
   }
 
   .toggle-member {
@@ -1737,4 +1838,6 @@ nav .menu span {
   transition: all 0.1s ease-in-out;
   border: 3px solid #e7a529;
 }
+
+
 
