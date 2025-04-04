@@ -43,8 +43,9 @@ function Navbar() {
             <span>
               <FontAwesomeIcon
                 icon={faBars}
+                className="hamburger"
                 style={{
-                  transform: "translate(-5px, -83px)",
+                  transform: "translate(290px, -83px)",
                   height: "1.9rem",
                   color: "#ffc038",
                 }}
@@ -54,12 +55,13 @@ function Navbar() {
         ) : (
           <div
             className="cross"
-            style={{ transform: "translateY(-75px)", color: "#ffc038" }}
+            style={{ transform: "translate(295px, -75px)", color: "#ffc038" }}
           >
             ✖
           </div>
         )}
       </div>
+      
       <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link
@@ -236,45 +238,59 @@ function App() {
           <br />
           <br />
           <br />
-          <img
-            src={loadingGif}
-            className="loadingscreen"
-            alt="loading..."
-            style={{ height: "200px", width: "270px" }}
-          />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h4
-            className="did-you-know"
-            style={{
-              fontFamily: "Font2",
-              fontWeight: "normal",
-              fontSize: "1.1rem",
-            }}
-          >
-            {getRandom_DYK(DYK_arr)}
-          </h4>
+          <div className="load-container">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={loadingGif}
+                className="loadingscreen"
+                alt="loading..."
+                style={{ height: "200px", width: "270px" }}
+              />
+            </div>
+
+            <h4
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <h4
+                className="did-you-know"
+                style={{
+                  fontFamily: "Font2",
+                  fontWeight: "normal",
+                  fontSize: "1.1rem",
+                }}
+              >
+                {getRandom_DYK(DYK_arr)}
+              </h4>
+            </h4>
+          </div>
         </center>
       ) : (
         <>
           <div className="BOX">
             <div className="nav-links">
-              <h1 className="headers">
-                <h3 style={{ display: "flex", justifyContent: "right" }}>
+              <h1 className="headers fadein_fadeout2">
+
+                <h3 style={{ display: "flex", justifyContent: "left" }}>
                   <a href="/">
                     <img
                       src={mainlogo}
                       alt="SYNTAX"
-                      className="logo-main fadein_fadeout"
+                      className="logo-main"
                     />
                   </a>
 
                   <img
                     src={futureblue}
                     alt="FIEM"
-                    className="fiem fadein_fadeout"
+                    className="fiem"
                   />
                 </h3>
 
@@ -301,7 +317,7 @@ function App() {
               </Router>
             </div>
           </div>
-          <footer className="footer-container">
+          <footer className="footer-container fadein_fadeout">
             <p className="footer">
               <div>
                 &copy; {new Date().getFullYear()} Syntax. All rights reserved.

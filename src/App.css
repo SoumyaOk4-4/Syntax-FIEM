@@ -28,7 +28,8 @@ body {
   font-family: "Font1";
 }
 
-html, body {
+html,
+body {
   /* background-image: linear-gradient(90deg, #706e6e, #967751); */
   height: 100%;
 }
@@ -53,7 +54,6 @@ html, body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
 }
 
 /* Logo */
@@ -107,7 +107,7 @@ html, body {
   animation: fadeIn2 0.5s ease-in forwards;
 }
 
-.spin{
+.spin {
   animation: App-logo-spin 0.5s ease-in forwards;
 }
 
@@ -135,10 +135,22 @@ html, body {
 }
 
 /* Section Styling */
+.load-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
 .did-you-know {
   text-align: center;
-  color: #ffb254;
+  color: #ff9100;
   margin: 20px 0;
+
+  padding: 10px;
+  background-color: #282c34a7;
+  border: 1px solid #ffb254;
+  border-radius: 12px;
 }
 
 .BOX {
@@ -149,7 +161,6 @@ html, body {
 .headers {
   color: #b3b3ff;
   background-color: #000;
-  text-align: left;
   display: flex;
   justify-content: left;
   height: 100px;
@@ -172,12 +183,6 @@ html, body {
   transform: scale(1.05);
   transition: all 0.1s ease-in-out;
   border: 2px solid #ffb254;
-}
-
-/* Loading Screen */
-.loadingscreen {
-  width: 210px;
-  height: 200px;
 }
 
 /* Navbar */
@@ -365,7 +370,7 @@ nav .menu span {
   width: 100%;
 }
 
-.footer-container{
+.footer-container {
   margin-top: auto;
 }
 
@@ -376,7 +381,7 @@ nav .menu span {
   padding: 2rem;
 }
 
-.footer div{
+.footer div {
   font-size: 1rem !important;
   color: #e7a529;
 }
@@ -418,7 +423,7 @@ nav .menu span {
   -webkit-tap-highlight-color: transparent;
 }
 
-.toggle-member h5{
+.toggle-member h5 {
   border: 2px solid rgb(61, 50, 223);
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
@@ -427,7 +432,7 @@ nav .menu span {
   user-select: none;
 }
 
-.toggle-member h5:hover{
+.toggle-member h5:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
   color: rgb(118, 135, 236) !important;
@@ -449,13 +454,13 @@ nav .menu span {
   backdrop-filter: blur(3px);
 }
 
-.event-box{
+.event-box {
   font-size: 25px;
   border: 3px solid black;
   border-radius: 7px;
   margin: 20px;
   padding: 10px;
-  
+
   border: 1px solid rgb(0, 136, 255);
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 26px rgba(2, 31, 59, 0.7),
@@ -478,7 +483,7 @@ nav .menu span {
     width: 23% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 23px !important;
   }
 
@@ -492,7 +497,6 @@ nav .menu span {
     scale: 1.2;
     margin: 0 auto;
     width: fit-content;
-    background-color: #282c34a7;
   }
 
   .team-member:hover {
@@ -515,7 +519,7 @@ nav .menu span {
     width: 28% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 23px !important;
   }
 
@@ -535,7 +539,7 @@ nav .menu span {
     width: 30% !important;
     transform: translateX(120%) !important;
   }
-  
+
   .toggle-box {
     padding: 10px !important;
   }
@@ -544,7 +548,7 @@ nav .menu span {
     width: 30% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 23px !important;
   }
 
@@ -560,7 +564,6 @@ nav .menu span {
     width: fit-content;
   }
 }
-
 
 @media (max-width: 1465px) {
   .navbar {
@@ -618,7 +621,7 @@ nav .menu span {
     width: 32% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 23px !important;
   }
 
@@ -640,11 +643,13 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 2rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.5rem !important;
   }
 
@@ -652,7 +657,7 @@ nav .menu span {
     scale: 1;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.8rem !important;
   }
@@ -663,7 +668,7 @@ nav .menu span {
 }
 
 @media (max-width: 1380px) {
-  .navbar{
+  .navbar {
     padding: 15px;
   }
 
@@ -688,10 +693,10 @@ nav .menu span {
     width: 34% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 23px !important;
   }
-  
+
   .team {
     width: 100% !important;
     display: grid;
@@ -713,11 +718,13 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 2rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.5rem !important;
   }
 
@@ -725,7 +732,7 @@ nav .menu span {
     scale: 1;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.8rem !important;
   }
@@ -736,7 +743,7 @@ nav .menu span {
 }
 
 @media (max-width: 1117px) {
-  .navbar{
+  .navbar {
     padding: 12px;
   }
 
@@ -757,7 +764,7 @@ nav .menu span {
     width: 42% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 21px !important;
   }
 
@@ -786,19 +793,21 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.8rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.4rem !important;
   }
 
   .return-home {
-    scale: 0.95
+    scale: 0.95;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.8rem !important;
   }
@@ -826,7 +835,7 @@ nav .menu span {
     padding: 2.3rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1rem !important;
   }
 
@@ -834,7 +843,7 @@ nav .menu span {
     width: 42% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 20px !important;
   }
 
@@ -869,19 +878,20 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.7rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.3rem !important;
   }
 
   .return-home {
-    scale: 0.94
+    scale: 0.94;
   }
 }
-
 
 @media (max-width: 925px) {
   .event-stat {
@@ -893,7 +903,7 @@ nav .menu span {
     width: 46% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 20px !important;
   }
 
@@ -925,17 +935,19 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.7rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.3rem !important;
   }
 
   .return-home {
-    scale: 0.94
-  } 
+    scale: 0.94;
+  }
 }
 
 @media (max-width: 902px) {
@@ -948,7 +960,7 @@ nav .menu span {
     width: 42% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 19px !important;
   }
 
@@ -978,16 +990,18 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.7rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.3rem !important;
   }
 
   .return-home {
-    scale: 0.94
+    scale: 0.94;
   }
 }
 
@@ -1014,7 +1028,7 @@ nav .menu span {
     padding: 2.2rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1rem !important;
   }
 
@@ -1022,7 +1036,7 @@ nav .menu span {
     width: 48% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 18px !important;
   }
 
@@ -1050,19 +1064,21 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.7rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.3rem !important;
   }
 
   .return-home {
-    scale: 0.94
+    scale: 0.94;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.8rem !important;
   }
@@ -1072,9 +1088,101 @@ nav .menu span {
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+  .headers {
+    justify-content: center;
+  }
+
+  .logo-main {
+    margin-left: 90px !important;
+  }
+
+  .fiem {
+    transform: translateX(-10px) !important;
+  }
+
+  .hamburger {
+    transform: translate(680px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(685px, -75px) !important;
+  }
+
+  .navbar{
+    padding: 0px !important;
+  }
+
   .nav-btn-title {
-    font-size: 0.7rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  .gform a {
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+    opacity: 0;
+  }
+
+  nav ul.open span {
+    display: none;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-links a {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul.open span {
+    display: none;
+  }
+
+  #nav-links a {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    display: flex;
+    padding: 15px;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  nav ul li {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .event-container {
@@ -1091,7 +1199,7 @@ nav .menu span {
     padding: 2.2rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1rem !important;
   }
 
@@ -1099,7 +1207,7 @@ nav .menu span {
     width: 50% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 18px !important;
   }
 
@@ -1130,27 +1238,55 @@ nav .menu span {
     scale: 0.85 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.7rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.3rem !important;
   }
 
   .return-home {
-    scale: 0.92
+    scale: 0.92;
+  }
+}
+
+@media (max-width: 753px) {
+  .toggle-member {
+    width: 60% !important;
+  }
+
+  .hamburger {
+    transform: translate(550px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(555px, -75px) !important;
   }
 }
 
 /* Mobile Navigation */
 @media (max-width: 640px) {
+  .headers {
+    justify-content: center;
+  }
+
   .logo-main {
-    margin-left: 175px;
+    margin-left: 90px !important;
   }
 
   .fiem {
     transform: translateX(-10px) !important;
+  }
+
+  .hamburger {
+    transform: translate(550px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(555px, -75px) !important;
   }
 
   .nav-btn-title {
@@ -1183,7 +1319,7 @@ nav .menu span {
     padding: 2rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 0.9rem !important;
   }
 
@@ -1191,7 +1327,7 @@ nav .menu span {
     width: 60% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 17px !important;
   }
 
@@ -1202,7 +1338,7 @@ nav .menu span {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 30px !important;
+    gap: 0px !important;
   }
 
   .team-member {
@@ -1211,9 +1347,9 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
 
-
     margin: 0 auto;
-    width: fit-content;
+    width: 300px !important;
+    scale: 0.85 !important;
     transform: translateX(5px);
   }
 
@@ -1221,7 +1357,7 @@ nav .menu span {
     font-size: 18px;
   }
 
-  .navbar{
+  .navbar {
     padding: 0 !important;
   }
 
@@ -1304,21 +1440,45 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.5rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.2rem !important;
   }
 
   .return-home {
-    scale: 0.9
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 610px) {
+  .logo-main {
+    margin-left: 80px !important;
+  }
+
+  .hamburger {
+    transform: translate(510px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(515px, -75px) !important;
+  }
+
+  .toggle-member {
+    width: 70% !important;
+  }
+
+  .team-member {
+    width: 260px !important;
   }
 }
 
 @media (max-width: 540px) {
-  .body{
+  .body {
     background-image: url("../src/images/logos/back_mobile.png") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -1326,13 +1486,26 @@ nav .menu span {
     background-attachment: fixed !important;
   }
 
+  .headers {
+    justify-content: center;
+  }
+
   .logo-main {
-    margin-left: 120px;
+    margin-left: 100px !important;
   }
 
   .fiem {
     transform: translateX(-10px) !important;
   }
+
+  .hamburger {
+    transform: translate(430px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(435px, -75px) !important;
+  }
+
   .nav-btn-title {
     font-size: 1.2rem !important;
   }
@@ -1355,7 +1528,7 @@ nav .menu span {
     padding: 1.8rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 0.75rem !important;
   }
 
@@ -1363,7 +1536,7 @@ nav .menu span {
     width: 70% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 17px !important;
   }
 
@@ -1389,16 +1562,18 @@ nav .menu span {
     scale: 0.8 !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.5rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.2rem !important;
   }
 
   .return-home {
-    scale: 0.9
+    scale: 0.9;
   }
 }
 
@@ -1410,19 +1585,49 @@ nav .menu span {
     scale: 0.8 !important;
     transform: translateX(10px);
   }
+
+  .hamburger {
+    transform: translate(430px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(435px, -75px) !important;
+  }
+}
+
+@media (max-width: 511px) {
+  .hamburger {
+    transform: translate(420px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(425px, -75px) !important;
+  }
 }
 
 @media (max-width: 480px) {
-  body{
-    background-image: url("../src/images/logos/back_mobile2.png") !important;  
+  body {
+    background-image: url("../src/images/logos/back_mobile2.png") !important;
+  }
+
+  .headers {
+    justify-content: center;
   }
 
   .logo-main {
-    margin-left: 65px;
+    margin-left: 65px !important;
   }
 
   .fiem {
     transform: translateX(-10px) !important;
+  }
+
+  .hamburger {
+    transform: translate(380px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(385px, -75px) !important;
   }
 
   .nav-btn-title {
@@ -1451,7 +1656,7 @@ nav .menu span {
     padding: 1.8rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 0.7rem !important;
   }
 
@@ -1459,7 +1664,7 @@ nav .menu span {
     width: 100% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 18px !important;
   }
 
@@ -1499,7 +1704,7 @@ nav .menu span {
     display: none;
   }
 
-  .navbar{
+  .navbar {
     padding: 0 !important;
   }
 
@@ -1573,19 +1778,21 @@ nav .menu span {
     font-size: 2rem !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1.1rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2.2rem !important;
   }
 
   .return-home {
-    scale: 0.9
+    scale: 0.9;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.7rem !important;
   }
@@ -1595,17 +1802,49 @@ nav .menu span {
   }
 }
 
-@media (max-width: 380px) {
-  body{
+@media (max-width: 432px) {
+  .hamburger {
+    transform: translate(350px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(355px, -75px) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hamburger {
+    transform: translate(330px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(335px, -75px) !important;
+  }
+}
+
+@media (max-width: 391px) {
+  body {
     background-image: url("../src/images/logos/back_mobile2.png") !important;
   }
 
+  .headers {
+    justify-content: center;
+  }
+
   .logo-main {
-    margin-left: 55px;
+    margin-left: 65px !important;
   }
 
   .fiem {
     transform: translateX(-15px) !important;
+  }
+
+  .hamburger {
+    transform: translate(300px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(305px, -75px) !important;
   }
 
   .event-container {
@@ -1622,7 +1861,7 @@ nav .menu span {
     padding: 1.5rem;
   }
 
-  .footer div{
+  .footer div {
     font-size: 0.6rem !important;
   }
 
@@ -1630,7 +1869,7 @@ nav .menu span {
     width: 100% !important;
   }
 
-  .toggle-member h5{
+  .toggle-member h5 {
     font-size: 16px !important;
   }
 
@@ -1663,7 +1902,6 @@ nav .menu span {
     color: #4e0e0e;
   }
 
-  
   .error-container {
     scale: 0.7 !important;
   }
@@ -1672,24 +1910,36 @@ nav .menu span {
     font-size: 2rem !important;
   }
 
-  .error-container h1, h4, marquee span{
+  .error-container h1,
+  h4,
+  marquee span {
     font-size: 1rem !important;
-  }  
+  }
 
-  .error-container marquee span{
+  .error-container marquee span {
     font-size: 2rem !important;
   }
   .return-home {
-    scale: 0.8
+    scale: 0.8;
   }
 
-  .volunteer-btn a{
+  .volunteer-btn a {
     padding: 15px !important;
     font-size: 1.5rem !important;
   }
 
   .para {
     font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .hamburger {
+    transform: translate(290px, -83px) !important;
+  }
+
+  .cross {
+    transform: translate(295px, -75px) !important;
   }
 }
 
@@ -1721,6 +1971,7 @@ nav .menu span {
   box-shadow: 0 0 26px rgba(2, 34, 64, 0.7),
     1px 1.5px 2px -1px rgba(2, 31, 59, 0.65),
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
+  background-color: #282c34a7;
 }
 
 .team-member:hover {
@@ -1852,11 +2103,8 @@ nav .menu span {
   font-size: 2.2rem;
 }
 
-.return-home h1:hover{
+.return-home h1:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
   border: 3px solid #e7a529;
 }
-
-
-
