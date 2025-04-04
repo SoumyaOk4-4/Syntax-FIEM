@@ -28,7 +28,7 @@ function EventsHandler() {
       const diff = eventDate - now;
 
       if (diff <= 0) {
-        setStatus("Ongoing"); // ✅ Update state instead of modifying the array
+        setStatus("Ongoing");
         setTimeLeft("Ongoing");
         return;
       }
@@ -87,7 +87,7 @@ function EventsHandler() {
                     ? "yellow"
                     : status === "Ongoing"
                     ? "green"
-                    : "blue", // ✅ Uses state
+                    : "blue",
                 border: "2px solid orange",
                 borderRadius: "20px",
                 width: "30%",

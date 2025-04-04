@@ -26,22 +26,22 @@ function Team() {
 
   return (
     <>
-      <h1>
+      <h1 className="fadein_fadeout2" >
         <div
           className="toggle-box"
           style={{ display: "flex", justifyContent: "center", padding: "10px" }}
         >
           <div className="toggle-member">
             <h5
-              style={{
-                padding: "15px",
-                backgroundColor: "rgb(36, 34, 39)",
-                borderRadius: "20px",
-                color: "rgb(184, 184, 184)",
-              }}
               onClick={() => {
                 setTeamToggle(true);
                 setMentorToggle(false);
+              }}
+              style={{
+                padding: "15px",
+                backgroundColor: "rgb(35, 34, 36)",
+                borderRadius: "20px",
+                color: teamToggle ? "rgb(118, 135, 236)" : "rgb(184, 184, 184)",
               }}
             >
               <FontAwesomeIcon
@@ -52,15 +52,15 @@ function Team() {
             </h5>
             {/* eslint-disable-next-line */}
             <h5
+              onClick={() => {
+                setMentorToggle(true);
+                setTeamToggle(false);
+              }}
               style={{
                 padding: "15px",
                 backgroundColor: "rgb(36, 34, 39)",
                 borderRadius: "20px",
-                color: "rgb(184, 184, 184)",
-              }}
-              onClick={() => {
-                setMentorToggle(true);
-                setTeamToggle(false);
+                color: mentorToggle ? "rgb(118, 135, 236)" : "rgb(184, 184, 184)",
               }}
             >
               Mentors{" "}

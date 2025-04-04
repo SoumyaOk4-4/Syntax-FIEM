@@ -12,7 +12,7 @@ import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <div className="web-content-container contact-container">
-      <h1 style={{color: "#e7a129"}}>
+      <h1 className="fadein_fadeout2" style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faHeadset} /> Contact Us
       </h1>
       <br />
