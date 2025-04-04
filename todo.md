@@ -11,3 +11,5 @@ design
 publicity
 media
 support
+
+* content of join us (as a interested individuals)
