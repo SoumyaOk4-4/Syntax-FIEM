@@ -5,8 +5,8 @@ function Sponsers() {
   return (
     <>
       <br />
-      <h1 className="fadein_fadeout2" style={{color: "#e7a129"}}>
-        <FontAwesomeIcon icon={faBuilding} /> Sponsers
+      <h1 className="fadein_fadeout2 page-title" style={{color: "#e7a129"}}>
+        <FontAwesomeIcon icon={faBuilding} /> Sponsors
       </h1>
       <br />
       <br />

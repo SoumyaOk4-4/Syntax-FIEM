@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: "Font1";
+  font-family: "Font2";
 }
 
 html,
@@ -169,7 +169,7 @@ body {
 
 .gform a {
   color: #ffb254;
-  font-size: 18px;
+  font-size: 1.3rem;
   position: absolute;
   text-decoration: none;
   border: 1px solid #ffb254;
@@ -194,6 +194,7 @@ body {
   padding: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 #nav-links a {
   text-decoration: none;
@@ -227,6 +228,7 @@ body {
 /* Button Styling */
 .nav-btn {
   display: flex;
+  justify-content: center;
   gap: 8px;
   align-items: center;
 
@@ -243,10 +245,6 @@ body {
 
 .joinus-btn {
   display: none !important;
-}
-
-.nav-icons {
-  transform: translateY(-1.5px);
 }
 
 .nav-btn:hover {
@@ -438,6 +436,10 @@ nav .menu span {
   color: rgb(118, 135, 236) !important;
 }
 
+.about-container {
+  width: 90%;
+}
+
 .event-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -468,6 +470,16 @@ nav .menu span {
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 }
 
+.page-title{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.nav-btn-title {
+  text-transform: uppercase;
+}
+
+
 /* Responsive Design */
 @media (max-width: 2090px) {
   .did-you-know {
@@ -479,12 +491,46 @@ nav .menu span {
     transform: translateX(150%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .nav-btn-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-icons {
+    font-size: 1.3rem;
+  }
+
+
+  .about-txt {
+    padding: 30px !important;
+  }
+
+  .general {
+    font-size: 2.4rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 3rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 2.1rem !important;
+  }
+
   .toggle-member {
-    width: 23% !important;
+    width: 25% !important;
   }
 
   .toggle-member h5 {
-    font-size: 23px !important;
+    font-size: 2.4rem !important;
   }
 
   .team {
@@ -506,9 +552,42 @@ nav .menu span {
 }
 
 @media (max-width: 1820px) {
+  .nav-btn-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-icons {
+    font-size: 1.3rem;
+  }
+
   .event-stat {
     width: 30% !important;
     transform: translateX(120%) !important;
+  }
+
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 30px !important;
+  }
+
+  .general {
+    font-size: 2rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.8rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.9rem !important;
   }
 
   .toggle-box {
@@ -516,11 +595,11 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 28% !important;
+    width: 25% !important;
   }
 
   .toggle-member h5 {
-    font-size: 23px !important;
+    font-size: 2.2rem !important;
   }
 
   .team {
@@ -540,16 +619,53 @@ nav .menu span {
     transform: translateX(120%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .footer div{
+    font-size: 1.3rem !important;
+  }
+
+  .about-txt {
+    padding: 30px !important;
+  }
+
+  .nav-btn-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-icons {
+    font-size: 1.2rem;
+  }
+
+  .general {
+    font-size: 1.7rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.5rem !important;
+  }
+  
   .toggle-box {
     padding: 10px !important;
   }
 
   .toggle-member {
-    width: 30% !important;
+    width: 28% !important;
   }
 
   .toggle-member h5 {
-    font-size: 23px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -580,11 +696,11 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .nav-icons {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   #nav-links a {
@@ -617,12 +733,41 @@ nav .menu span {
     transform: translateX(75%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 20px !important;
+  }
+
+  .footer div{
+    font-size: 1.3rem !important;
+  }
+
+  .general {
+    font-size: 1.6rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.4rem !important;
+  }
+
   .toggle-member {
-    width: 32% !important;
+    width: 29% !important;
   }
 
   .toggle-member h5 {
-    font-size: 23px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -673,7 +818,7 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .nav-icons {
@@ -689,12 +834,41 @@ nav .menu span {
     transform: translateX(75%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .footer div{
+    font-size: 1.3rem !important;
+  }
+
+  .about-txt {
+    padding: 20px !important;
+  }
+
+  .general {
+    font-size: 1.6rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.4rem !important;
+  }
+
   .toggle-member {
-    width: 34% !important;
+    width: 32% !important;
   }
 
   .toggle-member h5 {
-    font-size: 23px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -748,11 +922,11 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .nav-icons {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .event-stat {
@@ -760,12 +934,37 @@ nav .menu span {
     transform: translateX(35%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 20px !important;
+  }
+
+  .general {
+    font-size: 1.6rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.4rem !important;
+  }
+
   .toggle-member {
-    width: 42% !important;
+    width: 38% !important;
   }
 
   .toggle-member h5 {
-    font-size: 21px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -819,11 +1018,11 @@ nav .menu span {
 
 @media (max-width: 984px) {
   .nav-btn-title {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 
   .nav-icons {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .event-stat {
@@ -831,20 +1030,45 @@ nav .menu span {
     transform: translateX(35%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 20px !important;
+  }
+
+  .general {
+    font-size: 1.6rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.4rem !important;
+  }
+
   .footer {
-    padding: 2.3rem;
+    padding: 2rem;
   }
 
   .footer div {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
 
   .toggle-member {
-    width: 42% !important;
+    width: 44% !important;
   }
 
   .toggle-member h5 {
-    font-size: 20px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -900,11 +1124,11 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 46% !important;
+    width: 44% !important;
   }
 
   .toggle-member h5 {
-    font-size: 20px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -957,11 +1181,11 @@ nav .menu span {
   }
 
   .toggle-member {
-    width: 42% !important;
+    width: 44% !important;
   }
 
   .toggle-member h5 {
-    font-size: 19px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1006,8 +1230,13 @@ nav .menu span {
 }
 
 @media (max-width: 856px) {
+  .nav ul {
+    width: 70% !important;
+  }
+
+
   .nav-btn-title {
-    font-size: 0.7rem !important;
+    font-size: 1.2rem !important;
   }
 
   .nav-icons {
@@ -1024,12 +1253,37 @@ nav .menu span {
     transform: translateX(50%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 18px !important;
+  }
+
+  .general {
+    font-size: 1.7rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.5rem !important;
+  }
+
   .footer {
-    padding: 2.2rem;
+    padding: 2rem;
   }
 
   .footer div {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
 
   .toggle-member {
@@ -1037,7 +1291,7 @@ nav .menu span {
   }
 
   .toggle-member h5 {
-    font-size: 18px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1109,12 +1363,12 @@ nav .menu span {
     transform: translate(685px, -75px) !important;
   }
 
-  .navbar{
+  .navbar {
     padding: 0px !important;
   }
 
   .nav-btn-title {
-    font-size: 1.2rem !important;
+    font-size: 2rem !important;
   }
 
   .gform a {
@@ -1195,20 +1449,45 @@ nav .menu span {
     transform: translateX(45%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 18px !important;
+  }
+
+  .general {
+    font-size: 1.8rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.5rem !important;
+  }
+
   .footer {
     padding: 2.2rem;
   }
 
   .footer div {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
 
   .toggle-member {
-    width: 50% !important;
+    width: 54% !important;
   }
 
   .toggle-member h5 {
-    font-size: 18px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1290,7 +1569,7 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1.2rem !important;
+    font-size: 2rem !important;
   }
 
   .headers {
@@ -1315,20 +1594,45 @@ nav .menu span {
     transform: translateX(45%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 18px !important;
+  }
+
+  .general {
+    font-size: 1.5rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.4rem !important;
+  }
+
   .footer {
     padding: 2rem;
   }
 
   .footer div {
-    font-size: 0.9rem !important;
+    font-size: 1.3rem !important;
   }
 
   .toggle-member {
-    width: 60% !important;
+    width: 65% !important;
   }
 
   .toggle-member h5 {
-    font-size: 17px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1507,7 +1811,7 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1.2rem !important;
+    font-size: 1.8rem !important;
   }
 
   .event-content-container {
@@ -1524,20 +1828,45 @@ nav .menu span {
     transform: translateX(0%) !important;
   }
 
+  .about-container {
+    width: 90%;
+  }
+
+  .about-txt {
+    padding: 15px !important;
+  }
+
+  .general {
+    font-size: 1.7rem !important;
+    padding: 20px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .future-events div{
+    font-size: 1.75rem !important;
+  }
+
   .footer {
     padding: 1.8rem;
   }
 
   .footer div {
-    font-size: 0.75rem !important;
+    font-size: 1.3rem !important;
   }
 
   .toggle-member {
-    width: 70% !important;
+    width: 75% !important;
   }
 
   .toggle-member h5 {
-    font-size: 17px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1631,7 +1960,7 @@ nav .menu span {
   }
 
   .nav-btn-title {
-    font-size: 1.2rem !important;
+    font-size: 1.7rem !important;
   }
 
   .headers {
@@ -1652,12 +1981,33 @@ nav .menu span {
     transform: translateX(0%) !important;
   }
 
+  .about-txt {
+    padding: 18px !important;
+  }
+
+  .general {
+    font-size: 1.8rem !important;
+    padding: 2px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .future-events div {
+    font-size: 1.7rem !important;
+  }
+
   .footer {
-    padding: 1.8rem;
+    padding: 2rem;
   }
 
   .footer div {
-    font-size: 0.7rem !important;
+    font-size: 1.2rem !important;
   }
 
   .toggle-member {
@@ -1665,7 +2015,7 @@ nav .menu span {
   }
 
   .toggle-member h5 {
-    font-size: 18px !important;
+    font-size: 2rem !important;
   }
 
   .team {
@@ -1857,12 +2207,33 @@ nav .menu span {
     transform: translateX(0%) !important;
   }
 
+  .about-txt {
+    padding: 15px !important;
+  }
+
+  .general {
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+  }
+
+  .expect {
+    font-size: 2.5rem !important;
+  }
+
+  .future-events {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .future-events div {
+    font-size: 1.4rem !important;
+  }
+
   .footer {
-    padding: 1.5rem;
+    padding: 1.8rem;
   }
 
   .footer div {
-    font-size: 0.6rem !important;
+    font-size: 1rem !important;
   }
 
   .toggle-member {
@@ -1870,11 +2241,11 @@ nav .menu span {
   }
 
   .toggle-member h5 {
-    font-size: 16px !important;
+    font-size: 1.9rem !important;
   }
 
   .nav-btn-title {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
   }
 
   .team {
@@ -1941,6 +2312,15 @@ nav .menu span {
   .cross {
     transform: translate(295px, -75px) !important;
   }
+
+  .toggle-member {
+    width: 100% !important;
+  }
+
+  .toggle-member h5 {
+    font-size: 1.7rem !important;
+  }
+
 }
 
 /* profile pics */
@@ -1960,6 +2340,8 @@ nav .menu span {
 }
 
 .team-member {
+  text-transform: uppercase;
+  font-size: 1.4rem;
   border: 2px solid rgb(0, 145, 255);
   border-radius: 6px;
   text-align: center;
@@ -1985,8 +2367,9 @@ nav .menu span {
 }
 
 .Job-Role {
+  text-transform: capitalize;
   font-family: "Font2";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(255, 162, 0);
 }
 
@@ -2035,6 +2418,10 @@ nav .menu span {
   padding: 20px;
 }
 
+.contact-content-container {
+  border: 1.6px solid #e7a529;
+}
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -2070,7 +2457,43 @@ nav .menu span {
 .about-txt {
   font-family: "Font2";
   font-size: 1.5rem;
-  color: rgb(157, 157, 157);
+  color: white;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  border: 1.6px solid #e7a529;
+  background-color: #1c1e20a7;
+}
+
+.general {
+  font-size: 1.7rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.future-events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.future-events div {
+  background-color: #1c1e20a7;
+  box-shadow: 0px 1px 6px rgb(0, 136, 255);
+
+  padding: 10px;
+  border: 1px solid rgb(0, 136, 255);
+  border-radius: 9px;
+  text-align: center;
+}
+
+.future-events div:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 20px rgb(0, 136, 255);
 }
 
 .linkedin:hover {
@@ -2093,6 +2516,8 @@ nav .menu span {
   text-align: center;
   padding: 20px;
   -webkit-tap-highlight-color: transparent;
+
+  border: 1.8px solid #e7a529;
 }
 
 .error-container h3 {

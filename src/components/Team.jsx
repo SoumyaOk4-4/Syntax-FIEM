@@ -48,7 +48,7 @@ function Team() {
                 icon={faUsers}
                 style={{ color: "rgb(184, 184, 184)" }}
               />{" "}
-              Team
+              TEAM
             </h5>
             {/* eslint-disable-next-line */}
             <h5
@@ -63,7 +63,7 @@ function Team() {
                 color: mentorToggle ? "rgb(118, 135, 236)" : "rgb(184, 184, 184)",
               }}
             >
-              Mentors{" "}
+              MENTORS{" "}
               <FontAwesomeIcon
                 icon={faUserTie}
                 style={{ color: "rgb(184, 184, 184)" }}
@@ -77,7 +77,6 @@ function Team() {
         <div className="web-content-container team fadein_fadeout">
           <div className="team-member">
             <img src={aniket} alt="Aniket Nandi" className="profile-pic" />
-            <br />
             <br />
             Aniket Nandi
             <div className="Job-Role">Operation Head</div>
@@ -101,7 +100,6 @@ function Team() {
 
           <div className="team-member">
             <img src={mrigank} alt="Mrigank Sen" className="profile-pic" />
-            <br />
             <br />
             Mrigank Sen
             <div className="Job-Role">Management Head</div>
@@ -130,7 +128,6 @@ function Team() {
               className="profile-pic"
             />
             <br />
-            <br />
             Soumya Chakraborty
             <div className="Job-Role">Technical Head</div>
             <div className="socials">
@@ -154,7 +151,6 @@ function Team() {
           <div className="team-member">
             <img src={sagufta} alt="Sagufta Sinha" className="profile-pic" />
             <br />
-            <br />
             Sagufta Sinha
             <div className="Job-Role">Web Content Head</div>
             <div className="socials">
@@ -177,7 +173,6 @@ function Team() {
 
           <div className="team-member">
             <img src={ankush} alt="Ankush Samanta" className="profile-pic" />
-            <br />
             <br />
             Ankush Samanta
             <div className="Job-Role">Design Head</div>
@@ -206,7 +201,6 @@ function Team() {
               className="profile-pic"
             />
             <br />
-            <br />
             Deboshreya Ganguly
             <div className="Job-Role">Publicity and Content Head</div>
             <div className="socials">
@@ -234,7 +228,6 @@ function Team() {
               className="profile-pic"
             />
             <br />
-            <br />
             Subhangi Bandyopadhyay
             <div className="Job-Role">Media and Communication Head</div>
             <div className="socials">
@@ -257,7 +250,6 @@ function Team() {
 
           <div className="team-member">
             <img src={ayan} alt="Ayan Purkait" className="profile-pic" />
-            <br />
             <br />
             Ayan Purkait
             <div className="Job-Role">Support Dev</div>
@@ -284,7 +276,6 @@ function Team() {
           <div className="team-member">
             <img src={jaydip} alt="Dr. Jaydip Nath" className="profile-pic" />
             <br />
-            <br />
             Dr. Jaydip Nath
             <div className="Job-Role">Facilitator</div>
             <div className="socials">
@@ -300,7 +291,6 @@ function Team() {
 
           <div className="team-member">
             <img src={chanchal} alt="Chanchal Ghosh" className="profile-pic" />
-            <br />
             <br />
             Chanchal Ghosh
             <div className="Job-Role">Mentor</div>
@@ -322,7 +312,6 @@ function Team() {
               className="profile-pic"
             />
             <br />
-            <br />
             Manjushree Chakraborty
             <div className="Job-Role">Mentor</div>
             <div className="socials">
@@ -339,7 +328,6 @@ function Team() {
           <div className="team-member">
             <img src={sounak} alt="Sounak Banerjee" className="profile-pic" />
             <br />
-            <br />
             Sounak Banerjee
             <div className="Job-Role">Mentor</div>
             <div className="socials">
@@ -355,7 +343,6 @@ function Team() {
 
           <div className="team-member">
             <img src={satyaam} alt="Satyam Raha" className="profile-pic" />
-            <br />
             <br />
             Satyam Raha
             <div className="Job-Role">Mentor</div>

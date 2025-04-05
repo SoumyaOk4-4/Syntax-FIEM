@@ -5,7 +5,7 @@ function Joinus() {
   return (
     <>
       <br />
-      <h1 className="fadein_fadeout2" style={{color: "#e7a129"}}>
+      <h1 className="fadein_fadeout2 page-title" style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faFileSignature} /> Join Us
       </h1>
       <br />
@@ -59,7 +59,7 @@ function Joinus() {
                   padding: "15px",
                 }}
               >
-                <FontAwesomeIcon icon={faPen} /> Volunteer Form
+                Volunteer Form <FontAwesomeIcon icon={faPen} />
               </a>
             </h1>
           </div>

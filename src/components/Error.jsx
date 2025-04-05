@@ -16,14 +16,14 @@ function Error() {
                 gap: "20px",
 
                 fontSize: "2.5rem" ,
-                fontFamily: "Font1",
+                fontFamily: "Font2",
                 transform: "translateY(50px)",
               }}
             >
               <h3 style={{color: "#e7a129"}}>
                 <FontAwesomeIcon icon={faTriangleExclamation} /> 404!
               </h3>
-              <h4 style={{color: "#e7a129"}}>Page Not Found</h4>
+              <h4 style={{color: "#e7a129"}}>PAGE NOT FOUND</h4>
             </h1>
           </div>
 

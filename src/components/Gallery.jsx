@@ -5,7 +5,7 @@ function Gallery() {
   return (
     <>
       <br />
-      <h1 className="fadein_fadeout2" style={{color: "#e7a129"}}>
+      <h1 className="fadein_fadeout2 page-title" style={{color: "#e7a129"}}>
         <FontAwesomeIcon icon={faImages} /> Gallery
       </h1>
       <br />

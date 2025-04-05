@@ -11,6 +11,7 @@ import {
   faFileSignature,
   faHeadset,
   faImages,
+  faMugHot,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -110,7 +111,7 @@ function Navbar() {
               className="nav-btn-title"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              Sponsers
+              Sponsors
             </div>
           </Link>
         </li>
@@ -295,7 +296,7 @@ function App() {
                 </h3>
 
                 <h3 className="gform">
-                  <a href="/joinus">Become a member</a>
+                  <a href="/joinus">BECOME A MEMBER <FontAwesomeIcon icon={faMugHot} style={{color: "#ffae3d",}} /></a>
                 </h3>
               </h1>
               <Router>
