@@ -43,7 +43,7 @@ function Contact() {
         <div className="contact-item">
           <FaFacebook className="contact-icon" />
           <a
-            href="https://www.facebook.com/profile.php?id=61573956646182"
+            href="https://www.facebook.com/profile.php?id=61574601347303"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
