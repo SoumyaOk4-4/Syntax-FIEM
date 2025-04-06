@@ -218,7 +218,7 @@ function App() {
     img.src = fullRes;
 
     img.onload = () => {
-      const delay = setTimeout(() => {
+      setTimeout(() => {
         setBgImage(fullRes);
         setLoaded(true);
       }, 1000)
