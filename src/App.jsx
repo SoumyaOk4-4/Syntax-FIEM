@@ -21,10 +21,8 @@ import futureblue from "./images/logos/future-blue.png";
 import loadingGif from "./images/logos/loading.gif";
 
 import back_desktop from "./images/logos/Back.png";
-import back_mobile from "./images/logos/back_mobile2.png";
+import back_mobile from "./images/logos/back_mobile.png";
 
-import back_desktop_small from "./images/logos/Back-small2.png";
-import back_mobile_small from "./images/logos/back_mobile2_small.png";
 
 //components
 import Events from "./components/Events";
@@ -196,32 +194,21 @@ function Navbar() {
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [bgImage, setBgImage] = useState("");
   const [loaded, setLoaded] = useState(false);
-
-  console.log(bgImage);
   
   //loading time
   useEffect(() => {
     const delayTime = 4000;
 
     const isMobile = window.innerWidth <= 540;
-
-    const placeholder = isMobile ? back_mobile_small : back_desktop_small;
     const fullRes = isMobile ? back_mobile : back_desktop;
-
-    // Set blurred placeholder first
-    setBgImage(placeholder);
 
     // Then load full image
     const img = new Image();
     img.src = fullRes;
 
     img.onload = () => {
-      setTimeout(() => {
-        setBgImage(fullRes);
-        setLoaded(true);
-      }, 1000)
+      setLoaded(true);
     };
 
     const delayLoading = setTimeout(() => {

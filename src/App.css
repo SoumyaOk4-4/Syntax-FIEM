@@ -47,6 +47,8 @@ body {
   top: 0;
   z-index: 0;
 
+  background-color: #000;
+
   background-image: url("../src/images/logos/Back.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -54,14 +56,6 @@ body {
   background-size: cover;
 }
 
-.App.blur {
-  transition: pulse 250ms ease-out;
-}
-
-.App.loaded {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out;
-}
 
 .blur {
   background-image: url("../src/images/logos/Back-small.png");
@@ -1794,11 +1788,11 @@ nav .menu span {
 
 @media (max-width: 540px) {
   .App {
-    background-image: url("../src/images/logos/back_mobile2.png") !important;
+    background-image: url("../src/images/logos/back_mobile.png") !important;
   }
 
   .blur {
-    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
+    background-image: url("../src/images/logos/back_mobile_small.png") !important;
   }
 
   .headers {
@@ -1947,11 +1941,11 @@ nav .menu span {
 
 @media (max-width: 480px) {
   .App {
-    background-image: url("../src/images/logos/back_mobile2.png") !important;
+    background-image: url("../src/images/logos/back_mobile.png") !important;
   }
 
   .blur {
-    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
+    background-image: url("../src/images/logos/back_mobile_small.png") !important;
   }
 
   .headers {
@@ -2189,11 +2183,11 @@ nav .menu span {
 
 @media (max-width: 391px) {
   .App {
-    background-image: url("../src/images/logos/back_mobile2.png") !important;
+    background-image: url("../src/images/logos/back_mobile.png") !important;
   }
 
   .blur {
-    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
+    background-image: url("../src/images/logos/back_mobile_small.png") !important;
   }
 
   .headers {
