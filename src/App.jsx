@@ -198,6 +198,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [bgImage, setBgImage] = useState("");
   const [loaded, setLoaded] = useState(false);
+
+  console.log(bgImage);
   
   //loading time
   useEffect(() => {
@@ -216,8 +218,10 @@ function App() {
     img.src = fullRes;
 
     img.onload = () => {
-      setBgImage(fullRes);
-      setLoaded(true);
+      const delay = setTimeout(() => {
+        setBgImage(fullRes);
+        setLoaded(true);
+      }, 1000)
     };
 
     const delayLoading = setTimeout(() => {
