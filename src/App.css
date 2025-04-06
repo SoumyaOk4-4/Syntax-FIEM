@@ -22,10 +22,7 @@
   src: url("../public/fonts/pixel2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-body {
-  font-family: "Font2";
+  font-display: block;
 }
 
 html,
@@ -35,6 +32,7 @@ body {
 }
 
 .App {
+  font-family: "Font2";
   text-align: center;
   max-width: 100%;
   overflow-x: hidden;
@@ -54,6 +52,23 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.App.blur {
+  transition: pulse 250ms ease-out;
+}
+
+.App.loaded {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.blur {
+  background-image: url("../src/images/logos/Back-small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Logo */
@@ -194,7 +209,6 @@ body {
   padding: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 #nav-links a {
   text-decoration: none;
@@ -470,7 +484,7 @@ nav .menu span {
     4px 4px 12px -2.5px rgba(2, 31, 59, 0.65);
 }
 
-.page-title{
+.page-title {
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -478,7 +492,6 @@ nav .menu span {
 .nav-btn-title {
   text-transform: uppercase;
 }
-
 
 /* Responsive Design */
 @media (max-width: 2090px) {
@@ -503,7 +516,6 @@ nav .menu span {
     font-size: 1.3rem;
   }
 
-
   .about-txt {
     padding: 30px !important;
   }
@@ -521,7 +533,7 @@ nav .menu span {
     grid-template-columns: repeat(4, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 2.1rem !important;
   }
 
@@ -586,7 +598,7 @@ nav .menu span {
     grid-template-columns: repeat(4, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.9rem !important;
   }
 
@@ -623,7 +635,7 @@ nav .menu span {
     width: 90%;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1.3rem !important;
   }
 
@@ -652,10 +664,10 @@ nav .menu span {
     grid-template-columns: repeat(4, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.5rem !important;
   }
-  
+
   .toggle-box {
     padding: 10px !important;
   }
@@ -741,7 +753,7 @@ nav .menu span {
     padding: 20px !important;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1.3rem !important;
   }
 
@@ -758,7 +770,7 @@ nav .menu span {
     grid-template-columns: repeat(4, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.4rem !important;
   }
 
@@ -838,7 +850,7 @@ nav .menu span {
     width: 90%;
   }
 
-  .footer div{
+  .footer div {
     font-size: 1.3rem !important;
   }
 
@@ -859,7 +871,7 @@ nav .menu span {
     grid-template-columns: repeat(4, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.4rem !important;
   }
 
@@ -955,7 +967,7 @@ nav .menu span {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.4rem !important;
   }
 
@@ -1051,7 +1063,7 @@ nav .menu span {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.4rem !important;
   }
 
@@ -1234,7 +1246,6 @@ nav .menu span {
     width: 70% !important;
   }
 
-
   .nav-btn-title {
     font-size: 1.2rem !important;
   }
@@ -1274,7 +1285,7 @@ nav .menu span {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.5rem !important;
   }
 
@@ -1470,7 +1481,7 @@ nav .menu span {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.5rem !important;
   }
 
@@ -1615,7 +1626,7 @@ nav .menu span {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.4rem !important;
   }
 
@@ -1782,12 +1793,12 @@ nav .menu span {
 }
 
 @media (max-width: 540px) {
-  .body {
-    background-image: url("../src/images/logos/back_mobile.png") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
+  .App {
+    background-image: url("../src/images/logos/back_mobile2.png") !important;
+  }
+
+  .blur {
+    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
   }
 
   .headers {
@@ -1849,7 +1860,7 @@ nav .menu span {
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
-  .future-events div{
+  .future-events div {
     font-size: 1.75rem !important;
   }
 
@@ -1935,8 +1946,12 @@ nav .menu span {
 }
 
 @media (max-width: 480px) {
-  body {
+  .App {
     background-image: url("../src/images/logos/back_mobile2.png") !important;
+  }
+
+  .blur {
+    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
   }
 
   .headers {
@@ -2173,8 +2188,12 @@ nav .menu span {
 }
 
 @media (max-width: 391px) {
-  body {
+  .App {
     background-image: url("../src/images/logos/back_mobile2.png") !important;
+  }
+
+  .blur {
+    background-image: url("../src/images/logos/back_mobile2_small.png") !important;
   }
 
   .headers {
@@ -2320,7 +2339,6 @@ nav .menu span {
   .toggle-member h5 {
     font-size: 1.7rem !important;
   }
-
 }
 
 /* profile pics */

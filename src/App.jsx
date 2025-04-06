@@ -20,6 +20,12 @@ import mainlogo from "./images/logos/main_logo.png";
 import futureblue from "./images/logos/future-blue.png";
 import loadingGif from "./images/logos/loading.gif";
 
+import back_desktop from "./images/logos/Back.png";
+import back_mobile from "./images/logos/back_mobile2.png";
+
+import back_desktop_small from "./images/logos/Back-small2.png";
+import back_mobile_small from "./images/logos/back_mobile2_small.png";
+
 //components
 import Events from "./components/Events";
 import About from "./components/About";
@@ -62,7 +68,7 @@ function Navbar() {
           </div>
         )}
       </div>
-      
+
       <ul className={menuOpen ? "open" : ""} id="nav-links">
         <li>
           <Link
@@ -190,10 +196,30 @@ function Navbar() {
 
 function App() {
   const [loading, setLoading] = useState(true);
-
+  const [bgImage, setBgImage] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  
   //loading time
   useEffect(() => {
-    const delayTime = 3500;
+    const delayTime = 4000;
+
+    const isMobile = window.innerWidth <= 540;
+
+    const placeholder = isMobile ? back_mobile_small : back_desktop_small;
+    const fullRes = isMobile ? back_mobile : back_desktop;
+
+    // Set blurred placeholder first
+    setBgImage(placeholder);
+
+    // Then load full image
+    const img = new Image();
+    img.src = fullRes;
+
+    img.onload = () => {
+      setBgImage(fullRes);
+      setLoaded(true);
+    };
+
     const delayLoading = setTimeout(() => {
       setLoading(false);
     }, delayTime);
@@ -204,7 +230,7 @@ function App() {
   //did you knows
   const dyk = "Did You Know: ";
   const DYK_arr = [
-    dyk + "The 3.5sec delay is intentional, to read these messages.😆",
+    dyk + "The 4sec delay is intentional, to read these messages.😆",
     dyk + "Ctrl+C and Ctrl+V are responsible for 90% of coding.💀",
     dyk +
       "Gamers rage over lag, but developers rage over missing semicolons.😡",
@@ -223,7 +249,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={`App ${loaded ? "loaded" : "blur"}`}>
       {loading ? (
         //loading screen
         <center>
@@ -278,25 +304,22 @@ function App() {
           <div className="BOX">
             <div className="nav-links">
               <h1 className="headers fadein_fadeout2">
-
                 <h3 style={{ display: "flex", justifyContent: "left" }}>
                   <a href="/">
-                    <img
-                      src={mainlogo}
-                      alt="SYNTAX"
-                      className="logo-main"
-                    />
+                    <img src={mainlogo} alt="SYNTAX" className="logo-main" />
                   </a>
 
-                  <img
-                    src={futureblue}
-                    alt="FIEM"
-                    className="fiem"
-                  />
+                  <img src={futureblue} alt="FIEM" className="fiem" />
                 </h3>
 
                 <h3 className="gform">
-                  <a href="/joinus">BECOME A MEMBER <FontAwesomeIcon icon={faMugHot} style={{color: "#ffae3d",}} /></a>
+                  <a href="/joinus">
+                    BECOME A MEMBER{" "}
+                    <FontAwesomeIcon
+                      icon={faMugHot}
+                      style={{ color: "#ffae3d" }}
+                    />
+                  </a>
                 </h3>
               </h1>
               <Router>

@@ -84,7 +84,7 @@ function EventsHandler() {
               style={{
                 color:
                   status === "Future"
-                    ? "yellow"
+                    ? "#ff9100"
                     : status === "Ongoing"
                     ? "green"
                     : "blue",
