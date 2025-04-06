@@ -7,6 +7,7 @@ import aniket from "../images/team_pics/aniket.jpg";
 import ankush from "../images/team_pics/ankush.jpg";
 import shubhangi from "../images/team_pics/shubhangi.jpg";
 import deboshreya from "../images/team_pics/deboshreya.jpg";
+import arnab from "../images/team_pics/arnab.jpg";
 import chanchal from "../images/team_pics/chanchal-ghosh.jpg";
 import manjushree from "../images/team_pics/manjushree-chakraborty.jpg";
 import satyaam from "../images/team_pics/satyaam-raha.jpg";
@@ -263,6 +264,28 @@ function Team() {
               </a>
               <a
                 href="https://github.com/JustChillinBro92"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="team-socials github" />
+              </a>
+            </div>
+          </div>
+          <div className="team-member">
+            <img src={arnab} alt="Arnab Das" className="profile-pic" />
+            <br />
+            Arnab Das
+            <div className="Job-Role">Sociability Head</div>
+            <div className="socials">
+              <a
+                href="https://www.linkedin.com/in/arnab-das-33080a300/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="team-socials linkedin" />
+              </a>
+              <a
+                href="https://github.com/mrBinaryMonk375"
                 target="_blank"
                 rel="noopener noreferrer"
               >
