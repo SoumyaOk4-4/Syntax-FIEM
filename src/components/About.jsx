@@ -12,12 +12,12 @@ function About() {
       <div className="web-content-container about-container">
         <div className="fadein_fadeout web-content about-txt">
           <div className="general">
-            Welcome to SYNTAX, the vibrant tech community of Future Institute of
+            Welcome to SYNTAXX, the vibrant tech community of Future Institute of
             Engineering and Management (FIEM), Kolkata, dedicated to nurturing
             innovation, creativity, and collaboration among students. Our goal
             is to create a dynamic community where tech enthusiasts can explore,
             experiment, and excel in the rapidly evolving world of technology.
-            Stepping into a new era of tech-driven excellence, SYNTAX provides a
+            Stepping into a new era of tech-driven excellence, SYNTAXX provides a
             platform for hands-on learning, problem-solving, and skill-building
             through a wide range of events and activities. From robotics and
             gaming to coding competitions and technical workshops, we offer a
@@ -29,7 +29,7 @@ function About() {
           <div className="future-events">
             <div>
               To kickstart each academic session and ignite the spark of
-              technology, SYNTAX organizes CODEFEST - an intra-college coding
+              technology, SYNTAXX organizes CODEFEST - an intra-college coding
               competition that challenges problem-solving skills.
             </div>
             <div>
@@ -47,7 +47,7 @@ function About() {
             <div>
               Whether you're a Coding Wizard, a Robotics Enthusiast, a Gaming
               Champion, or just someone eager to dive into the world of
-              technology, SYNTAX welcomes you. Join us and be part of a
+              technology, SYNTAXX welcomes you. Join us and be part of a
               community that doesn't just follow technology— it creates it.
             </div>
           </div>

@@ -310,7 +310,7 @@ function App() {
               <h1 className="headers fadein_fadeout2">
                 <h3 style={{ display: "flex", justifyContent: "left" }}>
                   <a href="/">
-                    <img src={mainlogo} alt="SYNTAX" className="logo-main" />
+                    <img src={mainlogo} alt="SYNTAXX" className="logo-main" />
                   </a>
 
                   <img src={futureblue} alt="FIEM" className="fiem" />
@@ -348,7 +348,7 @@ function App() {
           <footer className="footer-container fadein_fadeout">
             <p className="footer">
               <div>
-                &copy; {new Date().getFullYear()} Syntax. All rights reserved.
+                &copy; {new Date().getFullYear()} SyntaxX. All rights reserved.
               </div>
             </p>
           </footer>
