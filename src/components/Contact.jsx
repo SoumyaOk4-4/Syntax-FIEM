@@ -4,7 +4,8 @@ import {
   FaInstagram,
   FaXTwitter,
   FaYoutube,
-  FaFacebook
+  FaFacebook,
+  FaLinkedin
 } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset } from "@fortawesome/free-solid-svg-icons";
@@ -71,6 +72,17 @@ function Contact() {
             className="contact-link"
           >
             Twitter/X
+          </a>
+        </div>
+        <div className="contact-item">
+          <FaLinkedin className="contact-icon" />
+          <a
+            href="https://www.linkedin.com/company/syntexx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            LinkedIn
           </a>
         </div>
       </div>
