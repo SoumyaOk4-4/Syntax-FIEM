@@ -219,7 +219,7 @@ body {
 
 /* Logo Styling */
 .logo-main {
-  height: 100px;
+  height: 90px;
   width: 250px;
   object-fit: contain;
   cursor: default;
@@ -922,13 +922,23 @@ nav .menu span {
   }
 }
 
+@media (max-width: 1281px) {
+  .team {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .team-member {
+    width: 300px !important;
+  }
+}
+
 @media (max-width: 1117px) {
   .navbar {
     padding: 12px;
   }
 
   .nav-btn-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .nav-icons {
@@ -990,7 +1000,7 @@ nav .menu span {
 
     scale: 1;
     margin: 0 auto;
-    width: fit-content;
+    width: 280px !important;
     transform: translateX(5px);
   }
 
@@ -1154,7 +1164,7 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
 
-    scale: 0.85 !important;
+    scale: 0.9 !important;
 
     margin: 0 auto;
     width: fit-content;
@@ -1209,10 +1219,10 @@ nav .menu span {
     flex-direction: column;
     align-items: center;
 
-    scale: 0.85;
+    scale: 0.9;
 
     margin: 0 auto;
-    width: fit-content;
+    width: 260px !important;
     transform: translateX(-5px);
   }
 
@@ -1347,25 +1357,40 @@ nav .menu span {
   }
 }
 
+@media (max-width: 820px) {
+  .team-member {
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .team-member {
+    width: 235px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .headers {
     justify-content: center;
   }
 
   .logo-main {
-    margin-left: 90px !important;
+    height: 100px !important;
+    width: 250px;
+    margin-left: 65px !important;
   }
 
   .fiem {
-    transform: translateX(-10px) !important;
+    margin-right: 30px !important;
+    transform: translate(5px, 2px) !important;
   }
 
   .hamburger {
-    transform: translate(680px, -83px) !important;
+    transform: translate(670px, -76px) !important;
   }
 
   .cross {
-    transform: translate(685px, -75px) !important;
+    transform: translate(675px, -69px) !important;
   }
 
   .navbar {
@@ -1542,35 +1567,52 @@ nav .menu span {
     width: 60% !important;
   }
 
+  .team-member {
+    width: 280px !important;
+  }
+
   .hamburger {
-    transform: translate(550px, -83px) !important;
+    transform: translate(655px, -76px) !important;
   }
 
   .cross {
-    transform: translate(555px, -75px) !important;
+    transform: translate(660px, -69px) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .hamburger {
+    transform: translate(625px, -76px) !important;
+  }
+
+  .cross {
+    transform: translate(630px, -69px) !important;
   }
 }
 
 /* Mobile Navigation */
-@media (max-width: 640px) {
+@media (max-width: 690px) {
   .headers {
     justify-content: center;
   }
 
   .logo-main {
-    margin-left: 90px !important;
+    height: 100px !important;
+    width: 250px;
+    margin-left: 50px !important;
   }
 
   .fiem {
-    transform: translateX(-10px) !important;
+    margin-right: 30px !important;
+    transform: translate(5px, 2px) !important;
   }
 
   .hamburger {
-    transform: translate(550px, -83px) !important;
+    transform: translate(540px, -76px) !important;
   }
 
   .cross {
-    transform: translate(555px, -75px) !important;
+    transform: translate(545px, -69px) !important;
   }
 
   .nav-btn-title {
@@ -1764,18 +1806,14 @@ nav .menu span {
   }
 }
 
-@media (max-width: 610px) {
-  .logo-main {
-    margin-left: 80px !important;
-  }
-
+@media (max-width: 624px) {
   .hamburger {
-    transform: translate(510px, -83px) !important;
+    transform: translate(530px, -76px) !important;
   }
 
   .cross {
-    transform: translate(515px, -75px) !important;
-  }
+    transform: translate(535px, -69px) !important;
+  }d
 
   .toggle-member {
     width: 70% !important;
@@ -1786,7 +1824,7 @@ nav .menu span {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .App {
     background-image: url("../src/images/logos/back_mobile.png") !important;
   }
@@ -1800,19 +1838,22 @@ nav .menu span {
   }
 
   .logo-main {
-    margin-left: 100px !important;
+    height: 100px !important;
+    width: 250px;
+    margin-left: 50px !important;
   }
 
   .fiem {
-    transform: translateX(-10px) !important;
+    margin-right: 30px !important;
+    transform: translate(5px, 2px) !important;
   }
 
   .hamburger {
-    transform: translate(430px, -83px) !important;
+    transform: translate(450px, -78px) !important;
   }
 
   .cross {
-    transform: translate(435px, -75px) !important;
+    transform: translate(455px, -71px) !important;
   }
 
   .nav-btn-title {
@@ -1921,21 +1962,21 @@ nav .menu span {
   }
 
   .hamburger {
-    transform: translate(430px, -83px) !important;
+    transform: translate(430px, -77px) !important;
   }
 
   .cross {
-    transform: translate(435px, -75px) !important;
+    transform: translate(435px, -70px) !important;
   }
 }
 
 @media (max-width: 511px) {
   .hamburger {
-    transform: translate(420px, -83px) !important;
+    transform: translate(420px, -77px) !important;
   }
 
   .cross {
-    transform: translate(425px, -75px) !important;
+    transform: translate(425px, -70px) !important;
   }
 }
 
@@ -1953,19 +1994,22 @@ nav .menu span {
   }
 
   .logo-main {
-    margin-left: 65px !important;
+    height: 100px !important;
+    width: 250px;
+    margin-left: 30px !important;
   }
 
   .fiem {
-    transform: translateX(-10px) !important;
+    margin-right: 110px !important;
+    transform: translate(5px, 1px) !important;
   }
 
   .hamburger {
-    transform: translate(380px, -83px) !important;
+    transform: translate(380px, -77px) !important;
   }
 
   .cross {
-    transform: translate(385px, -75px) !important;
+    transform: translate(385px, -70px) !important;
   }
 
   .nav-btn-title {
@@ -2042,7 +2086,7 @@ nav .menu span {
   .team-member {
     scale: 1 !important;
     margin: 0 auto;
-    width: 350px !important;
+    width: 400px !important;
     transform: translateX(8px) !important;
   }
 
@@ -2162,22 +2206,26 @@ nav .menu span {
 }
 
 @media (max-width: 432px) {
+  .team-member {
+    width: 350px !important;
+  }
+
   .hamburger {
-    transform: translate(350px, -83px) !important;
+    transform: translate(350px, -77px) !important;
   }
 
   .cross {
-    transform: translate(355px, -75px) !important;
+    transform: translate(355px, -70px) !important;
   }
 }
 
 @media (max-width: 420px) {
   .hamburger {
-    transform: translate(330px, -83px) !important;
+    transform: translate(335px, -77px) !important;
   }
 
   .cross {
-    transform: translate(335px, -75px) !important;
+    transform: translate(340px, -70px) !important;
   }
 }
 
@@ -2195,19 +2243,21 @@ nav .menu span {
   }
 
   .logo-main {
-    margin-left: 65px !important;
+    height: 100px !important;
+    width: 210px;
+    margin-left: 30px !important;
   }
 
   .fiem {
-    transform: translateX(-15px) !important;
+    transform: translate(5px, -1px) !important;
   }
 
   .hamburger {
-    transform: translate(300px, -83px) !important;
+    transform: translate(310px, -78px) !important;
   }
 
   .cross {
-    transform: translate(305px, -75px) !important;
+    transform: translate(315px, -71px) !important;
   }
 
   .event-container {
@@ -2318,12 +2368,22 @@ nav .menu span {
 }
 
 @media (max-width: 360px) {
+  .logo-main {
+    height: 100px !important;
+    width: 220px;
+    margin-left: 50px !important;
+  }
+
+  .fiem {
+    transform: translate(5px, -1px) !important;
+  }
+
   .hamburger {
-    transform: translate(290px, -83px) !important;
+    transform: translate(290px, -77px) !important;
   }
 
   .cross {
-    transform: translate(295px, -75px) !important;
+    transform: translate(295px, -70px) !important;
   }
 
   .toggle-member {
