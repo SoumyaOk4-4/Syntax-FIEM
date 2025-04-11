@@ -33,7 +33,7 @@ function About() {
               competition that challenges problem-solving skills.
             </div>
             <div>
-              We also host BOT WARS, a thrilling robotics showdown, and TECH
+              We also host thrilling robotics showdown, and TECH
               ARENA, our annual tech fest, packed with hackathons, gaming
               tournaments, and cutting-edge tech talks.
             </div>
