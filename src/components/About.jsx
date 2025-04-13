@@ -27,13 +27,12 @@ function About() {
           <div className="future-events">
             <div>
               To kickstart each academic session and ignite the spark of
-              technology, SYNTAXX will organize CODEFEST - a coding
-              competition of CSE department that challenges problem-solving skills of the 
-              departmental(CSE) students.
+              technology, SYNTAXX will organize CODEFEST- a coding
+              competition of CSE department that challenges problem-solving skills.
             </div>
             <div>
               We will also host Hackathons, Workshops and Tech Talks on Latest Technologies 
-              to improve the skills of the students CSE department.
+              to improve the skills of our department students.
             </div>
             <div>
               We will conduct workshops and mentorship programs on emerging
@@ -45,7 +44,7 @@ function About() {
             <div>
               Whether you're a Coding Wizard, an enthusiast of Game Devolopment, 
               or just someone eager to dive into the world of
-              technology, SYNTAXX welcomes you. Join us and be a part of this departmental group 
+              technology, SYNTAXX welcomes you. Join us and be a part of team SYNTAXX
               that doesn't just follow technology— it creates it.
             </div>
           </div>
