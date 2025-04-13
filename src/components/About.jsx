@@ -13,7 +13,7 @@ function About() {
         <div className="fadein_fadeout web-content about-txt">
           <div className="general">
             Welcome to SYNTAXX, A Departmental(CSE) team to conduct Departmental Events, 
-            Kolkata, dedicated to nurturing innovation, creativity, and collaboration among students. 
+            dedicated to nurturing innovation, creativity, and collaboration among students. 
             Our goal is to create a dynamic community where tech enthusiasts of CSE department can explore,
             experiment, and excel in the rapidly evolving world of technology.
             Stepping into a new era of tech-driven excellence, SYNTAXX provides a
@@ -22,7 +22,7 @@ function About() {
             we offer a space where curiosity meets innovation.
           </div>
 
-          <div className="expect" style={{fontSize: "3rem"}}>WHAT TO EXPECT ?</div>
+          <div className="expect" style={{fontSize: "1.5rem"}}>WHAT TO EXPECT ?</div>
 
           <div className="future-events">
             <div>
