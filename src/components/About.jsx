@@ -13,7 +13,7 @@ function About() {
         <div className="fadein_fadeout web-content about-txt">
           <div className="general">
             Welcome to SYNTAXX, A Departmental(CSE) team to conduct Departmental Events, 
-            dedicated to nurturing innovation, creativity, and collaboration among students. 
+            dedicated to nurture innovation, creativity, and collaboration among students. 
             Our goal is to create a dynamic community where tech enthusiasts of CSE department can explore,
             experiment, and excel in the rapidly evolving world of technology.
             Stepping into a new era of tech-driven excellence, SYNTAXX provides a
@@ -27,8 +27,9 @@ function About() {
           <div className="future-events">
             <div>
               To kickstart each academic session and ignite the spark of
-              technology, SYNTAXX will organize CODEFEST - an intra-college coding
-              competition that challenges problem-solving skills.
+              technology, SYNTAXX will organize CODEFEST - a coding
+              competition of CSE department that challenges problem-solving skills of the 
+              departmental(CSE) students.
             </div>
             <div>
               We will also host Hackathons, Workshops and Tech Talks on Latest Technologies 
