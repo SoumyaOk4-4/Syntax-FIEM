@@ -15,8 +15,8 @@ function Team() {
   return (
     <>
     <br />
-      <h1 className="fadein_fadeout2" style={{ color: "#e7a129" }}>
-      <FontAwesomeIcon icon={faUsers} /> MENTORS
+      <h1 className="fadein_fadeout2 page-title" style={{ color: "#e7a129" }}>
+      <FontAwesomeIcon icon={faUsers} /> Mentors
       </h1>
       <br />
         <div className="web-content-container team fadein_fadeout">
